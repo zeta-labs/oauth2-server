@@ -1,97 +1,83 @@
-/**
- * Created by Ivan on 4.7.2015 г..
- */
 exports.quoteAPI = function(req,res, id) {
-    var fs = require("fs");
-    res.setHeader('Content-Type', 'application/json');
-    fs.readFile("quotes/quotes.txt",function(err,data) {
-        if (err || !data) {
-            res.end("Please come back later");
-        }
-        var allQuotes = data.toString().split("#");
-        var quote;
-        if (id) {
-            if ( id < allQuotes.length && id >= 0) {
+  var fs = require("fs");
+  res.setHeader('Content-Type', 'application/json');
+  fs.readFile("quotes/quotes.txt",function(err,data) {
+    if (err || !data) {
+      res.end("Please come back later");
+    }
+    var allQuotes = data.toString().split("#");
+    var quote;
+    if (id) {
+      if ( id < allQuotes.length && id >= 0) {
 
-                quote = allQuotes[id];
-            }
-            else {
-               return res.end(JSON.stringify({status: 'failure', 'msg' : 'Unexisting id'}));
-            }
+          quote = allQuotes[id];
+      }
+      else {
+         return res.end(JSON.stringify({status: 'failure', 'msg' : 'Unexisting id'}));
+      }
+    }else {
+      quote = allQuotes[Math.ceil(Math.random() * allQuotes.length) - 1];
+    }
 
-        }
-        else {
-            quote = allQuotes[Math.ceil(Math.random() * allQuotes.length) - 1];
-        }
+    quote = quote.split("\r\n\r\n");
+    var movieTitle = quote[0];
+    quote.shift();
+    quote = quote.join("\r\n\r\n");
+    var ret = JSON.stringify({quote: quote, movieTitle: movieTitle });
 
-        quote = quote.split("\r\n\r\n");
-        var movieTitle = quote[0];
-        quote.shift();
-        quote = quote.join("\r\n\r\n");
-        var ret = JSON.stringify({quote: quote, movieTitle: movieTitle });
-
-        res.end(ret);
-    })
+    res.end(ret);
+  })
 };
 
 exports.getQuoteRandom = function(req,res) {
-
     exports.quoteAPI(req,res,false);
 };
 
 exports.getQuoteById = function(req,res) {
-    var id = req.params.id;
-    if (id.match("^[0-9]+$")) {
-        exports.quoteAPI(req,res,id);
-    }
-    else {
-        res.setHeader('Content-Type', 'application/json');
-        res.end(JSON.stringify({status: 'failure', 'msg' : 'Bad value for id'}));
-    }
-
-
-
+  var id = req.params.id;
+  if (id.match("^[0-9]+$")) {
+    exports.quoteAPI(req,res,id);
+  }
+  else {
+    res.setHeader('Content-Type', 'application/json');
+    res.end(JSON.stringify({status: 'failure', 'msg' : 'Bad value for id'}));
+  }
 };
 
 exports.getAToken = function(req,res) {
+  var model       = module.exports,
+      connString  = process.env.DATABASE_URL,
+      databaseUrl = "oauth",
+      collections = ['oauth_access_tokens', 'oauth_clients', "oauth_refresh_tokens", "users"],
+      db          = require("mongojs")(databaseUrl, collections);
 
-    var model = module.exports,
-        connString = process.env.DATABASE_URL,
-        databaseUrl = "oauth",
-        collections = ['oauth_access_tokens', 'oauth_clients', "oauth_refresh_tokens", "users"],
-        db = require("mongojs")(databaseUrl, collections);
-
-        var fs = require("fs");
-        fs.readFile('views/authenticate.html',function(err,data) {
-            if (err || !data) {
-                console.log(err);
-            }
-            res.end(data);
-
-
-        })
-
+  var fs = require("fs");
+  fs.readFile('views/authenticate.html',function(err,data) {
+    if (err || !data) {
+        console.log(err);
+    }
+    res.end(data);
+  })
 }
 
 exports.getRegister = function(req,res) {
-    var fs = require("fs");
-    fs.readFile("views/register.html",function(err,data) {
-        if (err || !data) {
-            console.log("View not found!");
-        }
-        res.end(data);
-    })
+  var fs = require("fs");
+  fs.readFile("views/register.html",function(err,data) {
+    if (err || !data) {
+      console.log("View not found!");
+    }
+    res.end(data);
+  })
 };
 
-
 exports.getClientRegister = function(req,res) {
-    var fs = require("fs");
-    fs.readFile("views/getClient.html",function(err,data) {
-        if (err || !data) {
-            console.log("View not found!");
-        }
-        res.end(data);
-    })
+  var fs = require("fs");
+  fs.readFile("views/getClient.html",function(err,data) {
+    if (err || !data) {
+      console.log("View not found!");
+    }
+    res.end(data);
+  })
 };
 
 exports.postClientRegister = function(req,res) {
@@ -104,28 +90,24 @@ exports.postClientRegister = function(req,res) {
         'N','O','P','Q','R','S','T','Y','U','X'];
     var clientId = "";
     for (var i = 0; i < 16;i++) {
-        clientId += letters[Math.ceil(Math.random() * letters.length) -1];
+      clientId += letters[Math.ceil(Math.random() * letters.length) -1];
     }
     var clientSecret = "";
     for (var i = 0; i < 30;i++) {
-        clientSecret += letters[Math.ceil(Math.random() * letters.length) -1];
+      clientSecret += letters[Math.ceil(Math.random() * letters.length) -1];
     }
 
-
-
     db.oauth_clients.find({client_id: clientId},function(err,client) {
-        if (!client || !client.length) {
-            db.oauth_clients.save({client_id : clientId, redirect_uri: redirectUri, client_secret : clientSecret},function(err,saved) {
-                if (!err) {
-
-                    res.end(JSON.stringify({status: 'success', client_id : clientId, client_secret: clientSecret, msg: "User saved. Feel free to get an access token from /oauth/token now"}));
-                }
-
-            })
-        }
-        else {
-            res.end(JSON.stringify({msg: "It seems that we're really lame. We tried giving you an already existing client id", status:'failure'}))
-        }
+      if (!client || !client.length) {
+        db.oauth_clients.save({client_id : clientId, redirect_uri: redirectUri, client_secret : clientSecret},function(err,saved) {
+          if (!err) {
+            res.end(JSON.stringify({status: 'success', client_id : clientId, client_secret: clientSecret, msg: "User saved. Feel free to get an access token from /oauth/token now"}));
+          }
+        })
+      }
+      else {
+          res.end(JSON.stringify({msg: "It seems that we're really lame. We tried giving you an already existing client id", status:'failure'}))
+      }
     })
 }
 
@@ -135,32 +117,24 @@ exports.postRegister = function(req,res) {
         databaseUrl = "oauth",
         collections = ["users",'oauth_clients'],
         db = require("mongojs")(databaseUrl, collections);
-        res.setHeader('Content-Type', 'application/json');
-            if (username && username.match('^[A-Za-z0-9-_\^]{5,30}$') && password && password.length > 2) {
-            db.users.find({username:username},function(err,users) {
-                console.log(users);
-                if (!users || !users.length) {
-                    db.users.save({username: username, password: password}, function(err,saved) {
-                        if (!err) {
-                        res.end(JSON.stringify({status: "success", msg: "User registered"}));
+    res.setHeader('Content-Type', 'application/json');
 
-
-                        }
-
-                    })
-                }
-
-                else {
-                    res.end(JSON.stringify({msg:"Try using another username", status:'failure'}));
-                }
-                    })
-
-            }
-    else {
-            res.end(JSON.stringify({msg:"Username does not meet the required format or password/redirect uri are too short.", status:'failure'}));
-        }
-
-
+    if (username && username.match('^[A-Za-z0-9-_\^]{5,30}$') && password && password.length > 2) {
+    db.users.find({username:username},function(err,users) {
+      console.log(users);
+      if (!users || !users.length) {
+        db.users.save({username: username, password: password}, function(err,saved) {
+          if (!err) {
+            res.end(JSON.stringify({status: "success", msg: "User registered"}));
+          }
+        })
+      }else {
+        res.end(JSON.stringify({msg:"Try using another username", status:'failure'}));
+      }
+    })
+    }else {
+      res.end(JSON.stringify({msg:"Username does not meet the required format or password/redirect uri are too short.", status:'failure'}));
+    }
 };
 
 exports.login = function(req,res) {
@@ -171,10 +145,10 @@ exports.login = function(req,res) {
     console.log(clientId);
     var fs = require("fs");
     fs.readFile('views/login.html',function(err,data) {
-        if (err || !data) {
-            res.end("Please try logging in again later.");
-        }
-        res.end(data);
+      if (err || !data) {
+        res.end("Please try logging in again later.");
+      }
+      res.end(data);
     })
 };
 
@@ -184,7 +158,7 @@ exports.postLogin = function(req,res) {
   collections     = ["users"],
   db              = require("mongojs")(databaseUrl, collections),
   redirect        = null;
-  // console.log('req.body ', req.body);
+
   res.setHeader('Content-Type', 'application/json');
   if (req.query.redirect) {
       redirect = req.query.redirect;
@@ -213,11 +187,8 @@ exports.postLogin = function(req,res) {
           res.end(JSON.stringify({msg: "Invalid username or password combination", 'status' : 'failure'}));
       }
     })
-
-  }
-  else {
-      res.end(JSON.stringify({msg: "No user credentials provided", 'status' : 'failure'}))
-
+  }else {
+    res.end(JSON.stringify({msg: "No user credentials provided", 'status' : 'failure'}))
   }
 }
 
