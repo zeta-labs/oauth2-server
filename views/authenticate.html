@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Get Your Access Token</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+<h1>Password Credentials Grant Type</h1>
+<form method="POST" action="">
+    <label for="client_id">Client Id:</label>
+    <input id="client_id" name="client_id" type="text"/>
+    <br>
+    <label for="client_secret">Client Secret:</label>
+    <input type="text" id="client_secret" name="client_secret"/>
+    <br>
+    <label for="username">Username:</label>
+    <input type="text" id="username"/>
+    <br>
+    <label for="password">Password:</label>
+    <input type="text" id="password"/>
+    <br>
+    <input type="submit" value="Get a Token"/>
+
+</form>
+
+<h1>Authorization Code Grant Type</h1>
+
+
+<script>
+
+    $(function() {
+        $("form").on("submit",function(evt) {
+            evt.preventDefault();
+            var auth = btoa($("#client_id").val().trim() + ":" + $("#client_secret").val().trim());
+           $("body").html($.ajax({
+                type: "POST",
+                contentType: "application/x-www-form-urlencoded",
+                async:false,
+                headers: {
+                    'Authorization' : "Basic " + auth
+                },
+                url: "/oauth/token",
+                data: {grant_type: "password",username: $("#username").val(), password: $("#password").val()}
+            }).responseText);
+
+            return false;
+
+        })
+    })
+
+</script>
+
+
+
+</body>
+</html>

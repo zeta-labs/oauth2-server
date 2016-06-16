@@ -1,0 +1,5733 @@
+Subject: Memorable Quotes from Movies [DATABASE LIST]
+Newsgroups: rec.arts.movies,alt.cult-movies,rec.arts.sf.movies,alt.quotations,rec.answers,alt.answers,news.answers
+Keywords: movies quotes database
+Summary: This posting contains a list of memorable quotes from movies.
+         Mostly funny quotes, but also quotes that are memorable for
+         some other reason.  It is used in Colin Needham's rec.arts.movies
+         movie database, and also Cardiff's Movie Database Browser.  More
+         info: rtfm.mit.edu:/usenet/news.answers/movies/movie-database-faq
+Reply-To: quotes.list@colargol.edb.tih.no (Quotes List Filter)
+Followup-To: rec.arts.movies
+Approved: news-answers-request@MIT.EDU
+Expires: 04 Nov 1994
+Message-Id: <quotes-1.09@astfgl.edb.tih.no>
+Supersedes: <quotes-1.08@astfgl.edb.tih.no>
+Organization: Trondheim College of Engineering
+References: <quotes-1.08@astfgl.edb.tih.no>
+
+Archive-name: movies/quotes/part1
+Posting-Frequency: monthly
+Last-modified: 10/04/94
+Version: 1.09
+
+-----------------------------------------------------------------------------
+
+                          This is the QUOTES LIST
+                      (Memorable Quotes from Movies)
+
+        Maintained by: Lars Joergen Aas <larsa@colargol.edb.tih.no>
+
+-----------------------------------------------------------------------------
+
+NEWS:
+*) This list will also contain poetry from now on.  The poetry will of course
+   not be formatted 76 characters wide, indented by two spaces on the left,
+   like the ordinary quotes.
+
+FACTS & FIGURES:
+*) This list is supported by the Col Needham's movie database v2.9 and
+   upwards (current release: 3.0) and Cardiff's Movie Database Browser (WWW).
+   The latter includes hypertext links which isn't easy to implement in
+   ASCII-files ;)
+*) This list has now quotes and poetry from 361 different movies.
+*) It contains 765 individual quotes involving at least 630 different actors.
+
+New titles:		"I, Claudius"
+			African Queen, The
+			Ask a Policeman
+			Cliffhanger
+			Deep Red (1994)
+			Eve and the Handyman
+			Good Morning...and Goodbye!
+			Major League
+			Manhattan
+			Maverick
+			Necromania
+			Oh, Mr Porter!
+			Paint Your Wagon
+			Stakeout
+
+CONTRIBUTIONS and CORRECTIONS to this list is welcomed at movie@ibmpcug.co.uk
+with the subject "ADD" and the keyword "QUOTE" above all individual quotes.
+To find out how to use the email-server use the subject "HELP" instead.
+
+* Include which movie the quotes are taken from.  I would appreciate if the
+  movie title is consistent with the movie database, including the optional
+  year of release.  Avoid AKA-titles.
+* Write in a script-like way (see the list below) and include both the actors'
+  real names and the character names.  Both is needed to create hypertext
+  links on the WWW browser at Cardiff.  You should at least include one of
+  the names.
+* Keep narration brief, but do narrate if necessary.
+* Don't submit any quote.  Please try to avoid spoilers, and only submit
+  quotes which have a certain point to them.  It doesn't need to be a funny
+  quote (but they most often will be), but it should be memorable (like Roy's
+  last words in `Blade Runner').
+* Keep the QUALITY UP and the QUANTITY DOWN.
+* The quotes should be correct.  Correct spelling and written _exactly_ as
+  it's said in the movie.  When this is not the case, I'm not necessarily the
+  one to blame, but I am the one you should notify.
+
+-----------------------------------------------------------------------------
+
+The rec.arts.movies database consists of the following lists:               
+
+ List                 | Maintained by                              | Updated
+ ---------------------|--------------------------------------------|----------
+ Actors               | Col Needham <cn@ibmpcug.co.uk>             | 09/30/94
+ Actresses            | Col Needham <cn@ibmpcug.co.uk>             | 09/30/94
+ Alternative Titles   | Michel Hafner <hafner@ifi.unizh.ch>        | 09/16/94
+ Biographies          | Mark Harding <ccsmh@ss1.bath.ac.uk>        | 09/30/94
+ Character Names      | Steve Hammond <shammond@indirect.com>      | 09/16/94
+ Cinematographers     | Michel Hafner <hafner@ifi.unizh.ch>        | 09/16/94
+ Composers            | Michel Hafner <hafner@ifi.unizh.ch>        | 09/16/94
+ Costume Designers    | Michel Hafner <hafner@ifi.unizh.ch>        | 09/16/94
+ Crazy Credits        | Mark Harding <ccsmh@ss1.bath.ac.uk>        | 09/23/94
+ Directors            | Col Needham <cn@ibmpcug.co.uk>             | 09/30/94
+ Editors              | Col Needham <cn@ibmpcug.co.uk>             | 09/30/94
+ Goofs                | Michael Gaines <starman@intac.com>         | 09/02/94
+ Movies               | Michel Hafner <hafner@ifi.unizh.ch>        | 09/16/94
+ Plot Summaries       | Colin Tinto <colint@spider.co.uk>          | 09/30/94
+ Producers            | Andre Bernhardt <ujad@rz.uni-karlsruhe.de> | 07/29/94
+ Production Designers | Michel Hafner <hafner@ifi.unizh.ch>        | 09/16/94
+ Quotes               | Lars J Aas <larsa@colargol.edb.tih.no>     | 09/16/94
+ Ratings              | Col Needham <cn@ibmpcug.co.uk>             | 09/30/94
+ Running Times        | Mark Harding <ccsmh@ss1.bath.ac.uk>        | 09/30/94
+ Soundtracks          | Ron Higgins <rhiggins@carroll1.cc.edu>     | 09/16/94
+ Trivia               | Murray Chapman <muzzle@cs.uq.oz.au>        | 09/23/94
+ Writers              | Jon Reeves <reeves@zk3.dec.com>            | 08/26/94
+ -----------------------------------------------------------------------------
+                        
+The lists are available via anonymous FTP from:  
+
+  cathouse.org  in  pub/cathouse/movies/database
+
+  ftp.funet.fi  in  pub/culture/tv+film/lists
+
+
+SEARCHING THE DATABASE
+======================
+
+The movie database frequently asked questions list contains more information
+on the whole movie database project. For a copy send an e-mail message with
+the subject "HELP FAQ" to <movie@ibmpcug.co.uk>. Here is a summary of the
+ways to access the database:
+
+(1) e-mail interface
+  
+    For details send a message with the subject HELP to <movie@ibmpcug.co.uk>
+
+(2) WWW interface
+
+    The database is available via the World Wide Web. Access is via a 
+    "browser". The two main WWW browsers are Mosaic and Lynx...
+
+    Mosaic (X windows, MS-Windows, Mac, Amiga) ftp.ncsa.uiuc.edu  /Web
+    lynx   (vt100)                             ftp.wustl.edu /packages/www/lynx
+
+    From your browser, OPEN or GO to the any of the following documents:
+
+      http://www.cm.cf.ac.uk/Movies/        (European users prefered)
+      http://www.msstate.edu/Movies/        (USA/rest of world prefered)
+      http://ballet.cit.gu.edu.au/Movies/   (Australian users *only*)
+
+    See the comp.infosystems.www FAQ for more information on the WWW.
+
+(3) local installation (Unix/Amiga)
+
+    The movie database package enables you to install the data locally and
+    provides a variety of search tools. It is available via anonymous FTP:
+
+     cathouse.org  in  /pub/cathouse/movies/database/tools/moviedb-3.0.tar.Z
+
+     ftp.funet.fi  in  /pub/culture/tv+film/lists/tools/moviedb-3.0.tar.gz
+
+    see the README file in the same directories for more information. The Amiga
+    version is in the file mdb_Amiga_3.0.lha.
+
+(4) local installation (MS-DOS)
+
+    The CineBASE program provides an MS-DOS interface to the database and is
+    also available via anonymous FTP:
+
+     cathouse.org  in  /pub/cathouse/movies/database/tools/cb141.arj
+
+     ftp.funet.fi  in  /pub/culture/tv+film/lists/tools/msdos/cb141.arj
+
+    (note: preloaded database files for CineBASE are available from the
+      ftp.funet.fi site in the same directory as the program archive)
+
+(5) telnet access via WWW
+
+    There are several telnet'able WWW servers. Here are some examples;
+
+     telnet info.cern.ch
+        then type    go http://www.cm.cf.ac.uk/Movies/
+     telnet www.njit.edu          (login: www)
+        then type    g http://www.cm.cf.ac.uk/Movies/
+     telnet ukanaix.cc.ukans.edu  (login: www)  needs vt100
+        then look under "by Subject" then "Movies"
+
+-----------------------------------------------------------------------------
+
+QUOTES LIST
+===========
+
+
+# "I, Claudius"
+
+[While examining the vomit of someone she just poisoned]
+Livia:  Green?  I've never seen green before.
+
+
+# 'burbs, The
+
+[Last line]
+Ricky Butler:  God I love this street.
+
+
+# 'Crocodile' Dundee
+
+Richard Mason:  Take care now.
+Sue Charlton:  Don't worry.  I'm a New York'er!
+
+Neville Bell:  Oh no, you can't take my photograph.
+Sue Charlton:  Oh, I'm sorry, you believe it will take your spirit away?
+Neville Bell:  No, you got the lens-cap on.
+
+Michael J. (Crocodile Dundee):  Me and God - we'd be mates!
+
+Michael J. (Crocodile Dundee):  For a minute there, "room-service" took on a
+  whole new meaning.
+
+
+# 20,000 Leagues Under the Sea
+
+Captain Nemo:  I wonder if you are familiar with utensils, Mr. Land?
+Ned Land:  I'm indifferent to 'em.
+
+
+# 2001: A Space Odyssey
+
+[Famous line]
+Dave Bowman:  Open the pod bay doors please HAL
+
+HAL:  Just what do you think you're doing, Dave?
+
+HAL:  I'm sorry Dave...  I can't do that.
+
+[On Dave's return to the ship]
+HAL:  Look Dave, I can see you're really upset about this.
+
+HAL: I know I've made some very poor decisions recently.
+
+[HAL's shutdown]
+HAL:  Dave, my mind is going...I can feel it...I can feel it...My mind is
+  going...There is no question about it...I can feel it....I can feel it...
+  I can feel it...I'm afraid...Good afternoon gentlemen, I am a HAL 9000
+  computer. I became operational at the H.A.L. labs in Urbana Illinois on
+  the 12th of January 1992. My instructor was Mr. Langley and he taught me
+  to sing a song.  If you'd like to hear it I can sing it for you?
+Dave Bowman:  Yes, I'd like to hear it, HAL, sing it for me.
+HAL:  It's called Daisy.  Daisy, Daisy give me your answer do, I'm half
+  crazy all for the love of you. It won't be a stylish marriage, I can't
+  afford a carraige, but you'll look sweet upon the seat of a bicycle made
+  for two.
+
+
+# 2010
+
+HAL-9000:  Dr. Chandra, will I dream?
+
+
+# 3 Men and a Baby
+
+Jack Holden:  Wo-ow, Angela.  You look different.  What happened?
+Angelyne:  I'm dressed.
+
+
+# 39 Steps, The (1935)
+
+Richard Hannay:  I know what it is to feel lonely and helpless and to have
+  the whole world against me, and those are things that no men or women
+  ought to feel.
+
+Richard Hannay:  There are 20 million women in this island and I get to be
+  chained to you.
+
+
+# 48 HRS.
+
+[First lines]
+Jack's Girl:  You know, if you let me come over to your place once in a
+  while you could put on a clean shirt in the morning.
+Jack Cates:  What makes you think I got any clean shirts in my place?
+
+Reggie Hammond:  You said bullshit and experience is all it takes, right?
+Jack Cates:  Right.
+Reggie Hammond:  Come on in and experience some of my bullshit.
+
+Reggie Hammond:  Jack...  Tell me a story.
+Jack Cates:  Fuck you!
+Reggie Hammond:  Oh, that's one of my favourites.
+
+
+# Abyss, The
+
+Bud Brigman:  He's acting alone.  He's cut off from his chain of command.
+  He's exhibiting symptoms of pressure-induced psychosis, and he has a
+  nuclear weapon.  So as a personal favour to me, would you lay off him?
+
+
+# Ace Ventura: Pet Detective
+
+[Ace Ventura is trying to get his car started, while looking at somebody
+  smashing it with a bat in his mirror]
+Ace Ventura:  Warning!  Assholes are closer than they appear!
+
+[Ace Ventura just got his car started]
+Ace Ventura:  It's ALIVE.  IT'S ALIVE!
+
+[Ace Ventura is chewing on sunflower seeds, periodically emptying the shells
+  on the desk]
+Melissa:  Would you like an ash tray?
+[Ace Ventura got seeds all over his teeth]
+Ace Ventura:  No, I don't smoke.  Disgusting habit.
+
+[This is probably a reference to _"The Love Boat"_ (qv)]
+[Ace Ventura arrives at a posh party when a bald butler dressed in white
+  answer the door]
+Ace Ventura:  Hello, Captain Stubing!  Permission to come aboard?
+
+Ace Ventura:  I just visited Ray Finkles place.
+Melissa:  And?
+Ace Ventura:  Cozy, if you're Hannibal Lector.
+
+Ace Ventura:  If Lt. Einhorn is a woman, AS SHE CLAIMS TO BE...  Then she is
+  suffering from the WORST case of hemmorhoids I have EVER seen!
+[Ace Ventura turns Einhorn around to reveal a "tucked back" peace of male
+  anatomy]
+Ace Ventura:  Thank you!  Thank you!  I'll be preforming here all night, be
+  sure to tip your waitress.
+
+
+# Adventures of Baron Munchausen, The
+
+Baron Munchausen:  Your reality, sir, is lies and balderdash and I'm
+  delighted to say that I have no grasp of it whatsoever.
+
+
+# Adventures of Buckaroo Banzai Across the 8th Dimension, The
+
+Doctor Emilio Lizardo/Lord John Whorfin:  Take her to the pit!  And this
+  time use more honey; we must find out what she knows.
+
+Buckaroo Banzai:  But just remember, no matter where you go. there you are.
+
+PA system at Yoyo Dyne factory:  There are monkey boys in the facility.
+
+Buckaroo Banzai:  I was ionized this morning, but I'm okay now.
+
+
+# Adventures of Ford Fairlane, The
+
+Ford Fairlane:  Hey, look.  Write down my number:  555-6321  Got it?
+Twin Club Girl:  Yeah.  Wait a minute!  555 is not a real number!  They only
+  use that in the movies!
+Ford Fairlane:  No shit, honey.  What do you think this is?  Real life?
+
+Ford Fairlane:  You're 10 seconds away from the most embarrassing moment in
+  your life!
+
+Ford Fairlane:  So many assholes...  So few bullets...
+
+Lt. Amos:  You think you are so hot 'cos you get in all the clubs, heh?
+  Just because you have sex with great looking women...
+Ford Fairlane:  You got to admit those are pretty good reasons...
+
+Ford Fairlane:  Some people play hard to get.  I play hard to want.
+
+Ford Fairlane:  Johnny was the only guy who could out-disgust me.  When we
+  were kids we had gross-out contests.  I coughed a pile of phlegm on a
+  table, he said "Nice try!" and pulled out a straw...
+
+Jazz:  Well, that weekend was a mistake!
+Ford Fairlane:  Hey, look.  I'm sorry I made you clean the toilets and the
+  bathtubs, I mean, who did all the work in bed?
+
+Ford Fairlane:  How much?
+Ticket Guy:  300.
+Ford Fairlane:  300??  You charged the chicks one!
+Ticket Guy:  Hey, they blew me.
+Ford Fairlane:  Heh!  300 coming up!
+
+Lt. Amos:  I can't believe anybody can have so much fucking fun in a
+  funeral, Fairlane.
+
+Lt. Amos:  See, that's the difference between a great investigator like me,
+  and a piece of spam like you.
+Ford Fairlane:  Spam?  You're a piece of spam.  That's what I think of you.
+Lt. Amos:  No, I call you a piece of spam, 'cos that's what you are.
+Ford Fairlane:  Spam!
+
+[At the "sisters'" house, surrounded by all the semi-nude women]
+Ford Fairlane:  hibb..  hibbdy..  Maybe I did die in the explosion, you
+  know.
+
+Don Cleveland to Julian Grendale:  With friends like you, who needs
+  enemies?
+
+
+# Adventures of Robin Hood, The
+
+Sir Robin of Loxley to Prince John:  I'll organize a revolt, exact a death
+  for a death, and I'll never rest until every Saxon in this shire can stand
+  up free men and strike a blow for Richard and England...  From this night
+  on I'll use every means in my power to fight you!
+
+Lady Marian Fitzswalter:  Why, you speak treason!
+Sir Robin of Loxley:  Fluently.
+
+
+# African Queen, The
+
+Captain:  I know pronounce you man and wife.  Proceed with the execution.
+
+
+# Airplane II: The Sequel
+
+Buck Murdock:  They're beeping and they're flashing.  They're flashing and
+  they're beeping!  I cant stand it anymore, they're blinking and they're
+  flashing.
+
+
+# Airplane!
+
+???:  Johnny, what do you make of this?
+Johnny:  This?  I can make a hat, I can make a brooch, I can make a
+  pterodactyl...
+
+Doctor Rumack:  When are we going to be able to land?
+Ted Striker:  I can't tell.
+Doctor Rumack:  You can tell me, I'm a doctor.
+Ted Striker:  I don't know.
+Doctor Rumack:  Well, can't you take a guess?
+Ted Striker:  Not for another two hours.
+Doctor Rumack:  You can't take a guess for another two hours?
+
+Captain Oveur:  Joey, have you ever been to a Turkish prison?
+
+Doctor Rumack:  What did they have for dinner?
+Elaine:  They had a choice: chicken or fish.
+Doctor Rumack:  Ah, I remember, I had lasagna.
+
+
+# Aladdin (1992)
+
+The Genii:  Rug-man!  It's been a few millennia.  Slap me some tassel!
+
+
+# Alien (1979)
+
+[Kane starts choking in the scene where the Alien bursts from his chest]
+Parker:  What's the matter man, the food ain't THAT bad?!
+
+Ash:  You still don't know what you're dealing with do you?  Perfect
+  organism.  Its structural perfection is matched only by its hostility...
+  I admire its purity, a survivor; unclouded by conscience, remorse or
+  delusions of morality.
+
+[Last line (also used in _Alien 3_ (qv))]
+Ellen Ripley:  ..., Ash and Captain Dallas are dead.  Cargo and ship
+  destroyed.  I should reach the frontier in about 6 weeks.  With a little
+  luck, the network will pick me up.  This is Ripley - last survivor of The
+  Nostromo - signing off.
+
+
+# Alien 3
+
+[Ellen Ripley is looking for the Alien]
+Ellen Ripley:  Don't be afraid, I'm part of the family.
+
+[Last line (like in _Alien (1979)_ (qv))]
+Ellen Ripley:  ..., Ash and Captain Dallas are dead.  Cargo and ship
+  destroyed.  I should reach the frontier in about 6 weeks.  With a little
+  luck, the network will pick me up.  This is Ripley - last survivor of The
+  Nostromo - signing off.
+
+
+# Aliens
+
+Private Hudson:  Hey Vasquez, have you ever been mistaken for a man?
+Private Vasquez:  No, have you?
+
+[When they are dropped over LV-426]
+Private Hudson:  We're on the express elevator to hell - going down.
+
+Bishop:  I may be synthetic, but I'm not stupid.
+
+[Lieutenant Gorman orders the troops to disarm all their weapons before the
+  first alien encounter]
+Private Frost:  What the hell are we supposed to use man?  Harsh language?
+
+Private Hudson:  Yeah, but it's a dry heat!
+
+Private Hudson:  In case you haven't been paying attention to current
+  events, we just got our asses kicked, pal!
+
+Private Hudson:  Let's just bug out and call it even, OK?
+Ellen Ripley:  I say we take off and nuke the entire site from orbit.
+  That's the only way to be sure.
+Private Hudson:  Fuckin' A...
+Burke:  Ho-ho-hold on one second.  This installation has a substantial
+  dollar-value attached to it.
+Ellen Ripley:  They can *bill* me.
+
+[The drop-ship crashes]
+Private Hudson:  Well that's great, that's just fuckin' great man, now what
+  the fuck are we supposed to do?  We're in some real pretty shit now man...
+  That's it man, game over man, game over!  What the fuck are we gonna do
+  now?  What are we gonna do?
+
+Private Hudson:  Dear Lord Jesus, this can't be happenin' man, this isn't
+  happenin...
+
+Ellen Ripley:  Hudson!  This little girl survived longer than that with no
+  weapons and no training.  Right?
+Private Hudson:  So why don't you put her in charge?
+
+Bishop:  I'm afraid I have some bad news.
+Private Hudson:  Well that's a switch.
+
+
+# All of Me (1984)
+
+Roger Cobb:  You bought me a grave-post for my 38th birthday?
+
+Edwina Cutwater:  Guess what I'm going to do?
+Roger Cobb:  What?
+Edwina Cutwater:  I'm going to come back from the dead.
+Roger Cobb:  Aaahhhh.  And what makes you think you can do that?
+Edwina Cutwater:  Because I'm rich...
+
+Burton Schyuler:  Are you strong enough to continue?
+Edwina Cutwater:  What?  Oh, I'm fine.  Really.  I'm fine.  Tell them!
+Dr. Betty Ahrens:  She could drop dead any minute...
+Edwina Cutwater:  Don't mind her.  She is only trying to make me feel good.
+
+Edwina Cutwater:  I can't believe this.  I can't even die right!
+
+Peggy Schyuler:  Roger, you go to court tomorrow, we're through!
+Roger Cobb:  If I don't, your father will have my balls.
+Peggy Schyuler:  Then it's either me or your balls.  You can't have both!
+
+Roger Cobb:  Women, eh?  Can't live with them.  Can't live without them.
+
+Roger Cobb to Edwina Cutwater:  You know, it's just like a dead person to
+  say something like that!
+
+Tyrone Wattell:  Roger, exactly how do you plan pulling this off?
+Roger Cobb:  Beats the heck out of me.
+Tyrone Wattell:  Well, if I can be of any help at all, you are in worse
+  trouble than I thought.
+
+Prahka Lasa:  Backinbowl. Backinbowl.
+
+Terry Hoskins:  I love it when you talk like a beer commercial.
+
+
+# American Werewolf in London, An
+
+David Kessler:  How could there have been witnesses, it was so dark.  We
+  were running and I fell and Jack went to help me up and this thing came
+  from nowhere.  I don't know what they're talking about.
+
+Jack Goodman:  Stick to the Road.
+David Kessler:  Beware of the Moors...
+Jack Goodman:  Ooops.
+
+
+# Angelfist
+
+Victor Winslow:  This is Manila.  We do things differently here.
+
+
+# Animal Crackers
+
+Captain Jeffrey Spaulding:  One morning I shot an elephant in my pajamas.
+  How he got in my pajamas, I don't know.
+
+Captain Jeffrey Spaulding:  You are going Uruguay, and I'm going my way.
+
+
+# Another Stakeout
+
+[Bill Reimers and Chris Lecce call to Archie (a dog) who is chasing a
+  neighbour's cat - Archie takes no notice]
+Bill Reimers:  Come back here!
+Chris Lecce:  Oh Stick 'em Archie.  Eat the cat!
+
+[Chris Lecce is angry with Gina Garrett's because of her interference in the
+  stakeout]
+Chris Lecce:  If this assignment gets blown.  I want to go on record right
+  now, that this is the most stupid, dim witted, idiotic, moronic piece of
+  putrefied garbage that I have ever in my entire professional carrier, ever
+  had the displeasure of being involved with.
+
+Gina Garrett:  Cover Me!  I'm taking a bath.
+
+[Gina Garrett asks Bill Reimers to shave his moustache to look younger]
+Bill Reimers:  I don't think you understand the relationship a man has with
+  his facial hair.
+
+Captain Coldshank:  Your cover is you're renting the judge's house for a
+  month of vacation.
+Chris Lecce:  As what? ... friends or lovers?
+
+
+# Another You
+
+Eddie Dash to the angry dog, Duane, that is stopping George from getting out
+  of the car]
+Eddie Dash:  Hey, Duane.  Give the man a break.  Come on!  Hey, I'll let you
+  hump my leg.  Come on, baby.
+[Duane takes off]
+
+[Last line (after credits)]
+George:  Don't ever call my friend a "shithead" again, OK?
+
+
+# Apartment, The
+
+Fran Kubelik:  When you're in love with a married man you shouldn't wear
+  mascara.
+
+
+# Apocalypse Now
+
+Lieutenant Colonel Kilgore:  I love the smell of napalm in the morning...
+  Smells like victory.
+
+Lieutenant Colonel Kilgore:  Some day this war's gonna end.
+
+Lieutenant Colonel Kilgore:  Charlie don't surf!
+
+Captain Benjamin L. Willard:  Saigon.  Still in Saigon.  Shit!
+
+
+# Armed and Dangerous
+
+[Frank Dooley is being driven at high speed to the scene of the crime by
+  "The Cowboy", a truck driver with a load of rocket fuel]
+The Cowboy:  Slim, I ain't never seen a handgun that big before.
+Frank Dooley:  Yeah, it's a 50 calibre...  They used to use it to hunt
+  buffalo with...  Up close!  It's only legal in two states...  This isn't
+  one of them.
+
+Tanning Salon Woman:  Gosh, I didn't realize it was going to be this formal.
+  If I had known it was going to be this kind of party I would have worn
+  underwear.
+
+Maggie Cavanaugh:  Just remember, when you pull the trigger, the bullets
+  come out going VERY VERY fast...  So make sure to keep the weapon pointing
+  away from you.  Now that's about it.  You are now armed [slight pause]
+  guards.  God help us all.
+
+
+# Army of Darkness
+
+Ash:  Shop smart, shop S-mart!
+
+Ash about his shotgun:  This ... is my BOOM STICK!!!
+
+Ash:  You ain't leading nothing but Jack and Shit.  And Jack just left
+  town.
+
+[The girl wants to apologize to Ash]
+Ash:  First you wanna kill me, now you wanna kiss me.  Blow.
+
+Ash to the Witch:  Yo, she-bitch!  Let's go!
+
+Ash:  Don't touch that please, you primitive intellect wouldn't understand
+  things with alloys and compositions and things with ... molecular
+  structures.
+
+[Upon getting the powered glove in place of his right hand]
+Ash:  Groovy.
+
+[In a passionate moment of romance]
+Ash:  Gimme some sugar, baby.
+
+Ash:  Clatu Verata Nicto.
+Wise man:  Again.
+Ash:  Clatu Verata Nicto.
+Wise man:  Again.
+Ash:  Look, I know your damn words!
+
+[After shooting Bad Ash]
+Good Ash:  I ain't that good.
+
+Ash:  Clatu Verata N... N... It's definitely an "N" word!
+
+Village Resident:  Are all men from the future loud-mouthed braggarts?
+Ash:  Nope.  Just me baby...  Just me.
+
+[As undead Ash stands triumphant on catapult]
+Ash:  Buckle up Bonehead.  'Cos you're goin' for a ride!
+
+Demon Lady:  I'll swallow your soul!
+Ash:  Come get some.
+
+[Last line]
+Ash:  Hail to the king, baby.
+
+
+# Arthur
+
+Arthur Bach:  I'm so rich, I wish I had a dime for every dime I had.
+
+[While Arthur Bach is taking a bath]
+Arthur Bach:  God, Hobson, isn't life wonderful?
+Hobson:  Yes it is, Arthur, do your armpits.
+Arthur Bach:  A hot bath is Wonderful...  Girls are WONDERFUL!
+Hobson:  Yes, imagine how wonderful a girl who bathes would be...  Get
+  dressed.
+
+Arthur Bach:  I race cars, play tennis, and fondle women, BUT!  I have
+  weekends off, and I am my own boss.
+
+Hobson:  Good afternoon.  If you and your undershirt will take two paces
+  backwards, I could enter this dwelling.
+
+[After Linda Marolla stole a necktie from a store]
+Hobson:  Arthur, I see no reason for prolonging this conversation, unless
+  you plan on knocking over a fruit-stand later this afternoon.
+Hobson to Linda Marolla:  Good luck in prison.
+
+[In Burt Johnson's den, looking at a moosehead mounted on the wall]
+Arthur Bach:  Where is the rest of this moose?
+
+Arthur Bach:  It's so small, they recently had the whole country carpeted.
+
+
+# Baby Boom
+
+doctor Jeff Cooper:  You know... you kind of remind me of a bullterrier of
+  some kind.
+J.C. Wiatt:  Yeah, I bet you say that to all the girls.
+
+
+# Back to the Future
+
+Mr. Strickland:  You don't have a chance, you're too much like your old man.
+  No McFly ever ammounted to anything in the history of Hill Valley!
+Marty McFly:  Yeah, well, history is gonna change...
+
+[Repeated line]
+Marty McFly:  If you put your mind to it, you can accomplish anything...
+
+Dave McFly kissing George McFly on the head:  See ya pap.  Oooow, time to
+  change that oil!
+
+Doctor Emmet Brown: If my calculations are correct, when this baby hits
+  eighty-eight miles per hour ... you're gonna see some serious shit.
+
+[In 1955, Tab and Pepsi Free aren't "invented" yet]
+Lou:  You gonna order something, kid?
+Marty McFly:  Ah, yeah...  Give me a Tab.
+Lou:  Tab?  I can't give you a tab unless you order something!
+Marty McFly:  Alright, give me a Pepsi Free.
+Lou:  You want a Pepsi, PAL, you're gonna pay for it!
+
+Goldie Wilson:  I'll be the most powerful man in Hill Valley, and I'm gonna
+  clean up this town.
+Lou handing him a broom:  Good, you can start by sweeping the floor.
+
+[Lorraine's parents are talking about Marty McFly, Lorraine's future son]
+Stella Baines:  He's a very strange young man.
+Sam Baines:  He's an idiot.  Comes from upbringing.  His parents are
+  probably idiots too.  Lorraine, if you ever have a kid that acts that way
+  I'll disown you.
+
+[Dr. Emmet Brown is doubting Marty McFly's story about that he is from the
+  future]
+Dr. Emmet Brown:  Then tell me, "future boy", who is president in the United
+  States in 1985?
+
+[Marty McFly comes to his school in 1955]
+Marty McFly:  Wow, they really cleaned this place up.  It looks brand new!
+
+Marty McFly:  Wait a minute, Doc, are you trying to tell me that my mother
+  has got the hots for me?
+Dr. Emmet Brown:  Precisely.
+Marty McFly:  Wow, this is heavy...
+Dr. Emmet Brown:  There's that word again; "heavy".  Why are things so heavy
+  in the future?  Is there a problem with the earths gravitational pull?
+
+[The correct phrase is "So why don't you make like a tree and leave"]
+Biff Tannen:  So why don't you make like a tree and get outta here.
+
+George McFly:  Lou!  Give me a milk... [dramatic pause] Chocolate!
+
+[Instead of "My destiny has brought me to you"]
+George McFly:  Lorraine, my density has popped me to you.
+
+[Marty McFly arrives late for his take-off]
+Dr. Emmet Brown:  You got no consept of time!
+
+Dr. Emmet Brown:  Don't worry!  As long as you hit that wire with the
+  connecting hook at precisely eighty-eight miles per hour the moment the
+  lightning strikes the tower ... everything will be fine!
+
+
+# Back to the Future Part II
+
+[After having so much trouble with Jennifer Parker in 2015, Doc Emmet L.
+  Brown decides to destroy the time machine as soon as they get back to
+  1985]
+Doc Emmet L. Brown:  The time-travelling is just too dangerous.  Better that
+  I devote myself to study the other great mystery of the universe:
+  ...women!
+
+
+# Bananas
+
+Fielding Mellish:  I once stole a pornographic book that was printed in
+  braille.  I used to rub the dirty parts.
+
+
+# Barbarian Queen
+
+Amethea:  I'll be no man's slave and no man's whore, and if I can't kill
+  them all, by the gods they'll know I've tried.
+
+
+# Basic Instinct
+
+Gus:  Did you ever do drugs with Mr. Boz?
+Catherine Tramell:  Sure.
+Gus:  What kind of drugs?
+Catherine Tramell:  Cocaine.  Have you ever fucked on cocaine Nick?  It's
+  nice.
+[Catherine Tramell uncrosses her legs and it can be seen she's wearing no
+  underwear]
+Detective Nick Curran:  You like playing games don't you?
+Catherine Tramell:  I have a degree in psychology, it goes with the turf...
+  Games are fun.
+
+
+# Batman (1989)
+
+[Repeated line]
+Jack Napier:  Have you ever danced with the devil in the pale moonlight?
+
+[Jack Napier is confronted with Batman for the first time]
+Jack Napier:  Nice outfit!
+
+[Joker gives someone a hand and electrocutes him]
+Joker:  Oh, I got a live one here!
+
+[Jack Napier looks through a pile of pictures and sees Vicki Vale for the
+  first time]
+Jack Napier:  Stop the press, who is that?
+
+
+# Best Man, The
+
+William Russell:  T.T. Claypoole has all the characteristics of a dog except
+  loyalty.
+
+
+# Better Off Dead (1985)
+
+Lane Myer:  Gee, Johnny, I don't have a dime.
+Johnny Gasparini:  Didn't ask for a dime, 2 dollars.
+
+Lane Myer:  I'm sorry your mom blew up, Ricky.
+
+
+# Beyond the Call of Duty
+
+Lt. Sam Henderson:  Well, now it's you and me and the barrel.
+
+
+# Bill & Ted's Bogus Journey
+
+Rufus:  ...and very important, DO NOT do your homework without wearing
+  headphones.  Repeat...
+
+Evil Robot Ted:  Aim for the cat, dude!  Aim for a cat!
+
+Evil Robot Ted:  I got a full-on robot Chubby
+
+[Evil Robot Bill and Evil Robot Ted arrives at 1988]
+Evil Robot Bill:  Not bad...
+Evil Robot Ted:  Yeah.  Let's make it bad.
+
+[Dead Bill S. Preston almost falls down when climbing around in Hell]
+Dead Bill S. Preston:  Ted, you know, if I die, you can have my megadeth
+  collection.
+Dead Ted "Theodore" Logan:  Dude, we are already dead.
+Dead Bill S. Preston:  Oh.  Well then they're yours, dude.
+
+Heaven's Gatekeeper to the Grim Reaper:  Don't I know you?
+
+Ted "Theodore" Logan to God:  Keep up the good work.
+
+[Bill and Ted wakes up after having been dead a while.  Bill picks out a
+  worm from his ear]
+Bill S. Preston:  Dinner's over, wormdude.
+
+The Grim Reaper to The Smoker:  See you real soon.
+
+Bill S. Preston:  You totally killed us, you evil metal dickweeds!
+
+Ted Logan:  Dude, how are we gonna get out of this?  We don't got any time!
+Bill S. Preston:  Yeah we do, dude.  Look, after we get away from this guy,
+  we use the booth.  We time travel back to before the concert and set up
+  the things we need to get him now.
+
+The Grim Reaper rapping:  You might be a king or a little street sweeper,
+  but sooner or later you'll dance with the reaper.
+
+
+# Bill & Ted's Excellent Adventure
+
+Bill S. Preston and Ted "Theodore" Logan:  Excellent!
+
+[Bill S. Preston and Ted "Theodore" Logan are working on their report]
+Bill S. Preston:  OK, Ted...  George Washington...  1) The father of our
+  country.
+Ted "Theodore" Logan:  2) Born on Presidents Day.
+Bill S. Preston:  3) The dollar-bill guy.
+
+[Bill S. Preston and Ted "Theodore" Logan meet themselves]
+Ted "Theodore" Logan:  OK wait.  If you guys are really us, what number are
+  we thinking of?
+Bill S. Preston and Ted "Theodore" Logan:  69 dudes!
+Bill S. Preston and Ted "Theodore" Logan:  Woah!
+[Quadruple air guitar solo]
+
+Ted "Theodore" Logan:  Dude, are you sure we should be doing this?
+Bill S. Preston:  Ted, you and I have witnessed many things, but nothing as
+  bodacious as what just happened.  Besides, we told ourselves to listen to
+  this guy...
+Ted "Theodore" Logan:  What if we were lying?
+Bill S. Preston:  Why would we lie to ourselves?
+
+[Just before time-traveling for the first time]
+Rufus mounting on his sunglasses:  Gentlemen...  We're history!
+
+Bill S. Preston:  Socrates; "The only true wisdom consist of knowing you
+  know nothing".
+Ted "Theodore" Logan:  That's us, dude!
+
+[Bill S. Preston and Ted "Theodore" Logan have met themselves again]
+Bill S. Preston and Ted "Theodore" Logan:  Catch you later, Bill and Ted!
+Bill S. Preston:  That conversation made more sense this time.
+ 
+Police Psychiatrist:  I don't know why you claim to be Sigmund Freud.
+Sigmund Freud:  Why do you claim I'm not Sigmund Freud?
+Police Psychiatrist:  Why do you keep asking me these questions?
+Sigmund Freud:  Tell me about your mother.
+
+[Repeated lines]
+Abraham Lincoln:  Be excellent to eachother...  And party on, dudes!
+
+[Last line (while Bill S. Preston and Ted "Theodore" Logan are "jamming")]
+Rufus reassuringly to the camera:  They do get better.
+
+
+# Billy Budd
+
+Billy Budd:  Farewell to the Rights of Man!
+
+
+# Billy Ze Kick
+
+[The police are interrogating some witnesses]
+Witness:  He looked very North-African and he had something oriental in his
+  face; actually, he looked more like a Turk, like a Germanic Turk, with
+  blue eyes...
+
+
+# Birds, The
+
+Cathy Brenner:  He's got a client who shot his wife in the head six times.
+  Six times, can you imagine it?  I mean, even twice would be overdoing it,
+  don't you think?
+
+
+# Blade Runner
+
+Deckard:  Sushi.  That's what my ex-wife calls me - Cold fish.
+
+Sushi Master:  He say you are blade runner.
+Deckard:  Tell him I'm eating.
+
+Deckard:  I have had people walk out on me before, but not when I was being
+  so charming.
+
+Roy Batty:  Chew, if only you could see what I've seen with your eyes!
+
+Roy Batty:  It's not an easy thing to meet your maker.
+
+Leon:  Nothing is worse than having an itch you can never scratch!
+
+Leon:  Wake up!  Time to die!
+
+Rachael:  I'm not in the business...  I am the business...
+
+Pris:  Must get lonely here, J.F.
+J.F. Sebastian:  Not really.  I MAKE friends.  They're toys.  My friends are
+  toys.  I make them.  It's a hobby.  I'm a genetic designer.
+
+Tyrell:  The light that burns twice as bright burns half as long - and you
+  have burned so very, very brightly, Roy.
+
+Roy:  I have done ... questionable things.
+
+Roy Batty:  Quite an experience to live in fear, isn't it?  That's what it
+  is, to be a slave.
+
+Roy Batty:  I've seen things you people wouldn't believe.  Attack ships on
+  fire off the shoulder of Orion.  I watched C-beams glitter in the dark
+  near the Tannhauser gate.  All those moments will be lost in time, like
+  tears in rain.  Time to die.  
+
+Gaff:  It's too bad she won't live!  But then again, who does?
+
+
+# Blaze
+
+Earl Long:  Would you still love me as much if I wasn't the fine governor of
+  the great state of Louisiana?
+Blaze Starr:  Would you still love *me* if I had little tits and worked in a
+  fish house?
+
+
+# Blazing Saddles
+
+Gabby Johnson:  I wash born here, an I wash raished here, and dad gum it,
+  Iam gonna die here, an no  sidewindin bushwackin, hornswaglin, cracker
+  croaker is gonna rouin me bishen cutter.
+
+[The railway crew discover quicksand up ahead, and one of them offers to
+  ride up ahead to check it out]
+Taggart:  Fool!  We can't afford to lose no horses...  Send a couple o'
+  niggers on a hand-cart.
+
+[Taggart spots two workers on a hand-card sinking into quicksand]
+Taggart:  Oh shit!  Quick!
+[Lassos the hand-cart and drags it (but not the men) out of the quicksand]
+Taggart:  Phew!  That was close!  Nearly lost a four hunner' dollar
+  hand-cart!
+
+Taggart:  Don't just stand there!  Take that shovel and put it to some good
+  use!
+[Bart grabs a shovel and advances on Taggart from behind]
+Charlie:  Don't do it, buddy!
+Taggart to his sidekick:  Now take a telegram to Mr Lamarr, and tell him I
+  said  [gets hit on the head by the shovel]  ow!
+Sidekick:  ...tell him I said "ow!".  Got it!
+
+[The Governor is having trouble putting his pen back into its holder]
+Hedley Lamarr:  Think of your secretary...
+[The pen goes straight in]
+Governor Lepetomane:  Thank you!  That's a good one! 
+
+Hedley Lamarr:  Give the Governor "harrumph"!
+Startled Aide:  Harrumph!
+Governor Lepetomane:  You watch your ass!
+
+Taggart:  God dammit, Mr Lamarr sir, you use your tongue purdier than a
+  twenny dollar whore!
+
+[Bart returns unexpectedly after being sentenced to death]
+Charlie:  They said you wuz hung!
+Bart:  And they was right!
+
+[Gabby Johnson (on the roof of the church) spots the new sheriff riding into
+  town]
+Gabby Johnson shouting:  The sherrif's a nigger!
+[The last word is lost in the peal of a church bell]
+Harriet Johnson:  What did he say?
+Dr. Sam Johnson:  He said the sheriff's nearer!
+
+[Dr. Sam Johnson (with laurel wreath in hand) greets Bart (the new sheriff),
+  reading from a piece of paper, not realizing that Bart is black]
+Dr. Sam Johnson:  As chairman of the welcoming comittee, it is my honor and
+  priviledge to extend this Laurel and Hardy handshake to the town's new
+  [finally looks up] ... nigger.
+
+[Bart holds his gun to his own head]
+Bart:  One move, and the nigger gets it!
+Harriett Johnson:  Isn't someone going to help that poor man?
+Dr. Sam Johnson:  Hush, Harriett!  That's sure to get him killed!
+Bart:  Help me, help me!
+[Bart maneuvers his hostage (himself) into an empty building]
+Bart:  Oh baby, you are so talented.  And they are so dumb!
+
+Bart:  You be my guest, and I be your host.  What be your pleasure, Jim?
+Jim:  I don't know...  play chess...  screw....
+Bart quickly:  Let's play chess!
+
+[Describing how everyone wanted to duel him when he was The Waco Kid]
+Jim:  One day I hear "draw!"  I turn around, and it's a six-year old kid.
+  So I just walked away.  Little bastard shot me in the ass!
+
+[Lili von Schtupp has lured Bart back to her room]
+Lili von Schtupp:  Is it true how zey say zat you people are.... gifted?
+[Lights go out, sound of zipper undoing]
+Lili von Schtupp:  Oh!  It's twue!  It's twue!
+
+[Lili Von Schtupp offers Bart a gigantic sausage]
+Lili Von Schtupp:  Would you like another schnitzengruben?
+Bart:  No, thank-you.  Twelve is my limit on schnitzengruben!
+Lili von Schtupp:  Well how about a little [whispers in his ear]
+Bart shocked:  Baby!  I'm not from Havana!
+
+Jim to some Ku Klux Klansmen:  Looky what I got me here, boys!
+Bart being held by Jim:  Hey!  Where's the white women at?
+
+[Bart and Jim are wearing KKK outfits to infiltrate the enemy's lynch mob]
+Jim spotting Bart's black hands:  How many times have I told you to wash
+  your hands after burning them crosses?
+[Taggart whips off Bart's hood]
+Bart:  For my next impression, Jesse Owens!
+
+[The lynch mob comes across a toll-booth in the middle of the desert]
+Taggart:  Someone's gotta go back for a shit-load of dimes!
+
+[Jim: The Waco Kid has just shot the guns out of the hands of a dozen
+  henchmen]
+Bart:  Don't just stand there clasping your hands in pain...  How about a
+  round of appluase for The Waco Kid?
+
+Adolf Hitler:  They lose me right after the bunker scene.
+
+Buddy Bizarre:  Cut!  Cut!  Cut!
+Taggart:  Fuck You!  I work for Mel Brooks!
+[Shapes to punch Buddy Bizarre]
+Buddy Bizarre:  Not the face!  Not the face!
+[Taggart compiles, punching him in the stomach]
+Buddy Bizarre collapsing:  Thank-you!
+
+
+# Blind Fury
+
+Crook:  God damn!  That thing's got more holes than my daddy's rubber.
+
+
+# Blue Velvet
+
+(Dennis Hopper):  Nobody fucks with me!
+(Kyle McLachlan):  Oh - maybe if you find the right girl...
+
+
+# Blues Brothers, The
+
+[Jake Blues is released on parole and gets back all the things he wore when
+  he was arrested]
+Corrections Officer:  One timex digital watch - broken.  One unused
+  prophylactic.  One soiled.
+
+[Elwood Blues Jake Blues has a fight over the police car Elwood Blues got
+  after he traded away the original bluesmobile for a microphone]
+Elwood Blues:  You don't like it?
+Jake Blues:  No I don't like it...
+[Elwood Blues floors the pedal and jumps over an open bridge]
+Jake Blues:  Of course it got a lot of pickup...
+Elwood Blues:  It got a cop motor, a 440 cubicinch plant, it got cop tires,
+  cop suspensions, cop shocks.  It's a model made before catalytic
+  converters so it'll run good on regular gas.   What do you say, is this
+  the new bluesmobile or what?
+[A brief thinking pause while Jake Blues lights a cigarette]
+Jake Blues:  Fix the cigarette lighter.
+
+Jake Blues to Sister Mary Stigmata:  5 grand?  No problem, we'll have it for
+  you in the morning.  Let's go, Elwood.
+Sister Mary Stigmata:  No, no, I will not take your filthy stolen money!
+Jake Blues:  Well then...  I guess you're really up Shit Creek.
+[Sister Mary Stigmata hits Jake Blues with a ruler for using that kind of
+  language]
+Sister Mary Stigmata:  I beg your pardon, what did you say?
+Jake Blues:  I offered to help you...  You refused to take out money.  Then
+  I said; I guess you're really up Shit Creek.
+[Sister Mary Stigmata hits Jake Blues with the ruler again]
+Elwood Blues:  Christ Jake!  Take it easy man.
+[Sister Mary Stigmata hits Elwood Blues]
+Jake Blues:  Oh shit!
+[Sister Mary Stigmata hits Jake Blues]
+Elwood Blues:  Jesus Christ!
+[Sister Mary Stigmata hits Elwood Blues]
+Jake Blues:  Shit!
+[...]
+
+Jake Blues:  You were outside, I was inside.  You were supposed to keep in
+  touch with the band.  I kept asking you if we were gonna play again.
+Elwood Blues:  What was I gonna do?  Take away your only hope?  Take away
+  the very hing that kept you going in there?  I took the liberty of
+  bullshitting you.
+
+[Elwood Blues has just passed on a red light, and a police car rolls up
+  behind them.  The words are said in the same rythm as a blues song
+  ("Soothe Me") on the car stereo]
+Elwood Blues:  Shit!
+Jake Blues:  What?
+Elwood Blues:  Rollers...
+Jake Blues:  No!
+Elwood Blues:  Yeah.
+Jake Blues:  Shit!
+
+Jake Blues:  First you trade the caddilac for a microphone.  Then you lie to
+  me about the band.  Now you're gonna put me right back in the joint!
+Elwood Blues:  They're not gonna catch us.  We're on a mission from God!
+
+[While they are driving around in the shopping mall with 2 police cars on
+  their tail]
+Elwood Blues:  Baby clothes...
+Jake Blues:  This place has got everything.
+
+[Repeated line]
+Elwood Blues:  We're on a mission from God.
+
+Murph:  Tell me a little about this electric piano, Ray.
+Ray:  Ah, you have a good eye, my man.  That's the best in the city
+  Chicago.
+Jake Blues:  How much?
+Ray:  2000 bucks and it's yours.  You can take it home with you.  As a
+  matter of fact, I'll throw in the black keys for free.
+
+Elwood Blues:  What kind of music do you usually have here?
+Claire:  Oh, we got both kinds.  We got country *and* western.
+
+Jake Blues:  Book us for tomorrow night.
+Maury Sline:  Hold it, hold it.  "Tomorrow night", what are you talking
+  about.  A gig like that, you gotta prepare the proper exploitation.
+Elwood Blues:  I know all about that stuff.  I have been exploited all my
+  life.
+
+Burton Mercer:  Who wants an orange whip?  Orange whip?  Orange whip?  Three
+  orange whips!
+
+Elwood Blues:  It's a 106 miles to Chicago, we've got a full tank of gas,
+  half a pack of cigarettes, it's dark and we're wearing sunglasses.
+Jake Blues:  Hit it!
+
+
+# Body Heat
+
+[First Line]
+Ned Racine:  My history is burning up out there.
+
+[Pick-Up Line]
+Matty Walker:  You're not very bright, are you?  I like that in a man.
+
+
+# Bram Stoker's Dracula
+
+Vlad Dracula:  ... and I never drink ... wine.
+
+Vlad Dracula to Jonathan Harker:  They say you are a man of good ... taste.
+
+Vlad Dracula about the wolves that are howling:  Liten to them - the
+  children of the night.  What sweet music they make.
+
+Lord Arthur Holmwood:  Last week he wanted to marry her.  Now he wants to
+  have her commited.
+
+Vlad Dracula:  I have crossed oceans of time to find you.
+
+Doctor Jack Seward:  You want to autopsy Lucy?
+Van Helsing:  No no no, not exactly.  I just want to cut of her head and
+  take out her heart.
+
+
+# Breakfast Club, The
+
+John Bender:  But face it.  You're a neo maxi zoom dweebie, what would you
+  be doing if you weren't out making yourself a better citizen?
+
+
+# Bride of Re-Animator
+
+Herbert West:  I don't consider science *morbid*.
+
+Dr. Graves:  Really, Lieutenant.  Who'd want to steal body parts?
+
+
+# Brighton Beach Memoirs
+
+[Eugene is explaining his intense desire to play for the Yankees]
+Eugene:  I'll never make it with the Yankes.  All the great Yankees are
+  Italian.  My mother makes spaghetti with ketchup - what chance do I have?
+
+
+# Broadcast News
+
+Albert Brooks:  Ok, I'll meet you at the place near the thing where we went
+  that time.
+
+
+# Buffy the Vampire Slayer
+
+Coach:  OK people, they are psyching you out.  Let's not be so defensive out
+  there, OK?  Now what do we say on the court, repeat after me;  I am a
+  person, I have the right to the ball.
+
+[The Coach is having the last pep-talk with his team, pointing at a piece of
+  paper with an infinity-sign, some male / female symbols and the eye inside
+  the pyramid]
+Coach:  ...therefore, if we all work together, together we'll work out.  Are
+  you with me?  Get out there!  All right!  Score some..  eh..  points!
+  Hey, you missed practice again today!  I think you better sit down and
+  think about how that made me feel...
+
+[After getting his whole arm cut of]
+Amilyn:  You ruined my jacket!  Kill him A LOT!
+
+Pike:  Look!  Air!
+
+
+# Bull Durham
+
+[Crash Davies starts to walk out on Annie because he says he doesn't believe
+  in quantum physics when it comes to matters of the heart]
+Annie:  Well, what *do* you believe in?
+"Crash" Davis:  Well, I believe in the soul, the cock, the pussy, the small
+  of a woman's back, the hanging curve ball, high fibre, good Scotch, that
+  the novels of Susan Sontag are self-indulgent overrated crap.  I believe
+  Lee Harvey Oswald acted alone, I believe there ought to be a
+  constitutional amendment outlawing Astroturft in the designated hitter, I
+  believe in the sweet spot, soft core pornography, opening your presents
+  Christmas morning rather than Christmas Eve and I believe in long slow
+  deep soft wet kisses that last three days.  Good night.
+[He laughs and walks out]
+Annie:  Oh my.
+
+
+# Bullseye! (1991)
+
+[Lipton knocks his door and the entire front of the house collapses around
+  him; the hole where the door was saves him from certain death.  He wanders
+  away dazed.  Willie pulls up in her car]
+Willie:  What's wrong?
+Lipton:  I come from a broken home.
+
+
+# Butch Cassidy and the Sundance Kid
+
+Butch Cassidy:  I have vision, and the rest of the world wears bifocals.
+
+Butch Cassidy:  If he'd just pay me what he's paying them to stop me robbing
+  him, I'd stop robbing him!
+
+[Last lines]
+Butch Cassidy:  Wait a minute - you didn't see LaForce out there did you?
+The Sundance Kid:  LaForce?  No, why?
+Butch Cassidy:  Thank God for that.  For a moment there I thought we were in
+  trouble.
+
+Butch Cassidy:  Then you jump first.
+The Sundance Kid:  No, I said.
+Butch Cassidy:  What's the matter with you.
+The Sundance Kid:  I can't swim.
+Butch Cassidy:  Why you crazy, the fall will probably kill you.
+
+
+# By Dawn's Early Light (TV)
+
+[Alice has just refused an order from the acting president]
+Sam:  They'll shoot you for this general.
+Alice:  Sam, old friend, I should find such an angel of mercy.
+
+[Harpoon and Fargo try to advise the acting president on how to react to the
+  nuclear conflict]
+Harpoon:  Use the pause...  Settle things down.
+Fargo:  The best defence...  Cut off the head of the Soviet chicken.
+
+[President talking of the incompetent acting president]
+President:  We got Alice in one plane and the mad hatter in another.
+
+
+# Caddyshack
+
+Carl Spackler:  I got to get into this dude's pelt and crawl around for a
+  few days.  Who's the gopher's ally.  His friends.  The harmless squirrel
+  and the friendly rabbit.
+
+Carl Spengler:  This crowd has gone deadly silent, a Cinderella story outta
+  nowhere.  Former greenskeeper and now about to become the masters
+  champion.
+
+Ty Webb:  Just be the ball, be the ball, be the ball.  You're not being the
+  ball Danny.
+Danny Noonan:  It's hard when you're talking like that.
+
+
+# Cadillac Man
+
+[Joe is trading insults with a photographer]
+Joe:  You know what you are --- you're an ass-half...  Takes two of you to
+  make an ass-whole.
+
+Molly:  ...you have no respect for women.
+Joe:  I guess dinner and a blow job's out of the question.
+Molly:  I guess.
+Joe:  We'll forget dinner...
+
+
+# Cannonball Run, The
+
+Fenderbaum:  We got a secret weapon.  God is our co-pilot!
+Blake:  God is our co-pilot? Remember our car?
+Fenderbaum:  Yeah?
+Blake:  Two seats!
+Fenderbaum:  Two seats...?
+Blake:  Where's he gonna sit? Where?
+
+
+# Casablanca
+
+Yvonne:  Where were you last night?
+Rick Blaine:  That's so long ago, I don't remember.
+Yvonne:  Will I see you tonight?
+Rick Blaine:  I never make plans that far ahead.
+
+Rick Blaine:  So who are you really?  And what were you before?  And what
+  did you do?  And what did you think?
+
+Rick Blaine:  I came here for the waters.
+Captain Louis Renault:  But Casablanca is in a desert.
+Rick Blaine:  I was misinformed.
+
+Rick Blaine:  Here's looking at you, kid.
+
+Ugarte:  You despise me, don't you Rick?
+Rick Blaine:  If I though about you I probably would.
+
+Rick Blaine:  And remember, this gun is pointed straight at your heart.
+Captain Louis Renault:  That is my least vulnerable spot.
+
+[Ugarte sells exit visas]
+Ugarte:  Rick, think of all the poor devils who cant meet the Renault's
+  price.  I get it for them for half.  Is that so parasitic?
+Rick Blaine:  I dont mind a parasite.  I object to a cut-rate one.
+
+Senor Ferrari to Victor Lazlo: It would take a miracle to get you out of
+  Casablanca, and the Germans have outlawed miracles.
+
+[Of Victor Lazlo, who wants to escape from Casablanca]
+Captain Louis Renault:  No matter how clever he is, he still needs an exit
+  visa ... or should I say two?
+Rick Blaine:  Why two?
+Captain Louis Renault:  He is travelling with a lady.
+Rick Blaine:  He'll take one.
+Captain Louis Renault:  I think not.  I have seen the lady.
+
+Rick Blaine:  I stick my neck out for nobody.
+
+[Speaking to the waiter about the gambling at Rick's]
+Customer:  Are you sure this place is honest?
+Carl:  Honest?  As honest as the day is long!
+
+Capt. Renault:  I'm captain of my soul and master of my fate!
+Croupier:  Captain Renault, Major Strasser wants to see you right away!
+Rick Blaine:  You were saying???
+
+Rick Blaine:  How can you close me up?  On what grounds?
+Captain Louis Renault:  I'm shocked ... shocked to find that gambling is
+  going on in here.
+[A waiter hands Renault a pile of money]
+Waiter:  Your winnings, sir.
+Captain Louis Renault:  Oh thankyou.  Thankyou very much.  Everybody out at
+  once!
+
+[Just after he has watched Rick shoot Strasser, Renault gives orders to his
+  police]
+Captain Louis Renault:  Major Strasser has been shot.  Round up the usual
+  suspects.
+
+[When Rick congratulates Mr Laszlo for his work in the resistance]
+Victor Lazlo:  I try my best.
+Rick Blaine:  We all try but you succeed.
+
+[When the pianist don't want to play the song]
+Rick Blaine:  Play it Sam!
+
+[Last line]
+Rick Blaine:  Louie, I think this is the beginning of a beautiful
+  friendship.
+
+
+# Cast a Deadly Spell (TV)
+
+Bradbury:  If this is the future, I'll take vanilla.
+
+
+# Citizen Kane
+
+[First line]
+Charles Foster Kane:  Rosebud...  Rosebud...
+
+Charles Foster Kane:  I run a couple of newspapers.  What do you do?
+
+
+# City Slickers
+
+[First line (running through the streets in front of angry bulls,
+  deliberately)]
+Mitch Robbins:  Who's idea was this anyway???
+
+Phil Berquist:  Where are you from?
+Ben Jessup:  Baltimore.  We have a dental practice there.
+Mitch Robbins:  Really, you're both dentists?
+Steve Jessup:  Yes!  We're black AND we're dentists.  Let's not make an
+  issue out of it.
+Ben Jessup:  Eh, they're not making an issue of it.  You're making an issue
+  of it.
+
+Bonnie Rayburn:  Listen, it took a lot of courage to do what you did...
+  Thank you.
+Mitch Robbins:  I'm married.
+
+[When Mitch are talking badly of someone]
+Mitch:  He's right behind me, isn't he?
+
+Curly:  I crap bigger than you!
+
+[Ed Furillo accuses Mitch Robbins of flirting with Bonnie Rayburn]
+Mitch Robbins:  I just said 'Hello'!
+Ed Furillo:  That's not 'hello'.  That's 'Hi, I like your ass.  Can I use it
+  as a hat?'.
+
+Mitch Robbins:  Hi Curly.  Killed anyone today?
+Curly:  The day ain't over yet...
+
+[While Mitch Robbins is delivering the calf (Norman)]
+Mitch Robbins:  You know, this was not in the brochure...
+
+Phil Berquist:  You know you were right, Mitch.  My life is a "do-over".
+  It's time to get started.
+Mitch Robbins:  I hope I can help.
+Ed Furillo:  Now I'm gonna go home, and I'm gonna get Kim pregnant.
+Mitch Robbins:  I hope I can help.
+
+
+# City Slickers II: The Legend of Curly's Gold
+
+[When Mitch are talking badly of someone (like in _City Slickers_ (qv)]
+Mitch:  He's right behind me, isn't he?
+
+
+# Cliffhanger
+
+Gabe Walker:  I've been working up in Denver.
+BASE Jumper #1:  "Work"?  Don't say that word man!
+Evan:  Man, I hate work.  Even when somebody else is doing it.
+
+[The jet is about to make an emergency landing after they screwed up]
+Eric Qualen:  Don't bother to buckle up - you may not want to survive this.
+
+Travers:  Tucker and Walker!  We're missing 3 bags.
+Gabe Walker:  What's in them?
+Travers:  None of your fucking business!
+Eric Qualen:  Suits, socks, 100 million dollars - the usual stuff.
+
+Eric Qualen:  Kill a few people, they call you a murderer.  Kill a million
+  and you're a conqueror.
+
+Eric Qualen:  Do you know what real loove is, Kristel?
+Kristel:  No.
+Eric Qualen shooting her:  Sacrifice.
+
+Eric Qualen:  Love is a killer, isn't it?
+
+
+# Close Encounters of the Third Kind
+
+Brad Neary:  I don't understand these fractions.
+Roy Neary:  What's one third of sixty?
+Brad Neary:  That's a fraction, I don't understand them.
+Roy Neary:  Alright, lets say that this box car is sixty feet long, OK?, and
+  one third of it is across this switch here, alright...  And now another
+  train is coming...  Now, how far do you have to move this box car so that
+  the other train doesn't smash it?  Quickly Brad, there are thousands of
+  lives at stake...  Brad any answer...
+[CRASH] 
+
+
+# Closet Land
+
+Torturer:  We are both seekers of truth and in this quest I am your friend,
+  philosopher and guide.
+
+
+# Cocktail
+
+Brian Hanagan:  You're offering me a job?
+Doug Coughlin:  Aha. [meaning yes]
+Brian Hanagan:  The waitresses hate me!
+Doug Coughlin:  You wait till you've given them crabs...  Then you'll really
+  know hatred.
+
+
+# Colors
+
+Danny McGavin:  You don't wanna get laid, man.  It leads to kissing and
+  pretty soon you gotta talk to 'em.
+
+
+# Commando (1985)
+
+Matrix:  I let him go.
+
+Matrix:  I'll be back, Bennett!
+
+Matrix after killing a man in the plane:  Don't disturb my friend, he's dead
+  tired.
+
+
+# Conan the Barbarian
+
+Conan:  Crom, I have never prayed to you before.  I have no tongue for it.
+  No one, not even you, will remember if we were good men or bad.  Why we
+  fought, and why we died.  All that matters is that today, two stood
+  against many.  Valor pleases you, so grant me this one request.  Grant me
+  revenge!  And if you do not listen, the HELL with you!
+
+Valeria:  Do you want to live forever?
+
+Thulsa Doom:  Now they will know why they are afraid of the dark.  Now they
+  learn why they fear the night.
+
+Subotai:  He is Conan, Cimmerian, he won't cry, so I cry for him.
+
+Mongol General:  Conan, what is good in life?
+Conan:  To crush your enemies, see them driven before you, hear the
+  lamentations of the women.
+
+
+# Contempt
+
+Film Producer:  When I hear the word culture, I take out my checkbook.
+
+
+# Coogan's Bluff
+
+[Coogan is taking a bath, a busty woman is washing him, Coogan throws the
+  soap, aiming for her cleavage, and misses]
+Woman:  Need a bigger target?
+Coogan:  There aint any in this county.
+
+
+# Couch Trip, The
+
+Hendricks:  He cares, that's the secret.  It's in his voice.  Do you know
+  what that means to an advertiser.
+Donald Becker:  Whoever wants the donuts without jelly, they're ready.
+
+
+# Crimes of Passion
+
+Wife:  Didn't your mother teach you to wash your hands after you went to the
+  bathroom?
+Bobby Grady:  No, she taught me not to piss on my fingers.
+
+
+# Crow, The
+
+Albrecht:  You, don't move!
+Eric Draven:  I thought cops always said "Freeze!"
+Albrecht:  Well, I say don't move.  Move and you're dead!
+Eric Draven:  And I say I'm dead ... and I move...
+
+
+# Dark Backward, The
+
+Rosarita:  It's all over between the two of us.  I can't love a man with
+  three hands.
+
+
+# Dead Men Don't Wear Plaid
+
+Rigby Reardon:  I hadn't seen a body put together like that since I solved
+  the case of the Murdered Girl with the Big Tits.
+
+Rigby Reardon:  Carlotta was the kind of town where they spell trouble
+  T-R-U-B-I-L, and if you try to correct them, they kill you.
+
+
+# Deep Red (1994)
+
+Joe Keyes:  This is not a perfect world.  In a perfect world, evil loses.
+
+
+# Dial M for Murder (1954)
+
+Tony Wendice:  People don't commit murder on credit.
+
+Tony Wendice:  Do you really believe in the perfect murder?
+
+
+# Diamonds Are Forever
+
+[Tiffany Case opened the door almost nude]
+Tiffany Case:  I'll finish dressing.
+James Bond as Feter Franks:  Oh please don't, not on my account.
+
+Felix Leiter:  I give up.  I know the diamonds are in the body, but where?
+James Bond:  Alimentary, my dear Leiter...
+
+Driver:  The stiff, ehm, the deseased back there...  Your brother, Mr.
+  Franks?
+James Bond as Peter Franks:  Yes, it was.
+Passenger:  I got a brother.
+James Bond as Peter Franks:  Small world.
+
+Plenty O'Toole:  Hi, I'm Plenty.
+James Bond:  But of course you are...
+
+[James Bond is lucky with the dices while gambling]
+Plenty O'Toole:  You handle those cubes like a monkey handles coconuts...
+
+James Bond:  That's a nice little nothing you're almost wearing.
+
+[Plenty O'Toole is thrown out of the window by some goons perhaps from the
+  10th floor, and lands in the middle of the hotel's swimming pool]
+James Bond looking down:  Exceptionally fine shot.
+Goon:  I didn't know there was a pool down there.
+
+[A couple of oil workers open a hatch down to the oil pipe, and James Bond
+  comes up to their surprise]
+James Bond:  Thank you very much.  I was just out walking my round and I
+  seem to have lost my way...
+
+James Bond:  Good morning, gentlemen.  ACME pollution inspection.  We're
+  cleaning up the world, we thought this was a suitable starting point.
+
+
+# Die Hard
+
+Special Agent Johnson:  Figure we take out the terrorists. Lose 20-25% of
+  the hostages.
+Special Agent Johnson:  I can live with that.
+
+Deputy Chief of Police Dwayne T. Robbins:  We're gonna need some more FBI
+  guys I guess.
+
+
+# Die Hard 2
+
+[Just before John McClane recognizes Vito Lorenzo, the officer towing away
+  his car earlier]
+John McClane:  Excuse me officers.  This may sound like a wild goose-chase,
+  but I think I just saw...
+Vito Lorenzo:  Saw what???
+John McClane:  Elvis.  Elvis Presley...
+
+John McClane:  Oh man, I can't fucking believe this.  Another basement,
+  another elevator.  How can the same thing happen to the same guy twice???
+
+Grant:  You are the wrong person at the wrong place at the wrong time!
+John McClane:  Story of my life.
+
+John McClane:  I guess I was wrong about you.  You're not such an asshole
+  after all.
+Grant:  Oh, you were right about me.  I'm just your kind of asshole.
+
+Grant:  Too bad, McClane.  I kind of liked you.
+John McClane:  I got enough friends!
+
+John McClane:  Yippie-ki-yeah, motherfucker!
+
+Holly McClane:  They told me there were terrorists at the airport.
+John McClane:  Yeah, I heard that too.
+
+
+# Dirty Harry
+
+[After a frantic gunfight, Harry has his gun trained on a crook who's lying
+  on the ground, trying to decide whether to try and grab his shotgun]
+Harry:  Aha!  I know what you're thinking...  Did I fire six shots or only
+  five?  To tell you the truth, I forgot it myself in all this excitement.
+  This here's a .44 Magnum, the most powerful handgun in the world, and it
+  can blow your head clean off.  Now, you must ask yourself one question:
+  "Do I feel lucky?"  Well, do you, punk?
+
+[Harry Callahan is being hassled for shooting a man without knowing for sure
+  he was going to rape a woman in the park]
+Harry Callahan:  When a man is chasing a woman in the park, naked with an
+  butcher's knife in his hand, I don't think he'll be collecting for the Red
+  Cross!
+
+
+# Doctor and the Devils, The
+
+Doctor Thomas Rock:  I set myself up as a God over death.
+
+
+# Doctor Dolittle
+
+Ploynesia the Parrot:  I speak over two thousand languages, including Dodo
+  and Unicorn.
+
+
+# Doppelganger (1993)
+
+[Elisabeth comments on how fast Patrick had begun sleeping with Holly when a
+  guy comes out of her bedroom]
+Patrick Highsmith:  What was that you were saying about 6 months of
+  suffering?
+Elisabeth:  OK, so I'm a slut, you're a slut, who wants coffee?
+
+
+# Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb
+
+The President:  You can't fight in here, this is the War Room!
+
+
+# Dracula (1979)
+
+Count Dracula:  Listen to them -- children of the night.  What music they
+  make!
+
+
+# Dragnet (1987)
+
+[Last lines]
+Friday:  Not that it's any of your business, Mr. National Enquirer, but I
+  had the pleasure of spending a quiet evening in the company of Connie
+  Swail.
+Pep Streebek:  Wait a minute.  Connie Swail?  Don't you mean "The *Virgin*
+  Connie Swail"?
+[Friday turns his head slowly towards Pep Streebek]
+
+
+# Dragon: The Bruce Lee Story
+
+Linda Emery:  A philosophy major?  Now, what can you do with a philosophy
+  major?
+Bruce Lee:  You can think deep thoughts about being unemployed.
+
+[Bruce Lee in a wheelchair]
+Vivian Emery:  How are you feeling, Mr. Lee?
+Bruce Lee:  Oh, like half man, half car.
+
+
+# Duellists, The
+
+Armand D'Hubert:  I am going to be killed responsibly, on horseback, as a
+  compliment to the cavalry.
+
+Armand D'Hubert:  General Feraud has made occasional attempts to kill me.
+  That does not give him the right to claim my acquaintance.
+
+Armand D'Hubert:  We came here to kill each other.  Any ground is suitable
+  for that.
+
+
+# Easy Rider
+
+George Hanson:  I mean it is real hard to be free when you are bought and
+  sold in the market place.
+
+
+# Empire Strikes Back, The
+
+Han Solo:  Afraid I was gonna leave without giving you a good bye kiss?
+Princess Leia Organa:  I'd just as soon kiss a wookie!
+Han Solo:  I can arrange that!  You could use a good kiss!
+
+C-3PO:  R2 says that the chances of survival are 725 to 1.  Actually R2 has
+  been known to make mistakes - from time to time...  Oh dear, oh dear...
+
+Han Solo:  I thought this smelled bad on the outside!
+
+Yoda:  Do...  Or do not.  There is no try.
+
+Princess Leia Organa:  I'll be back!
+
+Princess Leia Organa:  I love you.
+Han Solo:  I know.
+
+
+# Escape from New York
+ 
+Bob Hauk:  I'm not a fool, Plissken!
+S.D. "Snake" Plissken:  Call me Snake.
+ 
+President:  God save me.
+ 
+Bob Hauk:  Remember, once you're inside you're on your own.
+S.D. "Snake" Plissken:  Oh, you mean I can't count on you?  Good!
+ 
+Girl in "Chock Full O'Nuts":  You're a cop!
+S.D. "Snake" Plissken:  I'm an asshole...
+
+The Duke:  They sent in their best man, and when we roam out the 69th street
+  bridge tomorrow, on our way to freedom, we're going to have their best man
+  leading the way --- from the neck up!
+
+Brain:  They're savages, Mr. President.
+
+Bob Hauk:  We'd make one hell of a team, Snake!
+S.D. "Snake" Plissken:  The name's Plissken!
+
+[Last line]
+The President:  Good evening.  Although I shall not be present at this
+  historic summit meeting, I present this in the hope that our great nations
+  may learn to live in peace...
+
+
+# Eve and the Handyman
+
+The Woman:  My mind raced like a hot rod along the drag strip of
+  inspiration.
+
+
+# Evil Dead II
+
+[Upon gaining the chain saw in place of his lost right hand]
+Ash:  Groovy.
+
+
+# Evil Dead, The
+
+[Sharyn has been hacked into several pieces]
+Ash:  We can't bury Sharyn.  She's our friend.
+
+
+# Falling Down
+
+Korean Shop Owner:  Take the money!
+William "D-FENS" Foster:  You think I'm a thief?  You see, I'm not the
+  thief.  I'm not the one charging 85 cents for a STINKING SODA!  You're the
+  thief!  I'm just standing up for my rights as a consumer.
+
+[William "D-FENS" Foster is sitting on a concrete ruin filled with grafitti,
+  resting, and 2 non-american guys walk up to him saying he is trespassing]
+William "D-FENS" Foster:  I didn't see any signs?
+Dude #1 pointing at a graffiti skull:  What do you call that?
+William "D-FENS" Foster:  Graffiti?
+Dude #1:  No no, it's not fucking graffiti, that's a sign.
+Dude #2:  You can't read it man.
+Dude #1:  I'll read it for you.  It says this is fucking private property.
+  No fucking trespassing.  That means fucking you.
+William "D-FENS" Foster:  It says all that?
+Dude #1:  Yeah.
+William "D-FENS" Foster:  Well, if you maybe wrote in fucking English I
+  would fucking understand you.
+
+[William "D-FENS" Foster picks up the flat hamburger he jus ordered,
+  comparing it to the picture behind the desk]
+William "D-FENS" Foster:  Can anybody tell me what's wrong with this
+  picture?
+
+Annoying Man at Phone Booth:  Excuse me..  Hey, exCUSE ME!  I don't know if
+  you have noticed it or not, but there are other people waiting to use the
+  phone here.
+William "D-FENS" Foster:  There are?
+Annoying Man at Phone Booth:  Yeah!
+William "D-FENS" Foster:  People want to use the phone?
+Annoying Man at Phone Booth:  That's right, you selfish asshole!
+William "D-FENS" Foster:  That's too bad.  You know what?
+Annoying Man at Phone Booth:  What?
+William "D-FENS" Foster firing a machine gun into the phone booth:  I think
+  it's out of order.
+
+William "D-FENS" Foster to The Golfer that is having a heart attack:  Yeah!
+  And now you're gonna die, wearing that stupid little hat.  How does it
+  feel?
+
+William "D-FENS" Foster:  I'm the bad guy???  How did that happen?
+
+Sergeant Prendergast:  Fuck you Captian Yardley.  Fuck you very much.
+
+
+# Fast Times at Ridgemont High
+
+Jeff Spicoli:  No shirt.  No shoes.  No dice.
+Brad Hamilton:  Right.  Learn it, know it, live it.
+
+Stacy Hamilton:  When a guy has an orgasm.  How much comes out?
+Linda Barrett:  About a quart or so.
+
+Jeff Spicoli:  So what this Jefferson dude was saying is: We left this
+  England place because it was bogus.  If we don't get us some cool rules
+  pronto, we'll just be bogus too.
+
+Jeff Spicoli:  Relax, my old man is a TV repairman, he's got an ultimate set
+  of tools.
+
+
+# Father of the Bride (1991)
+
+George Banks:  And don't forget to fasten your condoms!  ...Seatbelts, I
+  mean seatbelts.
+
+
+# Fearless
+
+Laura Klein:  Why didn't you call and say you were alive?
+Max Klein:  I thought I was dead.
+
+Carla Rodrigo:  So what are you saying?  That there's no God, but there's
+  you?
+
+
+# Fearless Vampire Killers or: Pardon Me, But Your Teeth Are in My Neck, The
+
+[A young woman tries to fend off Shagail, a Jewish Vampire, with a cross]
+Shagail:  Boy have you got the wrong vampire.
+
+
+# Ferris Bueller's Day Off
+
+Ferris Bueller:  I did have a test today.  That wasn't bullshit.  It's on
+  European socialism.  I mean, really, what's the point?  I'm not European,
+  I don't plan on being European, so who gives a crap if they're socialist?
+  They could be fascist anarchists - that still wouldn't change the fact
+  that I don't own a car.  Not that I condone fascism, or any ism for that
+  matter.  Isms in my opinion are not good.  A person should not believe in
+  an ism - he should believe in himself.  I quote John Lennon:  "I don't
+  believe in Beatles - I just believe in me".  A good point there.  Of
+  course, he was the Walrus.  I could be the Walrus - I'd still have to bum
+  rides off of people.
+
+Ferris Bueller:  The key to faking out the parents is the clammy hands.
+  It's a good non-specific symptom.  A lot of people'll tell you that a
+  phony fever is a dead lock, but that can land you in a doctor's office,
+  and that's worse than school.  What you do is, you fake a stomach cramp,
+  and when you're bent over moaning and wailing, you lick your palms.  It's
+  a little childish and stupid, but then, so is high school.
+
+Ferris Bueller:  Pardon my French, but Cameron is so tight that if you stuck
+  a lump of coal up his ass, in two weeks you would have a diamond.
+
+
+# Field of Fire
+
+Sgt. Duncan:  It's your life.  I can't teach you the bush over night.
+
+
+# Final Analysis
+
+[Isaac Barr and Alan Lowenthal are talking about Heather Evans before Alan
+  Lowenthal has met her]
+Alan Lowenthal:  I suppose now you're gonna tell me you have feelings for
+  this woman?
+Isaac Barr:  To tell you the truth I can't I can't stop thinking about
+  her...
+Alan Lowenthal:  Isaac, you know as well as I do that romantic love is a
+  projection.  You're not seeing this woman
+Isaac Barr:  Hehe, get out of here...
+Alan Lowenthal:  It's a vision..  You're in a delusional state.
+Isaac Barr:  It's not deliusional.
+Alan Lowenthal:  Yes it is.  It's delusional.  There is no human being, no
+  woman that's so beautiful - so special - that all of your normal thought
+  patterns
+[Heather Evans enters the room]
+Alan Lowenthal:  Eh, can I help you?
+
+Heather Evans:  Do you come out here a lot?
+Isaac Barr:  No, just in moments of existential anxiety and when I want to
+  impress a date.
+
+Isaac Barr:  He thought I was from the justice department.  Is the dress
+  that bad?
+
+
+# Fish Called Wanda, A
+
+Wanda Gershowitz:  You just wanted to get me into bed.
+Archibald Leech:  I fell in love with you.
+Wanda Gershowitz:  How come you dumped me then.
+Archibald Leech:  I wasn't rich enough, remember.
+Wanda Gershowitz:  Say something in Russian.
+Archibald Leech:  No.
+
+[Repeated line]
+Otto:  Don't call me stupid.
+
+Wanda Gershowitz:  I've known sheep who could outwit you. I've worn dresses
+  with higher IQs, but you think you're an intellectual, don't you, ape?
+
+
+# Flatliners
+
+[First line (first used in _Little Big Man_ (qv))]
+Nelson:  Today is a good day to die...
+
+Joe Hurley:  I don't know.  Not thinking about the past or the future.  I
+  don't know it's difficult to explain, maybe impossible.
+David Labraccio:  Yeah, dying is quite that way.
+
+[This is an suix-indian war cry, meaning "Today is a good day to die"]
+David Labraccio:  Hoka-hey
+
+[Last Line]
+Nelson:  It wasn't such a good day to die...
+
+
+# Fletch
+
+Fletch:  Did you steal this car?
+Teenager:  I sure did!
+Fletch:  Well, I'm not sure that's even a crime anymore, there've been a lot
+  of changes in the law.
+
+Fletch:  You know, if you shoot me, you're liable to loose a lot of those
+  humanitarian awards.
+
+Fletch:  ...and who would have known that the Vice President knew I was
+  opening the door, but the Secret Service, they just *whack* [mimes door
+  hitting him in the face], blood...
+
+Alan Stanwyck:  You do own rubber gloves?
+Fletch:  I rent 'em.  I have a lease with an option to buy.
+
+Fletch:  For another grand, I'll let you take me out to dinner.
+
+Pathologist:  Ever seen a liver like that?
+Fletch:  No, not since breakfast.
+
+Fletch to Barbara Stanwyck:  Can I borrow your towel, my car just hit a
+  water buffalo.
+
+Fletch:  This doesn't involve me dressing up as Little-Bo-Peep, does it?
+
+Fletch:  I would have been here sooner, but a manuer-spreadder jacknifed on
+  the Santa Anna.  You should see my shoes.
+
+[Fletch is being interrogated by Chief Karlin and is giving him attitude]
+Chief Karlin:  What's your name?
+Fletch:  Fletch.
+Chief Karlin:  What's your full name?
+Fletch:  Fletch F. Fletch.
+Chief Karlin:  What do you do for a living, Mr. Fletch?
+Fletch:  I'm a shephard.
+Chief Karlin:  Why are you doing this, Mr. Fletch?
+Fletch:  I like men. I like to be manhandled. I like you.
+
+[Fletch is being framed for drug posession by two very large cops]
+Fletch:  Aren't you gonna read me my rights?
+Cop:  You have the right to remain silent.  You have the right to have your
+  face kicked in by me. You have the right to have your balls stomped on by
+  him.
+Fletch:  I think I'll waive my rights.
+
+
+# Fly, The (1986)
+
+[This is the originator of this quote]
+Veronica "Ronnie" Quaife:  Be afraid.  Be very afraid.
+
+
+# For Your Eyes Only
+
+James Bond:  Now put your clothes back on, and I'll buy you an ice cream.
+
+
+# Foreign Correspondent
+
+Johnny Jones:  I'm in love with a girl, and I'm going to help hang her
+  father.
+
+
+# Forrest Gump
+
+[Repeated line]
+Forrest Gump:  Stupid is as stupid does.
+
+[Repeated line]
+Forrest's Mother:  Life is like a box of chocolates, Forrest.  You never
+  know what you're gonna get.
+
+Forrest Gump:  Sometimes, there just aren't enough rocks.
+
+Army Sergeant:  Gump, what is your sole purpose in this army?
+Forrest Gump:  To do whatever you tell me, sir!
+Army Sergeant:  Gump, you are a @#$%&! genius...
+
+
+# Four Weddings and a Funeral
+
+[Charles comes running after Carrie]
+Charles:  Ehm, look.  Sorry, sorry.  I just, ehm, well, this is a very
+  stupid question and..., particularly in view of our recent shopping
+  excursion, but I just wondered, by any chance, ehm, eh, I mean obviously
+  not because I guess I've only slept with 9 people, but-but I-I just
+  wondered...  ehh.  I really feel, ehh, in short, to recap it slightly in a
+  clearer version, eh, the words of David Cassidy in fact, eh, while he was
+  still with the Partridge family, eh, "I think I love you", and eh, I-I
+  just wondered by any chance you wouldn't like to...  Eh...  Eh...  No, no,
+  no of course not...  I'm an idiot, he's not...  Excellent, excellent,
+  fantastic, eh, I was gonna say lovely to see you, sorry to disturb...
+  Better get on...
+Carrie:  That was very romantic...
+Charles:  Well, I thought it over a lot, you know, I wanted to get it just
+  right.
+
+
+# Frenzy (1972)
+
+[Last line]
+Inspector Oxford:  Mr. Rusk, you're not wearing your tie.
+
+
+# Freshman, The (1990)
+
+Carmine Sabatini:  Everything I say, by definition, is a promise.
+
+
+# Fugitive, The (1993)
+
+U.S. Marshal Samuel Gerard:  What are you doing?
+Newman:  I'm thinking.
+U.S. Marshal Samuel Gerard:  Well, think me up a cup of coffee and a
+  chocolate doughnut with some little sprinkles on top, will you?
+
+Cosmo Renfro:  When I die, I'm gonna come back just like you.
+U.S. Marshal Samuel Gerard:  Oh, you mean happy and handsome?
+
+Female Cop:  Care to revise your statement, Sir?
+Prison Guard:  What?
+U.S. Marshal Samuel Gerard:  Do you want to change your bullshit story,
+  Sir?
+
+Dr. Richard Kimble:  I didn't kill my wife!
+U.S. Marshal Samuel Gerard:  I don't care!
+
+[Last line]
+U.S. Marshal Samuel Gerard:  Don't tell anybody, ok?
+
+
+# Get Carter
+
+Jack Carter:  You know, I'd almost forgotten what your eyes looked like.
+  Still the same.  Pissholes in the snow.
+
+Jack Carter snaps fingers:  A pint of bitter ... In a straight glass!
+
+Jack Carter:  You're a big man, but you're in bad shape.
+
+
+# Getaway, The (1994)
+
+Doc McCoy:  What happened to Hansen?
+Rudy Travis:  He didn't make it...  And neither did you!
+
+
+# Ghost Story (1981)
+
+[Repeated line, including last]
+Eva/Alma:  I will take you places you've never been.  I will show you things
+  that you have never seen and I will see the life run out of you.
+
+
+# Ghostbusters
+
+Doctor Peter Venkman:  Back off man.  I'm a scientist.
+
+Doctor Peter Venkman:  This chick is *toast*.
+
+Doctor Peter Venkmann:  Egon, this reminds me of that time you tried to
+  drill a hole in your head.
+Doctor Egon Spengler:  That would have worked if you hadn't stopped me.
+
+Doctor Raymond Stantz:  Well, this is great.  If the ionization-rate is
+  constant for all ectoplasmic entities, we can really bust some heads...
+  in a spiritual sense of course.
+
+Dean Yeager:  This university will no longer continue any funding of any
+  kind for your group's activities.
+Doctor Peter Venkman:  But the kids love us!
+
+Dr. Peter Venkmann:  Generally you don't see that kind of behaviour in major
+  appliances.
+
+Dana Barrett:  That's the bedroom, but nothing ever happened in there.
+Doctor Peter Venkman:  What a crime.
+
+[Doctor Peter Venkman is opening the refrigerator door to look for ghosts]
+Doctor Peter Venkman:  Oh my God!  Look at all the junk food.
+
+Doctor Peter Venkman:  He slimed me!
+
+Janine Melnitz:  Do you believe in UFOs, astralprojections, mental
+  telepathy, ESP, clairvoiance, spirit photography, telekinetic movement,
+  full transmedium, the Loch Ness monster and the theory of Atlantis?
+Winston Zeddmore:  Ah, if there is a steady paycheck in it, I'll believe
+  anything you tell me.
+
+[The Gate Keeper, possessing Dana Barrett's body]
+The Gate Keeper:  Do you want this body?
+Doctor Peter Venkman:  Is this a trick question?
+
+Winston Zeddmore:  Do you believe in God?
+Doctor Raymond Stantz:  Never met him.
+
+Winston Zeddmore:  Ray, when someone asks you if you're a god, you say YES!
+
+
+# Gleaming the Cube
+
+Brian Kelly:  I guess we all do unexpected things sometimes, don't we?
+
+Brian Kelly:  Can I ask you something personal?
+Tina Trac:  Sure...
+Brian Kelly:  Where's the bathroom?
+
+
+# Goldfinger
+
+[A laser beam is slowly approaching a certain part of James Bond's body]
+James Bond:  Do you expect me to talk?
+Goldfinger:  No Mr. Bond!  I expect you to die!
+
+
+# Gone with the Wind
+
+Scarlett O'Hara:  Rhett...  If you go ... where shall I go?  What shall I
+  do?
+Rhett Butler:  Frankly, my dear, I don't give a damn.
+
+[Last line]
+Scarlett O'Hara:  After all ... tomorrow is another day.
+
+
+# Good Morning, Vietnam
+
+Adrian Cronauer:  Mantovani?  They feed Mantovani to insomniacs who don't
+  respond to strong drugs!  
+
+Adrian Cronauer:  Goooooooood morning, Vietnam!  Hey, this is not a test!
+  This is rock and roll!  Time to rock it from the Delta to the D.M.Z.!  
+
+Lt. Steven Hauk:  Furthermore, you are to stick to playing normal modes of
+  music, not weird stuff.  Those who we'd find acceptable here would include
+  Lawrence Welk, Jim Nabors, Mantovani ...  
+Adrian Cronauer:  ... Percy Faith ... 
+Lt. Steven Hauk:  Percy Faith ... good! ... Andy Williams, Perry Como, and
+  certain ballads by Mr. Frank Sinatra.  
+Adrian Cronauer:  Would Bob Dylan be outta line?  
+
+[Lt. Steven Hauk uses Army jargon to refer to a press conference to be given
+  by former Vice-President Nixon] 
+Adrian Cronauer:  Excuse me, sir.  Seeing as how the V.P. is such a V.I.P.,
+  shouldn't we keep the P.C. on the Q.T.?  Cause of the leaks to the V.C. he
+  could end up M.I.A., and then we'd all be put out in K.P.  
+
+Edward Garlick: "Captain Hauk sucks the sweat off of a dead mans balls."  I
+  have no idea what that means, but it seems very negative to me.
+
+
+# Good Morning...and Goodbye!
+
+Narrator:  Angel, a monument to unholy carnality, and a cesspool of marital
+  pollution, a shameless, brazen, bulldozing female prepared to humiliate,
+  provoke, and tantalize, savagely seeking the tranquilizer of unrestrained
+  fulfillment.
+
+Angel:  You read the profit and loss statements like a vulture, and you play
+  the stock market like a fox, but you store your nuts away like a
+  squirrel.
+
+
+# Good, the Bad, and the Ugly, The
+
+Tuco Benedicto Juan Ramirez aka "the Rat" to (Clint Eastwood):  There are 2
+  kinds of people in the world, my friend:  Those with a rope around the
+  neck, and the people who have the job of doing the cutting...
+
+[Tuco Benedicto Juan Ramirez aka "the Rat" is sitting in a bathtub with a
+  lot of foam and the One Armed Man enters the room]
+One Armed Man:  I've been looking for you for 8 months.  Whenever I should
+  have had a gun in my right hand, I thought of you.  Now I find you in
+  exactly the position that suits me.  I have lots of time to learn to shoot
+  with my left.
+[Tuco kills him with the gun he has hidden in the foam]
+Tuco:  When you have to shoot - shoot, don't talk.
+
+(Clint Eastwood) to Tuco Benedicto Juan Ramirez aka "the Rat":  You see, in
+  this world there's 2 kinds of people, my friend:  Those with loaded guns
+  and those who dig.  You dig.
+
+  
+# Gotcha!
+
+Sasha:  You must be Manolo.
+Manolo:  You must be Sasha.
+Johnathan:  You must be going.
+
+
+# Grand Canyon (1991)
+
+Davis:  We're talking about a religious experience here.  I might say 'doth'
+  or 'thou' or a lot of things.
+
+Davis:  All of life's riddles are answered in the movies.
+
+
+# Groundhog Day
+
+Rita:  Would you like to come to dinner with Larry and me?
+Phil Connors:  No thank you.  I've seen Larry eat.
+
+Phil Connnors:  So, did you sleep OK without me?  You tossed and turned,
+  didn't you?
+Rita:  You're incredible.
+Phil Connors:  Who told you?
+
+Phil Connors:  Do you ever have deja-vu Mrs Lancaster?
+Mrs Lancaster:  I don't think so, but I could check with the kitchen.
+
+Phil Connors:  Can I be serious with you with you for a minute?
+Rita:  I don't know.  Can you?
+
+[It's Phil Connors' second Groundhog Day in a row, but the rest of the
+  people seems to have completely forgotten yesterday]
+Phil Connors:  Well, it's groundhog day...  again.
+
+Phil Connors:  Well, what if there is no tomorrow?  There wasn't one toay!
+
+Phil Connors:  Can I talk to you about a matter that is not work-related?
+Rita:  You never talk about work.
+
+Phil Connors:  What would you do if you were stuck in one place and every
+  day was exactly the same, and nothing that you did mattered?
+Ralph:  That sums it up for me.
+
+[Phil Connors drives (because Ralph and Gus are drunk) right through a
+  mailbox]
+Gus:  Hey Phil, if we wanted to hit mailboxes we could let Ralph drive.
+
+Phil Connors:  It's the same things your whole life.  "Clean up your room!",
+  "Stand up straight!", "Pick up your feet!", "Take it like a man!", "Be
+  nice to your sister!", "Don't mix beer and wine, ever!".  Oh yeah?  "Don't
+  drive on the railroad track!"
+Gus:  Eh, Phil.  That's one I happen to agree with.
+
+[Phil Connors is stopped by the police after some crazy driving]
+Phil Connors:  Yeah, 3 cheeseburgers, 2 large fries, 2 chocolate shakes and
+  a one large coke.
+
+Paino Teacher:  Not bad... Mr Connors, you say this is your first lesson?
+Phil Connors:  Yes, but my father was a piano mover.
+
+Rita:  Have you ever had deja-vu?
+Phil Connors:  Didn't you just ask me that?
+
+Rita:  What did you do today?
+Phil connors:  All same-o same-o.
+
+Felix's Wife:  Dr.  Connors.  I want to thank you for fixing Felix's back.
+  He can even help around the house again.
+Phil Connors:  I'm sorry to hear that, Felix.
+
+
+# Guess Who's Coming to Dinner
+
+[Last line and Spencer Tracy's last movie line]
+Matt Drayton:  Well Tillie, when the hell are we going to get some dinner?
+
+
+# Guilty as Sin
+
+David Greenhill:  ..see people like us Miriam, we're ... we're warm; but
+  she's a ... she's an attorney.
+
+
+# Hard to Kill
+
+Mason Storm:  This is for my wife.  Fuck you and die!
+
+
+# Hard Way, The (1991)
+
+Nick Lang:  Ever killed anybody?
+John Moss:  Counting today?
+Nick Lang:  C'mon John.  Look, my character kills this guy.  It's probably
+  an innocent by-stander.  I just want to know what that's like.
+John Moss:  You can't.  Not by asking someone.
+Nick Lang:  Will you open up?  I just want to know what it feels like to be
+  inside your skin.
+John Moss:  I DON'T WANT YOU INSIDE MY SKIN, YOU UNDERSTAND?  It's private!
+  What's in there belongs to me!  You're not gonna learn what it meas to be
+  a cop by eating hot dogs and picking your teeth and asking stupid
+  questions.  We live this job.  It's something we are, not something we do!
+  Every time a cop walks up to a car and has to give a speeding ticket, he
+  know he may have to kill someone or be killed himself.  That's not
+  something you step into by strapping on a rubber gun and riding around all
+  day.  You get to go back to your million dollar beach house and your
+  bimbos and your blow jobs and you get 17 takes to get it right.  We get
+  one take.  It lasts our whole lives.  We mess it up and we're dead.
+Nick Lang picking up a tape recorder:  Fuck was that great!  John.  Look.
+  Can you just say that one more time for me, please?  John.
+
+[After being shot in the chest]
+Nick Lang:  Oh man, this is too real....
+
+
+# Harvey (1950)
+
+Elwood P. Dowd:  My mother used to say to me, "Elwood" - she always called
+  me Elwood - "Elwood, in this world you must be oh-so clever, or oh-so
+  pleasant."  For years I was clever.  I'd recommend pleasant - and you may
+  quote me.
+
+
+# Heathers
+
+Heather Chandler:  They all want me as a friend or a fuck.  I'm worshipped
+  at Westerburg and I'm only a junior.
+
+Veronica Sawyer:  This may seem like a really stupid question...
+Jason Dean:  There *are* no stupid questions.
+Veronica Sawyer:  You inherit 5 million dollars the same day aliens land on
+  the earth and say they will blow it up in 2 days.  What do you do?
+Jason Dean:  That's the stupidest question I've ever heard.
+
+Courtney:  If I got that money, I'd give it all to the homeless.  Every
+  cent.
+Veronica Sawyer:  You're beautiful.
+
+Jason Dean:  The extreme always seems to make an impression.
+
+Veronica Sawyer:  I say we just grow up, be adults and die.
+
+Veronica Sawyer:  All we want is to be treated like human beings, not to be
+  experimented on like guinea pigs or patronized like bunny rabbits.
+Veronica's Dad:  I don't patronize bunny rabbits!
+
+Jason Dean:  Seven schools in seven states and the only thing different is
+  my locker combination.
+
+Veronica Sawyer:  If you were happy every day of your life you wouldn't be a
+  human being.  You'd be a gameshow host.
+
+Veronica Sawyer:  Heather, why are you such a mega-bitch?
+Heather Duke:  Because I can be.
+
+Jason Dean:   Wanna go out tonight?  Catch a movie?  Miniature golf?
+Veronica Sawyer:  I was thinking more along the lines of slitting Heather
+  Duke's wrists open, making it look like suicide.
+Jason Dean:  Ah, now you're talking.  I can be up for that.  I've already
+  started underlining meaningful passages in her copy of Moby Dick, if you
+  know what I mean?
+
+Veronica Sawyer:  My teenage angst bullshit now has a bodycount.
+
+Jason Dean:  The only place different social types can genuinely get along
+  with each other is in heaven.
+
+Veronica Sawyer:  Heather, my dear, there's a new sheriff in town.
+
+
+# Hellbound
+
+[Calvin Jackson is examining a body]
+Calvin Jackson:  Oh shit!  His heart's gone!
+[Frank Shatter reassuringly, pointing to a corner of the room]
+Frank Shatter:  No it isn't.  It's right there...
+
+
+# Hero (1992)
+
+Bernie LaPlante:  You gotta look out for Goddamn number-one,
+  pardon-the-vulgarity.
+
+TV Exec(uncredited):  What a crock o' shit.  Have you ever heard more
+  bullshit or drivel coming from somebody who is not even the president?
+
+Bernie LaPlante:  Prisons are for tough guys ... prisons are for guys who
+  beat each other up, lift weights ... fuck each other.
+
+
+
+
+# Highlander
+
+[Just before the McLeod clan goes to war]
+Kate:  Angus, you'll keep him in one piece, ya hear?
+Dugal MacLeod:  And we all know what piece that is!
+
+Ramirez:  Why does the sun come up, or are the stars just pinholes in the
+  curtain of night?
+
+Ramirez:  If your head comes away from your neck, it's over!
+
+Candy:  Hi, I'm Candy.
+Kurgan:  Of course you are...
+
+Kurgan:  Forgive me father, I am a worm...
+
+Kurgan:  It's better to burn out, than to fade away!
+
+Kurgan:  So now it ends...
+
+[Repeated line by Ramirez, The Kurgan and Connor MacLeod]
+Connor MacLeod:  There can be only one!
+
+[Looking at the body lying next to its head]
+Garfield:  What do you think the cause of death was, Lieutenant?
+
+Connor MacLeod:  You only have one life!  Value it!
+
+
+# His Girl Friday
+
+Walter Burns:  Look Hildy, I only acted like any husband that didn't want
+  his home broken up.
+Hildy Johnson:  What home?
+Walter Burns:  "What home"???  Don't you remember the home I promised you?
+
+
+# Hitcher, The
+
+[John Ryder is being interrogated by the police]
+Interrogation Sergeant:  What's your name?  Come on.  What's your name?  Do
+  you have a name?  Do you have a police record?  Where are you from?
+John Ryder:  Disneyland.
+
+
+# Holiday (1938)
+
+Johnny Case:  When I find myself in a position like this, I ask myself what
+  would General Motors do?  ...and then I do the opposite!
+
+
+# Hollywood Shuffle
+
+The guy from the dirty Larry Clip:  What you say, honky sucker pig head jive
+  turkey fool?
+
+(Robert Townsend Robert Townsend):  I believe this movie.  A dude could jump
+  off a mountain and not hurt himself, cause he did brace himself.  And knew
+  something about the levels of gravitivity and polarity.
+
+
+# Hook (1991)
+
+Peter Banning:  I'm not a pirate!  It so happens that I am a lawyer.
+
+
+# Hot Dog...The Movie
+
+Race Official:  And now for the rules of the International, Chinese
+  downhill:  There are none.
+
+
+# How to Marry a Millionaire
+
+[Referring to older men marrying young women]
+Lauren Bacall:  Look at Roosevelt, look at Churchill, look at old fella
+  what's his name in The African Queen.
+
+
+# Hudson Hawk
+
+Darwin Mayflower:  I'll torture you so slowly, you'll think it's a career.
+
+
+
+# Hunt for Red October, The
+
+Jeffrey Pelt:  Listen; I'm a politician which means I'm a cheat and a liar,
+  and when I'm not kissing babies I'm stealing their lollipops.  But ... it
+  also means I keep my options open...
+
+Captain:  What's his plan?
+Jack Ryan:  His plan?
+Captain:  Russians don't take a dump, son, without a plan...
+
+Captain on USS Dallas:  Central Intelligence Agency...  Now, there's a
+  contradiction in terms.
+
+Jack Ryan:  I'm not an agent, I just write books for the CIA.
+
+Marko Ramius:  Ryan, be careful what you shoot at.  Most things in here
+  don't react too well to bullets.
+
+
+# I Love You to Death
+
+Marlon:  If we're gonna waste the dude, we oughta get paid for it.  I mean,
+  that's the American way, ain't it?
+
+
+# I'm No Angel
+
+(Mae West):  It's not the men in your life, it's the life in your men that
+  counts.
+
+
+# In the Line of Fire
+
+Lilly Raines:  What makes you think he'll call back?
+Frank Horrigan:  Oh, he'll call back.  He's got "panache".
+Lilly Raines:  Panache?
+Frank Horrigan:  Yeah, it means flamboyance.
+Lilly Raines:  I know what it means.
+Frank Horrigan:  Really?  I had to look it up...
+
+Mitch Leary:  Watching the president, I couldn't help wondering why a man
+  like you would risk his life to save a man like that.  You have such a
+  strange job.  I can't decide if it's heroic or absurd.
+Frank Horrigan:  Now, why would a man like you risk his life to kill a man
+  like that?
+
+Sam Campagna:  Frank, The President sent his limo for you.
+Lilly Raines:  Well, that's the least he could do.
+Frank Horrigan:  Good, I love public transportation.
+
+
+# Indiana Jones and the Last Crusade
+
+Indiana Jones:  I'm like a bad penny, I always turn up.
+
+[Indiana Jones is asking Henry how he could've slept with Elsa]
+Henry:  I'm as human as the next man.
+Indiana Jones:  Dad, I was the next man!
+
+[Henry, Indiana Jones, and Sallah are discussing why Henry calls Indy
+  'Junior']
+Indiana Jones:  I like 'Indiana'.
+Henry:  We named the *dog* 'Indiana'.
+
+
+# Into the Night
+
+Ed Okin:  Are we under arrest or what?
+FBI Agent:  I think you fall into the 'or what' category.
+
+
+# It's a Wonderful Life
+
+George Bailey:  You call this a happy family?  Why do we have to have all
+  these kids?  
+
+
+# Jaws
+
+Hooper:  This was no boating accident!
+
+Brody:  It's only an island if you look at it from the water.
+
+Hooper:  Mr. Vaughan, what we are dealing with here is a perfect engine,
+  er... an eating machine.  It's really a miracle of evolution.  All this
+  machine does is swim and eat and make little sharks and that's all.
+
+
+# Jerk, The
+
+Navin R Johnson:  I know we've only known each other 4 weeks and 3 days, but
+  to me it seems like 9 weeks and 5 days.
+
+
+# Johnny Dangerously
+
+[Vermin is showing off a .357 Magnum to Johnny Dangerously]
+Vermin:  See this gun, Johnny?  It shoots through schools.
+
+Danny Vermin:  I got something to stop him.
+Dutch:  They made it for him special.  It's an .88 Magnum
+Danny Vermin:  It shoots through schools.
+
+Ma Kelly:  The Lower East Side... this really sucks.
+
+Ma Kelly:  I know what you can't say.  You wanna get laid.  You wanna hump
+  your brains out.  Vavoom, vavoom, vavoom!!
+
+Lil:  And shelf paper!  Oh, Johnny, I *love* shelf paper!
+
+
+# Jurassic Park
+
+Lex:  It's a UNIX system!  I know this!!!
+
+Ian Malcolm:  God creates dinosaurs.  God destroys dinosaurs.  God creates
+  man.  Man destroys God.  Man creates dinosaurs...
+Dr. Ellie Sattler:  Dinosaurs destroys man.  Women rule the earth...
+
+Ian Malcolm:  Oh no.  We're in the hands of engineers!
+
+[After being chased by the T-Rex]
+Ian Malcolm:  You think they'll have that on the tour?
+
+Ian Malcolm:  Yes, John.  But when the Pirates of the Caribbean breaks down,
+  the pirates don't eat the tourists.
+
+
+# Just One of the Guys
+
+Terry:  You know, sometimes I just wish I was a guy.
+Buddy:  No you don't!  The male body needs sex at all times!  It's a living
+  hell!
+
+[Buddy is trying to show Terry how to act like a guy by getting her to
+  scratch her "balls".  She's not doing too good a job at it]
+Terry:  Look, maybe my balls don't itch.
+Buddy:  All balls itch!  It's a fact!
+
+Terry:  I'm just so confused.
+Buddy:  Of course you're confused.  You're wearing my underwear.
+
+
+# Kelly's Heroes
+
+[Oddball sees that the bridge he wants to cross is intact and is pleased
+  with himself]
+Oddball:  Still up!
+[A plane flies over the bridge and bombs it.. direct hit]
+Oddball:  No it ain't.
+
+Oddball:  Arf arf arf...  That's my other dog impression.
+
+[The heroes have found the bank with the gold,  but there is still one lone
+  German Tiger Tank to be reckoned with.  Supply Sergeant Crapgame (a
+  notorious hussler) makes the following suggestion to Infantry Sergeant Big
+  Joe concerning the commander of the Tiger Tank]
+Crapgame:  Try making a DEAL!
+Big Joe:  What kind of DEAL?
+Crapgame:  A DEAL, deal!  Maybe he's a Republican.  You know, "Business is
+  Business".
+
+
+# Kind Hearts and Coronets
+
+[Louis Mazzini just murdered his relative, Lady Agatha D'Ascoyne, who was
+  distributing suffragette literature from a balloon over London] 
+Louis Mazzini:  I shot an arrow in the air;  She fell to earth in Berkeley
+  Square.  
+
+
+# Klondike Annie
+
+(Mae West):  Whenever I'm caught between two evils, I take the one I never
+  tried.
+
+
+# Kuffs
+
+George Kuffs:  I got women to do, places to see!
+
+[At the Police Academy]
+George Kuffs:  Why are we doing so much running?  Aren't we all going to be
+  in cars?
+
+George Kuffs:  I'm looking for a really big gun which holds a lot of
+  bullets.
+Gun Salesman:  God bless you, young man.
+George Kuffs to the camera:  I always wanted a gun...
+Gun Salesman:  Is this what you had in mind?  It's a 9mm beretta.  15 in the
+  clip, 1 in the pipe.
+George Kuffs:  Got one that holds more?
+Gun Salesman:  No.
+George Kuffs:  I'll take two.
+
+Ted Bukovsky:  Next time shit before you sign in.  Shit!  Sign in!  In the
+  car!
+George Kuffs:  Am I gonna be tested on this later?
+
+Ted Bukovsky:  Now, if I'm gonna be killed on the job, it's gonna be by a
+  fucking bullet, not a fucking bus.  Now turn this fucking car around and
+  let's get back on your fucking patrol.
+George Kuffs:  You may have a limited vocabulary, Ted.
+Ted Bukovsky:  Fuck you!
+
+George Kuffs:  What can they possibly see in a man who dresses that
+  badly???
+
+
+# L.A. Story
+
+[Harris and friends at lunch]
+Harris' friend:  I'll have a decaf coffee.
+Harris' friend:  I'll have a decaf espresso.
+Harris' friend:  Do you have any decaffeinated coffee ice cream?
+Harris:  I'll have a half double-decaf half-caf - with a twist of lemon.
+Harris' friend:  I'll have a twist of lemon.
+Harris' friend:  I'll have a twist of lemon.
+Harris' friend:  I'll have a twist of lemon.
+
+Road Sign:  There are more things n heaven and earth than are dreamt of n
+  your philosophy.
+
+[Repeated line]
+Sara McDowel:  Let your mind go and your body will follow.
+
+Harris K. Telemacher:  Ordinarily, I don't like to be around interesting
+  people because it means I have to be interesting too.
+Sara McDowel:  Are you saying I'm interesting?
+Harris K. Telemacher:  All I'm saying is that, when I'm around you, I find
+  myself showing off, which is the idiot's version of being interesting.
+
+Bob:  Hi.  My name is Bob.  I'll be your robber.
+Harris K. Telemacher hands him the money:  Hi, how are you?
+Bob:  Thank you very much.
+
+Harris:  There's someone out there for everyone - even if you need a
+  pickaxe, a compass, and night goggles to find them.
+
+[Harris picks up the ringing phone]
+Harris:  Hello, this is Harris.  I'm at home right now, so you can talk to
+  me in person.  Please start talking at the beep.
+[beep]
+
+[Sara McDowel asks Harris when the right time for low, sustained, booming
+  noises were in L.A.  We later find out she plays tuba]
+Harris:  Ah - low, sustained, booming noises.  Nine, nine-fifteen.
+
+Harris:  SanDeE*, your breasts - they feel strange.
+SanDeE*:  Oh, that's 'cause they're real.
+
+Harris to SanDeE*:  Well, thank you for a lovely lunch and enema.
+
+Harris:  Well, maybe you think it's intellectual because you were raised
+  with a banana and an innertube...  This is an intellectual-free zone.
+
+Harris:  I could never be a woman.  If I were, I would do nothing but sit at
+  home all day playing with my breasts.
+
+
+# Lady Vanishes, The (1938)
+
+Iris Henderson:  I've no regrets.  I've been everywhere and done everything.
+  I've eaten caviar at Cannes, sausage rolls at the dogs.  I've played
+  baccarat at Biarritz and darts with the rural dean.  What is there left
+  for me but marriage?
+
+
+# Lair of the White Worm, The
+
+Lady Silvia Marsh:  To lose one parent may be reguarded as a misfortune.  To
+  lose both looks like carelessness.
+
+
+# Lassie Come Home
+
+Lassie:  Woof woof woof woof woof.
+
+
+# Last Action Hero
+
+[First line]
+Dekker:  This is one hell of a way to spend christmas...
+
+[Jack Slater is Hamlet]
+Hamlet:  Hey Claudius!  You killed my father!  Big mistake!
+Narrator:  Something is rotten in the state of Denmark, and Hamlet is taking
+  out the trash.
+Old Man:  Stay thee hand, fair prince.
+Hamlet shooting him:  Who said I'm fair?
+Narrator:  Noone is going to tell this sweet prince good night.
+Hamlet:  To be or not to be?  Not to be.
+
+Vivaldi:  What I'm saying is; Mr. Benedict can take you out as easy as
+  cake.
+
+[Danny Madigan is watching the bad guys on the screen]
+Danny Madigan:  You are gonna pay...  Oooh, you gonna pay!
+
+[Frank's last words]
+Frank:  I'm out of here...
+
+Jack Slater:  Who the hell are you?
+Danny Madigan:  Don't shoot me.  I'm Danny Madigan.  I'm a kid.
+
+Danny Madigan:  OK, I got one.  What about this girl right here.  She is way
+  too attractive to be working in a video store.
+Jack Slater:  I agree with you.  I think she should be working with us ...
+  under cover of course...
+
+Danny Madigan:  You think you are funny, don't you?
+Jack Slater:  I know I am.  I'm the famous comedian Arnold Braunschweiger.
+Danny Madigan:  Schwarzenegger!
+Jack Slater:  Gesundheit.
+
+Jack Slater:  Could I speak to the drugdealer of the house, please?
+
+Jack Slater:  I'll be back!  Ha!  You didn't know I was gonna say that, did
+  you?
+Danny Madigan:  That's what you always say!
+Jack Slater:  I do?
+
+Jack Slater:  Kid!  Who does the doctor treat?
+Danny Madigan:  Patients?
+Jack Slater:  Look at the elbow of my jacket.  What is it doing?
+Danny Madigan:  Wearing thin?
+Jack Slater:  Bingo!
+
+[Danny Madigan was just kissed by Whitney Slater]
+Danny Madigan:  From now on it's all gonna be downhill...
+
+Whitney Slater:  FREEZE!  Lose the guns or I redecorate in brain-matter
+  grey, gottit?
+
+Danny Madigan:  Chicken it is...
+
+Danny Madigan:  ...I though I was going to die.
+Jack Slater:  Well I'm sorry to disappoint you but you're gonna live to
+  enjoy all the glorious fruits life has got to offer - acne, shaving,
+  premature ejaculation ... and your first divorce.
+
+Jack Slater:  And Whitney!  Why can't she be like every other teenager.  For
+  prom night she stayed home and field stripped an AK-47.
+
+Vivaldi:  Mr. Torelli.  I hope it's alright with you I am here.  I don't
+  wanna be no fourth wheel...
+
+Vivaldi:  You've had Slater in front of the eight ball before, but you
+  always screwed it up.
+
+Vivaldi:  What is this, Benedict!  First you are my friend, then you turn
+  360 on me...
+
+Benedict:  If God was a villain, he would have been me.
+
+Nick:  There are lots of things worse than movies:  politicians, wars,
+  forest fires, famine, plague, sickness, pain, whorts, politicians...
+Jack Slater:  You already mentioned them.
+Nick:  I know I did.  They are twice as bad as anything else.
+
+James Belushi:  I'm not really a big fan of Arnold's...  She is, you know...
+  Arnold really turns her on and I just want to be there when it happens.
+
+
+# Last Boy Scout, The
+
+[Billy Cole's last line]
+Billy Cole:  Ain't life a bitch?
+
+[Joe Hallenbeck wakes up in his car and stares at his grubby reflection in
+  the mirror]
+Joe Hallenbeck:  Nobody likes you.  Everybody hates you.  You're gonna lose.
+  Smile, you fuck.
+
+Jimmy Dix:  Hi, you're nobody!
+Joe Hallenbeck:  Shhh, don't tell anyone.
+
+Joe Hallenbeck:  This ain't no game, "Flash"!  Real guns.  Real bullets.
+  It's dangerous.
+Jimmy Dix:  "Dangerous" is my middle name.
+Joe Hallenbeck:  Mine is "Cornelius".
+
+Milo:  You think you are so fucking cool, don't you?  You think you are so
+  fucking cool.  But just once, I would like to hear you scream in pain...
+Joe Hallenbeck:  Play some rap music.
+
+
+# Last of the Mohicans, The (1992)
+
+Nathaniel Poe:  In case your aim is better than your judgment.
+
+Hawkeye:  My Father says
+Cora interupting:  Your Father?!
+Hawkeye:  Chingachgook told me, "Don't try to understand them; and don't try
+  to make them understand you.  For they are a breed apart and make no
+  sense".
+
+
+# Leap of Faith (1992)
+
+Jonah Nightengale:  A twelve-gauge, double-barrelled, grenade-launcher of
+  LOVE!
+
+Jonas Nightengale:  Yakety Yak - God's talking back!
+
+
+# Lethal Weapon
+
+Man at the office:  You know, Roger, you are way behind the times.  The guys
+  of the 80s aren't though.  They are sensitive people.  Show a little
+  emotion to a woman and shit like that.  I think I'm an 80's...
+Roger Murtaugh:  How do you figure?
+Man at the office:  Last night I cried in bed.  So how is that?
+Roger Murtaugh:  Were you with a woman?
+Man at the office:  I was alone.  Why do you think I cried?
+Roger Murtaugh:  Sounds like an 80's man to me...
+
+[Repeated line all the way]
+Roger Murtaugh:  I'm too old for this shit!
+
+Roger Murtaugh:  God hates me, that's what it is...
+Martin Riggs:  Hate him back!  It works for me...
+
+Roger Murtaugh:  Have you ever met anybody you didn't kill?
+Martin Riggs:  I haven't killed you, have I?
+
+Martin Riggs:  Perhaps there's an opening in the L.A. Fire Department?
+
+[When Joshua is panting on the lawn after the title-fight]
+Roger Murtaugh:  Get that shit off my lawn!
+
+
+# Lethal Weapon 2
+
+[After a wild car chase, the car looks like a wreck]
+Roger Murtaugh:  This was a new car, Riggs...
+Martin Riggs:  Well, it still is!
+
+[After shooting 2 criminals with a nail gun]
+Roger Murtaugh:  Nailed you both!
+
+
+# Leviathan (1989)
+
+Sixpack:  You know, I stood next to a guy who blew up his suit once.  I'll
+  tell you, that was not a pretty sight.
+Jones:  Leave DeJesus alone, man!
+Sixpack:  One tiny little hole in a fucking toe of his suit, man.  No bigger
+  than your dick.  Yeah, the way the ocean came in, the pressure just
+  crammed his whole body up into his helmet.  We just buried his helmet.
+  That would have been you, DeJesus.
+DeJesus:  Hey, I know about implosions.
+Sixpack:  Yeah, I bet you do.  I bet you were imploding in your pants.
+
+
+# Lion in Winter, The
+
+Philip II:  That's what tapestries are for.
+
+Queen Eleanor of Aquitaine:  You're not an assassin.
+Richard:  Look again.
+
+Queen Eleanor of Aquitaine:  We could tangle spiders in the webs you weave.
+
+King Henry II:  More Brandy wine?  They were boiling it in Ireland before
+  the snakes left!
+
+Queen Eleanor of Aquitaine:  What family doesn't have its ups and downs?
+
+Prince Geoffrey:  I know.  You know I know.  I know you know I know.  We
+  know Henry knows, and Henry knows we know it.  [smiles] We're a
+  knowledgable family.
+
+
+# Lion King, The
+
+[Timon finds a grub in a rotten log and eats it]
+Timon:  Slimy ... yet satisfying.
+
+
+# Little Shop of Horrors (1986)
+
+[Orin Scrivello, the sadistic dentist]
+Orin Scrivello:  I thrill when I drill a bicuspid, it's swell though they
+  tell me I'm mal-ad-just-ed.
+
+
+# Lodger, The (1926)
+
+Joe Betts:  When I've put a rope round the Avenger's neck, I'll put a ring
+  around Daisy's finger.
+
+
+# Mad Max
+
+Fifi Macaffee:  People don't believe in heroes any more.  
+
+
+# Made in America
+
+Hal Jackson:  Funny thing, sperm...
+
+
+# Major League
+ 
+[The Indians General Manager calls minor league coach Lou Brown at Tire
+  World to offer him a position with the Indians]
+General Manager:  How would you like to manage the Indians this year?
+Lou Brown:  Gee, I don't know....
+General Manager:  What do you mean?  This is your chance to manage in the
+  big leagues.
+Lou Brown:  Let me get back to you.  I got a guy on the other line asking
+  about some white walls.
+ 
+[Rookie pitcher Ricky "Wild Thing" Vaughn is about to throw the final pitch
+  for the Indians in the playoff game]
+Lou Brown:  Forget about the curve ball Ricky, give him the heater.
+
+
+# Malice
+
+Jed:  Bad things happen to good people all the time, Andy, for no reason
+  what-so-ever...
+
+
+# Man Who Would Be King, The
+
+Peachy Carnehan:  Detriments you call us?  Detriments?  Well I want to
+  remind you that it was detriments like us that built this bloody Empire
+  AND the Izzat of the bloody Raj.  Hats on!
+
+Peachy Carnehan:  Home to what?  A porters uniform outside a restaurant and
+  six penny tips from belching civilians for closing cab doors on their
+  blowzy women?
+Daniel Dravot:  Not for us thank you.  Not after watching afghans come
+  howling down out of the hills and taking battlefield command when all the
+  officers bought it.
+Peachy Carnehan:  Well said, brother Dravot.
+
+
+# Manhattan
+
+Isaac Davis:  My ex-wife left me for another woman.
+
+
+# Manhunter (1986)
+
+Will Graham:  I know that I'm not smarter than you.
+Dr. Hannibal Lecktor:  Then how did you catch me?
+Will Graham:  You had disadvantages.
+Dr. Hannibal Lecktor:  What disadvantages?
+Will Graham:  You're insane.
+
+
+# Marked for Death
+
+[John Hatcher just killed two of the bad guys and is chatting to his buddy]
+John Hatcher:  One thought he was invisible, and the other thought he could
+  fly.  They were both wrong.
+
+
+# Maverick
+
+[Just like in _Lethal Weapon_ (qv) and it's sequels]
+Bank Robber:  I'm too old for this shit.
+
+
+# Midnight Cowboy
+
+Joe Buck:  I'll tell you the truth now, I ain't a f'real cowboy.  But I am
+  one hell of a stud!
+
+Joe Buck:  It just ain't right cheatin' from a pregnant lady.
+
+Joe Buck:  John Wayne!  Are you tryin' to tell me he's a fag?
+
+
+# Mirror Crack'd, The
+
+Lola Brewster:  I could eat a can of Kodak and puke a better movie.
+
+
+# Mississippi Burning
+
+Rupert Anderson to Ward:  Don't you have the whole world to save???
+
+
+# Mister Roberts
+
+[Last line]
+Ensign Pulver:  Captain, I just threw your palm tree overboard and what's
+  all this crud about there being no movie tonight?
+
+
+# Monolith
+
+Tucker:  I got 3 rules; 1) Shit happens, 2) Shit happens on a regular basis
+  and 3) You better get used to rule 1 and 2.
+
+
+# Monty Python and the Holy Grail
+
+Peasant 1:  Who's that there?
+Peasant 2:  I don't know...  Must be a king...
+Peasant 1:  Why?
+Peasant 2:  He hasn't got shit all over him.
+
+Arthur:  I am your king!
+Woman:  Well I didn't vote for you!
+Arthur:  You don't vote for kings.
+Woman:  Well how'd you become king then?
+[Angelic music plays...]
+Arthur:  The Lady of the Lake, her arm clad in the purest shimmering silmite
+  held aloft Excalibur from the bosom of the water, signifying by divine
+  providence that I, Arthur, was to carry Excalibur.  THAT is why I am your
+  king!
+Dennis interrupting:  Listen, strange women lyin' in ponds distributin'
+  swords is no basis for a system of government!  Supreme executive power
+  derives from a mandate from the masses, not from some farcicial aquatic
+  ceremony!
+
+Dennis:  Oh, but you can't expect to wield supreme executive power just
+  because some watery tart threw a sword at you!
+
+Dennis:  Oh but if I went 'round sayin' I was Emperor, just because some
+  moistened bink lobbed a scimitar at me, they'd put me away!
+
+Dennis:  Help!  Help!  I'm being oppressed!  Violence inherent in the
+  system!  Violence inherent in the system!
+
+Bedevere:  ...and that, my liege, is how we know the Earth to be banana
+  shaped...
+Arthur:  This new learning amazes me, Sir Bedevere.  Explain again how
+  sheep's bladders may be employed to prevent earthquakes...
+
+Arthur:  On second thought, let's not go to Camelot.  It is a silly place.
+
+Inge:  You must spank her well, and after you are done with her, you may
+  deal with her as you like...  and then...  spank me!
+All:  And me!  And me too!  And me!
+Inge:  Yes!  Yes, you must give us all a good spanking!
+
+Inge:  And after the spanking, the oral sex!
+Galahad:  Well I could stay a bit longer...
+
+Knight:  We are the Knights who say...  NI!
+
+Knight 1:  We are now no longer the Knights who say Ni.
+Knight 2:  NI!
+Other Knights:  Shh...
+Knight 1:  We are now the Knights who say...  "Ekki-Ekki-Ekki-Ekki-PTANG!
+  Zoom-Boing!  Z'nourrwringmm!"
+
+King of Swamp Castle:  We live in a bloody swamp.  We need all the land we
+  can get.
+Prince Herbert:  But I don't like her.
+King of Swamp Castle:  Don't like her?  What's wrong with her.  She's
+  beautiful, she's rich, she's got huge ... tracts of land.
+
+Dennis/Peasant in Autonomous Collective:  If I went around calling myself
+  emperor simply because some watery tart lobbed a scimitar at me, they'd
+  put me away.
+
+
+# More the Merrier, The
+
+Benjamin Dingle:  There are two kinds of people - those who don't do what
+  they want to do so they write down in a diary about what they haven't done
+  and those who are too busy to write about it 'cause they're out doing it!
+
+
+# Muppet Movie, The
+
+[Fozzie and Kermit pick up Gonzo and ask him what he wants to do with his
+  life]
+Gonzo:  I want to go to Bombay, India and become a movie star.
+Fozzie:  You don't go to Bombay, India to become a movie star!  You go where
+  we're going:  Hollywood.
+Gonzo:  Sure!  If you want to do it the easy way!
+
+
+# Murder!
+
+Handel Fane:  I assure you, Inspector, I'm not the other woman in this
+  case.
+
+
+# My Blue Heaven (1990)
+
+[pickup-line]
+Vincent Antonelli:  You know, it's dangerous for you to be here in the
+  frozen food section!
+Shaldeen:  Why is that?
+Vincent Antonelli:  Because you could melt all this stuff...
+
+[Vincent Antonelli is questioned about the stolen goods in the trunk of the
+  car he stole]
+Hannah Stubbs:  The books...
+Vincent Antonelli:  You have something against books?
+Hannah Stubbs:  I have nothing about books!  I am curious about the books in
+  your trunk.
+Vincent Antonelli:  You see, I was thinking of writing my story, so I bought
+  this one on how to do it.
+Hannah Stubbs:  Why do you need 25 copies of it?
+Vincent Antonelli:  In case I want to read it more than once...
+
+Vincent Antonelli:  Richie loved to use 22s because the bullets are small
+  and they don't come out the other end like a 45, see, a 45 will blow a
+  barn door out the back of your head and there's a lot of dry cleaning
+  involved, but a 22 will just rattle around like pac man until you're
+  dead.
+
+[last line]
+Vincent Antonelli:  You know, sometimes I even amaze myself.
+
+
+# My Chauffeur
+
+Cat Fight:  Look at that.  A blue woman with a blue dog.
+Groupie 1:  She aint Blue.
+Cat Fight:  Her hair is blue.
+Groupie 2:  That counts.  A blue woman with a blue dog.
+Groupie 3:  That's 20,000 points.
+Groupie 1:  Now you've gotta get her panties.
+
+
+# My Favorite Year
+
+Benjy Stone:  I don't want to bring Alan Swann to your house, Ma!
+Belle:  Well what are you ashamed of?
+Benjy Stone:  Everything!
+
+Benjy Stone:  Jews know two things in this world:  suffering, and where to
+  get really great Chinese food.
+
+[Alan Swann is panicking because he has to go on live television]
+Alan Swann:  Damn you!  I'm not an actor, I'm a movie star!
+
+Alan Swann:  Alfredo, telephone the Stork Club - we'll be two for dinner.
+Alfi Bambacelli:  Mr. Swann, are you sure you want the Stork Club?  Remember
+  what happened last time?
+Alan Swann:  It's been a year and a half.  Surely they've repaired the wall
+  and the bandstand by now.
+
+[Benjy Stone and a very drunken Alan Swann are up on a roof as Swann
+  attempts to shimmy down the side of the building]
+Benjy Stone:  Let's *not* do this - it's too dangerous!
+Alan Swann:  Nonsense!  It worked perfectly well in "A Slight Case of
+  Remorse"!
+Benjy Stone:  That was a movie! This is real life!
+Alan Swann:  What is the difference?
+
+[King Kaiser is trying to hit on Alice Miller the writer]
+King Kaiser:  You look real nice today, Alice.  Did you get those shoes I
+  sent you?
+Alice Miller:  Oh yeah.
+King Kaiser:  Why did you send them back?
+Alice Miller:  They were the wrong size.  And they were used.
+
+
+# My Own Private Idaho
+
+Mike Waters:  This is a nice home.  Do you live here? ... I don't blame
+  you.
+
+Mike Waters:  I've been tasting roads my whole life.
+
+Scott Favor:  When you wake up, wipe the slugs off your face.  Be ready for
+  a new day!
+
+
+# Mystery Date
+
+Geena:  We spend hours making ourselves look completely different, and then
+  we go into some dark place where we really can't see each other anyway,
+  and then we drink so we dont know if the other person is really
+  interesting or just seems interesting cuz they're pretending to be
+  interested in the person that we're pretending to be.
+Tom:  Uh, right. So I guess there's no getting around it.  We're gonna have
+  to lie to each other.
+
+
+# Naked Gun 2 1/2: The Smell of Fear, The
+
+Lt. Frank Drebin:  Nice party, Hapsburg...  I see a lot of familiar
+  facelifts.
+
+Quentin Hapsburg:  You do speak French don't you?
+Lt. Frank Drebin:  Unfortunately no, but I do kiss that way.
+
+[Lt. Frank Drebin is unhappy about Dr. Mainheimer]
+Lt. Frank Drebin:  Have you noticed anything different about him?
+Jane Spencer:  Well, only that he's a foot taller, and he seems to be left
+  handed now...  Frank, what are you trying to tell me?  That Quentin has
+  somehow found an exact double for Dr. Mainheimer and that tomorrow that
+  double will give a fraudulent report to the president?
+Lt. Frank Drebin:  Why that's brilliant, that's a lot better than what I
+  came up with.
+
+[Hector Savage is in a house surrounded by armed police...  He makes his
+  demands]
+Hector Savage:  I want a car out front, something fun, a Porsche, then I
+  want a plane ticket to Jamaica...  And I want a nice hotel, no touristy
+  place...  Something really indicative of the people and their culture.
+
+[Lt. Frank Drebin making a speech at the White House]
+Lt. Frank Drebin:  ...blowing away a fleeing suspect with my 44 magnum used
+  to mean everything to me, I enjoyed it, well who wouldn't?
+
+[Lt. Frank Drebin making a speech at the White House]
+Lt. Frank Drebin:  I want a world where Frank junior and all the Frank
+  juniors can sit under a shady tree, breathe the air, swim in the ocean,
+  and go into a 7-11 without an interpreter.
+
+[Lt. Frank Drebin and Jane Spencer are standing next to a nuclear bomb which
+  is about to explode]
+Jane Spencer:  Frank, if you're going to be blown to bits, I want to be here
+  with you.
+
+Lt. Frank Drebin:  The truth hurts doesn't it, Hapsburg?  Oh, sure maybe not
+  as much as jumping on a bike with the seat missing...
+
+[Lt. Frank Drebin and Ed Hocken are in a sex shop making inquiries]
+Busty Female Shop Assistant:  Why should I tell you copper?
+Lt. Frank Drebin:  Because I'm the last line of defense between sleeze like
+  this and the decent people of this town.
+[A male shop assistant appears from a storeroom.]
+Assistant:  Oh hi Frank, say we got that model D83 Swedish sure-grip suck
+  machine that you ordered.
+Lt. Frank Drebin to the Female Assistant:  It's a gift.
+
+[Frank Drebin and Ed Hocken try to analyze a case]
+Frank Drebin: Why would anyone do this?
+Ed Hocken: Sex, Frank?
+Frank Drebin: No, thanks, not now...
+
+
+# Naked Gun 33 1/3: The Final Insult
+
+[Frank Drebin is stopped at the entrance of the Award Ceremony place]
+Frank Drebin:  Sergeant Frank Drebin, Detective Leutenant, Police Squad.
+Guard:  Yeah, and I'm Robert De Niro.
+Frank Drebin:  Mr. De Niro, we got to get inside.
+
+
+# Naked Gun: From the Files of Police Squad!, The
+
+Frank Drebin:  Wilma, I promise you; whatever scum did this, not one man on
+  this force will rest one minute before until he's behind bars.  Now, let's
+  grab a bite to eat.
+
+Frank Drebin:  Interesting...  Almost as interesting as the photographs I
+  saw today.
+Jane Spencer:  I was young.  I needed the work.
+
+[Frank Drebin is emptying out his files after being kicked off the force]
+Frank Drebin:  Hey!  The missing evidence in the Kelner case!  He really was
+  innocent!
+Ed Hocken:  Frank, Kelner went to the chair two years ago.
+Frank Drebin: Well, uh......
+[Frank Drebin quickly shoves the evidence back into the file cabinet]
+
+[Frank Drebin is angrily breaking up with Jane Spencer]
+Frank Drebin:  And I'll tell you one more thing:  I faked every orgasm!
+
+Jane Spencer:  I wanted you to know, now, I've loved you since the first day
+  I met you, and I'll never stop.  I'm a very lucky woman.
+Frank Drebin:  So am I...
+
+
+# Narrow Margin (1990)
+
+[Flying through Canadian mountains]
+Deputy District Attorney:  How come we're flying so low.
+Cop:  We're not low, it's the ground that's high.
+
+
+# Necromania
+
+Shirley:  You nearly made me wet my nightgown, old boy.  It's new, too.
+
+
+# Night and the City (1992)
+
+Harry Fabian:  A toast.  To all of you...  to hell with you, to all of me!
+
+
+# Night of the Comet
+
+Younger Sister:  You were born with an asshole, Doris, you don't need
+  Chuck.
+
+
+# No Man's Land (1987)
+
+[The car phone in the porche rings]
+Benjy Taylor:  Hello?  No, Rick is not here.  Who am I?  The guy stealing
+  Rick's car...
+
+
+# North by Northwest
+
+Roger O. Thornhill:  Now you listen to me, I'm an advertising man, not a red
+  herring.
+
+Roger O. Thornhill:  I didn't realize you were an art collector.  I thought
+  you only collected corpses.
+
+Roger O. Thornhill:  The only performance that will satisfy you is when I
+  play dead.
+Phillip Vandamm:  Your very next role.  You'll be quite convincing, I assure
+  you.
+
+Roger O. Thornhill:  Now, what can a man do for twenty minutes with his
+  clothes off?  Couldn't we have made it an hour?
+Eve Kendall:  You could take a cold shower.
+
+
+# Notorious (1946)
+
+Alexander Sebastian:  I'm married to an American agent.
+
+[Last line]
+Eric Mathis:  Alex, will you come in, please.  I wish to talk to you.
+
+
+# Odessa File, The
+
+[Miller is trying to sell his editor on a story based on the diary]
+Editor:  No one wants to read about Jews.
+Miller:  They were GERMANS!
+Editor:  They were German Jews. 
+
+# Oh, Mr Porter!
+ 
+???:  Next train's gone.
+ 
+Postman:  You're wasting your time.
+Porter:  Well, what are you doing?
+Postman:  Just watching you wasting your time.
+ 
+
+# Oliver!
+
+Boy:  Fagin, this sausage is moldy!
+Fagin:  Shut up and drink your gin.
+
+
+# On Deadly Ground
+
+[Michael Jennings speaks about Forrest Taft]
+Michael Jennings:  Search down deep in your soul and think of your worst
+  nightmare...  And that won't even come close to him when he gets pissed.
+
+
+# Paint Your Wagon
+
+Ben Rumson:  There's two kinds of people, them goin' somewhere and them
+  goin' nowhere.  And's that what's true.
+
+
+# Palm Beach Story, The
+
+"Weenie King":  I'm the Weenie King!  Invented the Texas Weenie!  Lay off
+  'em, you'll live longer.
+
+John D. Hackensacker III:  That's one of the greatest tragedies of this life
+  -- that the men who are most in need of a beating up are always enormous.
+
+
+# Paradine Case, The
+
+Gay Keane:  Well, nice people don't go murdering other nice people.
+
+
+# Pat and Mike
+
+[Last lines]
+Pat Pemberton:  What would happen if I ever dropped you?
+Mike Conovan:  I'd go right down the drain.
+Pat Pemberton:  And?
+Mike Conovan:  I'd take you right down with me shorty.
+
+
+# Patton
+
+General George S. Patton Jr.:  Patriotism means making the other poor damned
+  bastard die for his country before he can make you die for yours.
+
+
+# People Under the Stairs, The
+
+Fool:  That X-ray lady's back, she's out back right now by the van...  She's
+  got a man with her the size of Detroit.
+
+Fool:  Your father's one sick mother...  Actually your mother is one sick
+  mother too.
+
+Woman:  Never shoot your gun outside.
+Man:  He got away!
+
+
+# Perfect World, A
+
+Terry Pugh on seeing the gun has no bullets:  Son of a bitch!  Hells bells -
+  no shells.
+
+
+# Pink Panther Strikes Again, The
+
+Francois:  Do you know what kind of a bomb it was?
+Chief Inspector Jacques Clouseau:  The exploding kind.
+
+[Suddenly the American football game is interrupted just before the end by
+  Charles Dreyfus' transmission]
+The President:  Call the FBI, the CIA and the Pentagon.  Find out who won
+  that game!
+
+Chief Inspector Jacques Clouseau:  Does your dog bite?
+Hotel Clerk:  No.
+Chief Inspector Jacques Clouseau bowing down to pet the dog:  Nice doggie.
+[Dog barks and bites Clouseau in the hand]
+Chief Inspector Jacques Clouseau:  I thought you said your dog did not
+  bite!
+Hotel Clerk:  That is not my dog.
+
+[Last line]
+Jacques Clouseau:  Cato!  You imbesile!  Not now!
+
+
+# Pink Panther, The
+
+[Having made her tipsy with champagne, Sir Charles Lytton kisses Princess
+  Dala] 
+Princess Dala:  If I were my father, I'd have you tortured.
+Sir Charles Lytton:  No.  If you were your father, I doubt very much if I
+  would have kissed you.  
+
+[At a costume ball, a police sergeant costumed as a zebra drinks from the
+  punch bowl] 
+Inspector Jacques Clouseau:  Any more behaviour like this and I'll have your
+  stripes!
+  
+[Inspector Jacques Clouseau bumps into a woman dressed as Cleopatra.  He
+  hands back her rubber snake] 
+Woman:  Take your filthy hands off my asp! 
+
+
+# Pit and the Pendulum, The (1990) (V)
+
+Francisco:  I'm sorry, mistress, that you weren't properly able to confess.
+  There just wasn't enough time to torture you.
+Esmeralda:  Thanks anyway.
+
+ 
+# Planes, Trains & Automobiles
+
+Neal Page:  Eh, look, I don't want to be rude, but I'm not much of a
+  conversationalist, and I really want to finish this article, a friend of
+  mine wrote it, so...
+Del Griffith:  Don't let me stand in your way, please don't let me stand in
+  your way.  The last thing I want to be remembered as is an annoying
+  blabbremouth...  You know, nothing grinds my gears worse than some
+  chauterhead that doesn't know when to keep his big tramp shut...  If you
+  catch me running off with my mouth, just give me a poke on the chubbs...
+
+[Waking up after sharing the same bed on the motel]
+Neal Page:  Del...  Why did you kiss my ear?
+Del Griffith:  Why are you holding my hand?
+Neal Page:  Where are your other hand?
+Del Griffith:  Between two pillows...
+Neal Page:  Those AREN'T PILLOWS!!!
+
+[Driving on the wrong side of the highway]
+Neal Page:  He says we're going the wrong way...
+Del Griffith:  Oh, he's drunk.  How would he know where we're going?
+
+Police Officer:  What the hell are you driving here?
+Del Griffith:  We had a small fire last night, but we caught it in a nick of
+  time.
+Police Officer:  Do you have any idea how fast you were going?
+Del Griffith:  Funny enough, I was just talking to my friend about that.
+  Our speedometer has melted and as a result it's very hard to see with any
+  degree of accuracy exactly how fast we were going.
+
+
+# Planet of the Apes
+
+[The first words ever spoken by a human to the apes]
+George Taylor:  Take your stinking paws off me, you damned dirty ape!
+
+
+# Player, The
+
+Larry Levy: I'll be there right after my AA meeting.
+Griffin Mill: Oh Larry, I didn't realise you had a drinking problem.
+Larry Levy: Well I don't really, but that's where all the deals are being
+  made these days.
+
+Andy Civelli:  Griffin, you move in mysterious ways, but I like it!  I like
+  it!
+
+
+# Point Break
+
+[Johnny Utah and Bodhi just beat the hell out of 4 surfers]
+Johnny Utah:  This is stimulating, but we're out of here.
+
+Ben Harp:  Special agent Utah!  This is not some job, flipping burgers at
+  the local drive-in!  Yes! - your surfboard bothers me!  Yes! - your
+  approach to this whole damn case bothers me!  And yes! - YOU BOTHER ME!
+  And Pappas!  Oh, for the love of Christ.  How the hell did I even let you
+  talk me into this whole bone-headed idea to begin with.
+Angelo Pappas:  Harp!  We are working under-cover.  It takes time.  We've
+  produced a few...
+Ben Harp:  NO! No no no no no no NO!  Let me tell you what you've
+  produced...  Over the last two weeks, you two have produced exactly squat!
+  SQUAT!  During which time the ex-presidents have robbed two more banks.
+  Now for Christ's sake, does either one of you have anything even remotely
+  interesting to tell me?
+Johnny Utah:  I caught my first tube today...  Sir.
+
+[Angelo Pappas is aiming the gun at a surfer]
+Angelo Pappas:  Speak into the microphone, squid brain!
+
+Angelo Pappas:  ...last time you had a feeling I had to kill a guy, and I
+  hate that...  It looks bad on my report.
+
+[After a long discussion about which parachute Johnny Utah should use]
+Johnny Utah:  You gonna jump or jerk off?
+
+Bodhi:  Life sure has a sick sense of humor, doesn't it?
+
+
+# Predator
+
+[They've just mowed down a football field's worth of jungle shooting at the
+  Predator; all they find is a few drops of glow-in-the-dark alien blood.]
+  
+Dutch:  If it bleeds, we can kill it.
+ 
+Dutch:  I'll be back!
+
+
+# Prick Up Your Ears
+
+Joe Orton:  I always wanted to be an orphan.  I could have, if it wasn't for
+  my parents.
+
+
+# Princess Bride, The
+
+[NOTE:  The whole script is more or less quotable.  To avoid having the
+  whole script here I consider this entry full]
+
+[The Grandson, interrupting the story in a kissing-scene]
+The Grandson:  Hold it, hold it!  What is this?  Are you trying to trick me?
+  Where's the sports?  Is this a kissing-book???
+
+Vizzini:  A word, my lady.  We are but poor, lost circus performers.  Is
+  there a village nearby?
+Buttercup:  There is nothing nearby...  Not for miles.
+Vizzini:  Then there will be no one to hear you scream!
+
+Inigo Montoya:  That Vizzini, he can *fuss*.
+Fezzik:  Fuss, fuss...  I think he like to scream at *us*.
+Inigo Montoya:  Probably he means no *harm*.
+Fezzik:  He's really very short on *charm*.
+Inigo Montoya:  You have a great gift for rhyme.
+Fezzik:  Yes, yes, some of the time.
+Vizzini:  Enough of that!
+Inigo Montoya:  Fezzik, are there rocks ahead?
+Fezzik:  If there are, we all be dead!
+Vizzini:  No more rhymes now, I mean it!
+Fezzik:  Anybody want a peanut?
+Vizzini:  DYEEAAHHHHHH!!
+
+[Vizzini has just cut the rope The Dread Pirate Roberts is climbing up]
+Vizzini:  HE DIDN'T FALL?  INCONCEIVABLE!
+Inigo Montoya:  You keep using that word.  I do not think it means what you
+  think it means.
+
+Inigo Montoya:  I donna suppose you coulda speed things up??
+Westley:  If you're in such a hurry, you could lower a rope or a tree branch
+  or find something useful to do.
+Inigo Montoya:  I could do that.  I have some rope up here, but I do not
+  think you would accept my help, since I am only only waiting around to
+  kill you.
+Westley:  That does put a damper on our relationship.
+
+Inigo Montoya:  I do not mean to pry, but you don't by any chance happen to
+  have six fingers on your right hand?
+Westley:  Do you always begin conversations this way?
+
+Inigo Montoya:  You seem a decent fellow, I hate to kill you.
+Westley:  You seem a decent fellow, I hate to die.
+
+Westley:  You are amazing.
+Inigo Montoya:  Well I ought to be, after twenty years.
+
+Inigo Montoya:  You are wonderful.
+Westley:  I've worked hard to become so.
+
+Inigo Montoya:  Who are you?
+Westley:  Noone of consequence.
+Inigo Montoya:  I must know...
+Westley:  Get used to disappointment.
+Inigo Montoya:  'kay.
+
+Vizzini:  Now, a clever man would put the poison into his own goblet,
+  because he would know that only a great fool would reach for what he was
+  given.  I am not a great fool, so I can clearly not choose the wine in
+  front of you.  But you must have known I was not a great fool, you would
+  have counted on it, so I can clearly not choose the wine in front of
+  me...
+
+Vizzini: You only think I guessed wrong -- that's what's so funny!  I
+  switched glasses when your back was turned!  Ha-ha, you fool!  You fell
+  victim to one of the classic blunders, the most famous of which is "Never
+  get involved in a land war in Asia", but only slightly less famous is
+  this:  "Never go in against a Sicilian, when *death* is on the line!".
+  Hahahahahah!
+[Vizzini falls over dead]
+
+Buttercup:  You mock my pain!
+Westley:  Life is pain!  Anyone who says different is trying to sell you
+  something.
+
+Buttercup:  We'll never survive!
+Westley:  Nonsense!  you're only saying that because noone ever has...
+
+Prince Humperdinck:  Surrender!
+Westley:  You mean you wish to surrender to me?  Very well, I accept...
+
+Count Rugen:  Get some rest.  If you haven't got your health, you haven't
+  got anything.
+
+Inigo Montoya:  Are you the Miracle Max who worked for the king all those
+  years?
+Miracle Max:  The King's stinking son fired me, and thank you so much for
+  bringing up such a painful subject.  While you're at it, why don't you
+  give me a nice paper cut and pour lemon juice on it?  We're closed!
+
+Miracle Max:  Get back, witch!
+Valerie:  I'm not a witch, I'm your wife!  And after what you just said, I'm
+  not even sure I want to be that any more!
+
+Westley:  Give us the gate key.
+Yellin:  I have no gate key.
+Inigo Montoya:  Fezzik, tear his arms off.
+Yellin:  Oh, you mean *this* gate key.
+
+Inigo Montoya:  Hello.  My name is Inigo Montoya.  You killed my father.
+  Prepare to die.
+
+[Repeated line, including the last]
+The Grandfather:  As you wish.
+
+
+# Prizzi's Honor
+
+Charley Partana:  What kind of a person wouldn't catch a baby.
+Mrs. Partana:  He wasn't paid to protect the baby.
+
+
+# Professionals, The
+
+[Last lines]
+J.W. Grant:  You bastard.
+Rico:  Yes sir.  In my case an accident of birth.  But you...  You're a
+  self-made man.
+
+
+# Psycho
+
+Norman Bates:  I think I must have one of those faces you can't help
+  believing.
+
+Norman Bates:  She just goes a little mad sometimes.  We all go a little mad
+  sometimes.  Haven't you?
+
+Norman Bates:  I'm not capable of being fooled!  Not even by a woman.
+
+Norman Bates:  Uh-uh, Mother-m-mother, uh, what is the phrase?  She isn't
+  quite herself today.
+
+Norman Bates:  She might have fooled me, but she didn't fool my mother.
+
+Norman Bates:  Well, a son is a poor substitute for a lover.
+
+Norman Bates:  She's as harmless as one of those stuffed birds.
+
+Norman Bates:  A boy's best friend is his mother.
+
+
+# Pump Up the Volume
+
+Mark Hunter:  Feeling screwed up at a screwed up time in a screwed up place
+  does not necessarily make you screwed up.
+
+Hard Harry:  Sometimes being a teenager is worse than being dead.
+ 
+Marla Hunter:  We think you should see a psychiatrist.
+Mark Hunter:  Is it that obvious?
+ 
+
+# Raiders of the Lost Ark
+
+Jock:  C'mon, show a little backbone, will ya?
+
+Indiana Jones:  It's not the years honey, it's the mileage.
+
+[Army Intelligence officer describing Indiana Jones]
+Officer:  Professor of Archeology, expert on the occult, and how does one
+  say it?  Obtainer of rare antiquities.
+
+Indiana Jones:  You want to talk to God?  Let's go see him together, I've
+  got nothing better to do!
+
+Rene Belloq:  You and I are very much alike.  Archeology is our religion,
+  yet we have both fallen from the pure faith.  Our methods have not
+  differed as much as you pretend.  I am but a shadowy reflection of you.
+  It would take only a nudge to make you like me.  To push you out of the
+  light.
+Indiana Jones:  Now you're getting nasty.
+
+Sallah:  Indy, why does the floor move?
+Indiana Jones:  Snakes ... why did it hafta be snakes?
+Sallah:  Asps ... very dangerous.  You go first.
+
+Indiana Jones:  This site also demonstrates one of the great dangers of
+  archeology, not to life and limb, although that does sometimes take place,
+  I'm talking about folklore.
+
+
+# Rambling Rose
+
+Rose:  I am only a human being person!
+
+Daddy:  Put your damn tit back in your dress ... replace that tit!
+
+
+# Raw Deal (1986)
+
+Kaminski:  You should not drink and bake!
+
+
+# Re-Animator
+
+Herbert West:  Who's going to believe a talking head?  Get a job in a
+  sideshow.
+
+[Visiting the morgue]
+Dan Cain:  What if we get caught?
+Herbert West:  What'll they do?  Embalm us?
+
+[Re-re-animating the dead cat in the basement]
+Herbert West:  Don't expect it to tango; it has a broken back.
+
+Herbert West:  I must say, Dr. Hill, I'm VERY disappointed in you.  You
+  steal the secret of life and death, and here you are trysting with a
+  bubble-headed coed.  You're not even a second-rate scientist!
+
+
+# Real Genius
+
+Old Lady:  Tell me, what's Einstein really like?
+Professor Hathaway:  Dead.
+
+Chris Knight:  This?  This is ice.  This is what happens to water when it
+  gets too cold.  This?  This is Kent.  This is what happens to people when
+  they get too sexually frustrated.
+
+[Mitch Taylor speaking through the microphone so that Kent hears voices in
+  his head]
+Mitch Taylor:  And from now on, stop playing with yourself!
+Kent:  It is God!
+
+Mitch Taylor:  The weirdest thing just happened to me.
+Chris Knight:  Was it a dream where you were standing in sort of sun-god
+  robes on top of a pyramid, and there were hundreds of naked women
+  screaming and throwing little pickles at you?
+Mitch Taylor:  No...
+Chris Knight:  Why, am I the only one who has that dream?
+
+Chris Knight:  If you think that by threatening me you can get me to do what
+  you want...  Well, that's where you're right.  But -- and I am only saying
+  that because I care -- there's a lot of decaffeinated brands on the market
+  that are just as tasty as the real thing.
+
+Chris Knight:  Would you be prepared if gravity reversed itself?
+
+Professor Hathaway:  What are you looking at?  You're laborers; you should
+  be laboring.  That's what you get for not having an education.
+
+Professor Hathaway:  Mitch, will you miss your friends?
+Mitch Taylor:  Uh, no sir, I think I intimidated most of them.
+
+[Chris Knight is trying to hit on Cynthia, a beautiful woman he finds in
+  Professor Hathaway's house]
+Chris Knight:  So, if there's anything I can do for you, or, more to the
+  point, to you, you just let me know.
+Cynthia:  Can you hammer a six-inch spike through a board with your penis?
+Chris Knight:  Not right now.
+Cynthia:  A girl's gotta have her standards.
+[She walks out]
+
+Kent:  You're all a bunch of degenerates!
+Chris Knight:  Oh, really?  Well, what about that time I found you naked
+  with that bowl of jello?
+Kent:  You did not!
+Chris Knight:  This is true.
+Kent:  Yeah, well I was hot and I was hungry!
+
+Mitch Taylor:  Did you know there's a guy living in our closet?
+Chris Knight:  You've seen him too?
+Mitch Taylor:  Who is he?
+Chris Knight:  Hollyfeld.
+Mitch Taylor:  Why does he keep going into our closet?
+Chris Knight:  Why do you keep going into our closet?
+Mitch Taylor:  To get my clothes - but that's not why he goes in there!
+Chris Knight:  Of course not, he's twice your size - your clothes would
+  never fit him!
+Mitch Taylor:  Yeah...
+Chris Knight:  Think before you ask these questions, Mitch!  Twenty points
+  higher than me?  Thinks a big guy like that can wear his clothes?
+
+Chris Knight:  Self-realization.  I was thinking of the immortal words of
+  Socrates, when he said, "I drank what?"
+
+# Real McCoy, The
+
+[J.T. Barker comes out of the bank and is questioned what he was doing in
+  there.  He said he was closing up his account]
+Bad Guy:  What the hell are you gonna do with a 152 dollars?  We're taking
+  18 God damn million dollars out of here on thursday!
+J.T. Barker:  I know that.  I just don't wanna split *my* 152 dollars 4
+  ways...
+
+[Karen McCoy tries to fire the gun in a gunfight]
+Karen McCoy:  You didn't load the gun?
+J.T. Barker:  You told me to buy it, not to load it.
+
+J.T. Barker:  Do you think that jerk Roy do a better job raising your boy
+  than you?
+Karen McCoy:  At least Roy is his father.  At least he has a chance of a
+  normal life with him...
+J.T. Barker:  Normal???  What's not normal about getting on an airplane with
+  your mam and go down to Rio with 3 million bucks?
+
+J.T. Barker:  How many of these creeps have you got in your life?
+
+
+# Reality Bites
+
+Lelaina Pierce:  So, uh, what religion are you?
+Michael Grates:  I'm kind of a non-practicing Jew.
+Lelaina Pierce:  That's okay. I'm a non-practicing virgin.
+
+Vickie Miner:  And I think about dying of AIDS all the time. I even dream
+  about it.  Only in my dreams, I'm not me:  I'm a character on "Melrose
+  Place".  I'm the HIV/AIDS character.  I move into the building and teach
+  everyone that it's okay to be close to me.  And then I die, and everyone
+  shows up at my funeral, and they're all wearing halter tops and chokers.
+[Vickie Miner starts to cry]
+Lelaina Pierce:  Vicki, you do not have AIDS and you are *not* alone.
+  Besides...  "Melrose Place" is a really good show!
+
+
+# Rear Window
+
+Stella:  A murderer would never parade his crime in front of an open
+  window.
+
+
+# Rebecca
+
+Maxim De Winter:  I knew where Rebecca's body was, lying on that cabin floor
+  at the bottom of the sea.
+Mrs. de Winter:  How did you know, Max?
+Maxim De Winter:  Because I put it there.
+
+
+# Remains of the Day, The
+
+James Stevens:  I don't believe a man can consider himself fully content
+  until he has done all he can to be of service to his employer.
+
+
+# Remo Williams: The Adventure Begins...
+
+Chiun:  Watches are a confidence trick invented by the Swiss.
+
+Chiun:  It would be better for you to eat this can than what's in it.
+
+Remo Williams:  There are times when I really like you.
+Chiun:  'Course!  I am Chiun!
+Remo Williams:  ... and there are times when I want to kill you.
+Chiun:  Good!  We will practice that after dinner...
+
+Remo Williams:  You know, Chiun, you can be a real pain in the ass!
+Chiun:  That is because it is the shortest route to your brain.
+
+
+# Repo Man
+
+Bud:  A repo man spends his life getting into tense situations.
+
+Miller:  The life of a repo man is always intense.
+
+Bud:  Normal fucking people -- I hate 'em!
+
+
+# Reservoir Dogs
+
+[Mr. White and Mr. Pink are washing up after the robbery went sour, trying
+  to figure out what happened]
+Mr. Pink:  You kill anybody?
+Mr. White:  Couple of cops.
+Mr. Pink:  No real people?
+Mr. White:  Just cops.
+
+Mr. Blonde:  Gee, that was really exciting.  I bet you're a big Lee Marvin
+  fan, aren't you?
+
+
+# Return of Swamp Thing, The
+
+Swamp Thing:  Me?  Your Boyfriend?
+Abby Arcane:  Why not?
+Swamp Thing:  You said it yourself:  I'm a plant.
+Abby Arcane:  That's ok, I'm a vegetarian.
+
+
+# Return of the Jedi
+
+Han Solo:  I think my eyes are getting better.  Instead of a big dark blur
+  it's a big light blur.
+Luke Skywalker:  There's nothing to see.  I used to live here you know.
+Han Solo:  You gonna die here you know.  Convenient!
+
+C3PO:  I do believe they think I am some kind of god.
+Han Solo:  Well, why don't you use your divine influence and get us out of
+  this?
+C3PO:  I beg your pardon General Solo, but that just wouldn't be proper.
+Han Solo:  Proper???
+C3PO:  It's against my programming to impersonate a deity.
+
+
+# Revenge of the Nerds
+
+Lewis Scholnic:  Cause all jocks ever think about is sports, all we ever
+  think about is sex.
+
+
+# Revenge of the Pink Panther
+
+[Philippe Douvier just set up a trap for Chief Inspector Jacques Clouseau
+  and "invited" him to it with a phone call]
+Simone Le Gree:  That's so obvious, he's bound to think it's a trap...
+Philippe Douvier:  Yes, or it's so obvious that he's bound to think it can't
+  be a trap.
+Cato:  It's so obvious, it's bound to be a trap.
+Jacques Clouseau:  That is why you'll never be a great detective, Cato.
+  It's so obvious that it could not possibly be a trap.
+
+Jacques Clouseau:  Now, this time *I'm* going to stand on *your* shoulders!
+Cato:  What good will that do?
+Jacques Clouseau:  Because I'm taller than you are, you fool!
+
+
+# Ride the High Country
+
+Steve Judd:  All I want is to enter my house justified.
+
+
+# Rising Sun
+
+Web Smith:  Where are you from, "sempai"?  Scotland Yard?
+John Connor:  Scotland Backyard.
+
+
+# Risky Business (1983)
+
+[Joel Goodson's parents are away for the weekend]
+Miles:  Joel, you wanta know something?  Every now and then say: "What the
+  fuck!".  "What the fuck!" gives you freedom.  Freedom brings opportunity.
+  Opportunity makes your future.
+
+Miles:  If you can't say it, you can't do it.
+
+[Lana is the prostitute Joel has hired using an alias]
+Lana:  Are you ready for me ... Ralph?
+
+Joel Goodman:  I deal in human fulfillment.  I grossed over $8000 in one
+  night.  Time of your life eh kid?
+
+Joel's Mother:  Please Joel, do what they say, just get off the
+  baby-sitter.
+
+
+# Robin and Marian
+
+[Robin Hood comes back from the Crusades]
+Maid Marian:  You never wrote.
+Robin Hood:  I don't know how.
+
+
+# Robin Hood: Prince of Thieves
+
+Azeem:  The hospitality in this country is as warm as the weather.
+
+Sheriff of Nottingham:  Locksley, I'm gonna cut your heart out with a
+  spoon.
+
+Sheriff of Nottingham:  ...cancel the kitchen scraps for lepers and orphans,
+  no more merciful beheadings...  And call off Christmas.
+
+Sheriff of Nottingham to a wench:  You!  My room.  10:30 tonight.
+Sheriff of Nottingham to another wench:  You!  10:45...  And bring a
+  friend.
+
+[Talking about how many men that are about to be ambushed]
+Robin of Locksley:  How many?
+Azeem:  20.
+Robin of Locksley:  20?
+Bull further away:  How many?
+Robin of Locksley:  5!
+Robin of Locksley to Azeem:  He can't count anyway. 
+
+Friar Tuck:  This is grain, which any fool can eat, but for which the Lord
+  intended a more divine means of consumption.  Let us give praise to our
+  maker and glory to his bounty by learning about...  BEER!
+
+Mortianna:  ...recruit the beasts that share our god.
+Sheriff of Nottingham:  Animals?
+Mortianna:  From the North!
+Sheriff of Nottingham:  You mean..  CELTS!  They drink the blood of their
+  dead.
+Mortianna:  Yolk their strength.
+Sheriff of Nottingham:  Hired thugs...  Ahh brilliant.
+
+
+# Rocky (1976)
+
+Adrian:  Why do you wanta fight?
+Rocky Balboa:  Because I can't sing or dance.
+
+
+# Rocky Horror Picture Show, The
+
+Doctor Frank-N-Furter:  How do you do?  I see you've met my faithful
+  handyman.
+
+
+# Rope
+
+Brandon:  The good Americans usually die young on the battlefield, don't
+  they?  Well, the Davids of the world merely occupy space, which is why he
+  was the perfect victim for the perfect crime.
+
+Brandon:  We killed for the sake of danger and for the sake of killing.
+
+Brandon:  Nobody commits murder just for the experience of committing it.
+  Nobody except us.
+
+
+# Roxanne
+
+[Roxanne Kowalski is walking behind a hedge because she is nude]
+Roxanne Kowalski:  Nobody had a coat?
+C.D. Bayles:  You said you didn't want a coat...
+Roxanne Kowalski:  Why would I not want a coat?
+C.D. Bayles:  You said you didn't want a coat...
+Roxanne Kowalski:  I was being ironic.
+C.D. Bayles:  Oh, ironi!  Oh no no, we don't get that here.  See, people are
+  skiing topless while smoking dope, so ironi is not really a high
+  priority...  We haven't had any ironi here since about 83 when I was the
+  only practicioner of it.  Was nice, but I was tired of being stared at.
+
+C.D. Bayles:  Well, every job has its perfect tool...  Eh, this lock doesn't
+  accept Master Card.
+
+C.D. Bayles:  Fashionable:  You know you could de-emphasize your nose if you
+  wore something larger...  like Wyoming!  
+
+C.D. Bayles:  Polite:  Would you mind not bobbing your head; the orchestra
+  keeps changing the tempo.
+
+Dixie:  Want anything?  A drink?
+C.D. Bayles:  Yeah, but if I ask for another one, give it to me.
+
+
+# Running Man, The (1987)
+
+Ben Richards:  I'm not into politics.  I'm into survival.
+
+[Damon Killian is talking to the operator on the telephone]
+Damon Killian:  Hello, this is Killian.  Give me the Justice Department,
+  Entertainment Division.
+
+Ben Richards:  Now I'm gonna untie you, and then you're gonna get dressed,
+  and then you're gonna come with me.
+Amber:  Oh yeah?  But why should I?
+Ben Richards:  Because I'm gonna say "please"...
+[Arnold tears up the bench Amber is tied to from the floor it was bolted
+  to]
+Amber:  Well, why didn't you say so?
+
+Ben Richards:  Killian!  I'll be back!
+Damon Killian:  Only in a rerun.
+
+Damon Killian:  You bastard!  Drop dead!
+Ben Richards:  I don't do requests.
+
+
+# S.O.B.
+
+Miles, Sally:  I am going to show my boobies.  Are you here to see my
+  boobies?
+
+
+# Saint of Fort Washington, The
+
+(Danny Glover):  Maybe you ain't schizofrenic.  Maybe you're just insane.
+
+
+# Scent of a Woman (1992)
+
+Colonel Roy Slade:  Don't shrug you imbecile, I'm blind!  Save the body
+  language for the bimbae.
+
+
+# School for Scoundrels
+
+[last line. Mr S. Potter to the camera]
+Mr S. Potter:  I do apologize ladies and gentlemen, events do seem to have
+  taken a most unfortunate turn.  This sort of calamity we cannot always
+  guard against, even amongst our best students.  You see once, once
+  sincerity rears its ugly head, well lifemanship is powerless... [an
+  orchestra starts to play] stop that music...  orchestra!...  orchestra...
+  stop that infernal din.  Please, no, I...  look at me, I must get back to
+  Yeovil.
+
+
+# Scrooged
+
+Frank "Lumpy" Cross:  I cant get these antlers attached to the mice.
+Props man:  Try staples.
+
+
+# Shadow of a Doubt (1993)
+
+Charlie Oakley:  The whole world is a joke to me.
+
+
+# Shining, The
+
+Jack Torrance:  Wendy, darling light of my life, I'm not going to hurt you.
+  I'm gonna kill you.
+
+
+# Shopping
+
+Billy:  I know my rights. I watch L.A.Law.
+Police Inspector:  Is that supposed to be funny?
+Billy:  No, more like comedy-drama.
+
+Billy to Jo:  Oh shit, the police brought a f***ing transit van to a car
+  chase.
+
+Billy to Jo:  This is the 90s. Sex isn't safe any more.
+
+
+# Shot in the Dark, A
+
+Inspector Jacques Clouseau:  Facts, Hercule, ... facts!  Nothing matters but
+  the facts.  Without them the science of criminal investigation is nothing
+  more than a guessing game.
+
+Inspector Jacques Clouseau:  You are forgetting the most important fact ...
+  motive.
+
+Hercule LaJoy:  He beat her.
+Inspector Jacques Clouseau:  He was Spanish!
+Hercule LaJoy:  He tore her dress off.
+Inspector Jacques Clouseau:  Oh, don't be ridiculous ....  Would you kill
+  someone who tore your dress off?
+
+Maria Gambrelli:  Tell me ... why do so many men smoke afterwards?  No
+  wonder tobacco companies get rich.
+
+[Accusing a suspect, millionaire Benjamin Ballon]
+Inspector Jacques Clouseau:  And I submit, Inspector Ballon, that you
+  arrived home, found Miguel with Maria Gambrelli, and killed him in a writ
+  of fealous jage!
+
+Commissioner Charles Dreyfus:  Give me ten men like Clouseau and I could
+  destroy the world.
+
+[Arriving at Camp Sunshine]
+Inspector Jacques Clouseau:  I am here on official business and I am looking
+  for someone in the recreation area.
+{@Turk Thrust: Not unless you take off your clothes ...
+Inspector Jacques Clouseau:  You, sir, are under arrest.
+{@Turk Thrust:  Arrest?  What for?
+Inspector Jacques Clouseau:  For making lewd and suggestive remarks to an
+  official of the French government.
+{@Turk Thrust:  Lewd and suggestive remarks?
+Inspector Jacques Clouseau:  Also for indecent exposure ... doesn't anyone
+  wear any clothes around here?
+{@Turk Thrust:  No.
+Inspector Jacques Clouseau:  What!
+{@Turk Thrust:  This is a nudist colony.
+
+Inspector Jacques Clouseau:  There is something ... personal ... in this?
+Commissioner Charles Dreyfus:  Yes ... deeply personal ... I hate you ...
+  every little bit of you ....  Now get out!
+Inspector Jacques Clouseau:  You want me to leave?
+
+Inspector Jacques Clouseau:  Well ... that just goes to prove what I have
+  said all along.
+Commissioner Charles Dreyfus:  What you've said, Clouseau, qualifies you as
+  the greatest prophet since Custer said he was going to surround all those
+  Indians!
+
+Commissioner Charles Dreyfus:  What about the maid?
+Inspector Jacques Clouseau:  The maid?
+Commissioner Charles Dreyfus:  Was he jealous of her too?  He strangled
+  her.
+Inspector Jacques Clouseau:  It is possible that his intended victim was a
+  man and that he made a mistake.
+Commissioner Charles Dreyfus:  Mistake?  ... in a nudist camp?
+  
+
+# Silence of the Lambs, The
+
+Dr. Hannibal Lector:  A census taker once tried to test me...  I ate his
+  liver with some fava beans and a nice chianti.
+
+Dr. Hannibal Lector:  I do wish we could chat longer, but I'm having an old
+  friend for dinner.
+
+
+# Sixteen Candles
+
+Long Duk Dong:  No more yankie my wankie.  The Donger need food.
+
+Geek:  Can I borrow your underpants for 10 minutes?
+
+Grandmother:  And they are so perky.
+Samantha:  I can't believe my grandmother actually felt me up.
+
+
+# Sleeper
+
+[A 22nd century historian is showing Miles some artifacts from the late
+  twentieth century to get more info on them.  The last item is a videotape
+  of Howard Cosell describing a boxing match]
+Historian:  We weren't sure at first what to make of this, but we developed
+  a theory:  When people committed great crimes against the state, they were
+  forced to watch this.
+Miles Monroe:  Yes.  That's exactly what it was.
+
+
+# Sleepless in Seattle
+
+Jonah Baldwin:  Talk to her dad.  She's a doctor.
+Samuel Baldwin:  Of what?  Her first name could be Doctor...
+
+[The Taxi Driver takes Jonah to the Empire State Building]
+Taxi Driver:  There it is.  What are you gonna do when you get up there?
+  Spit off the top?
+
+
+# So I Married an Axe Murderer
+
+Charlie Mackenzie:  I think I'm dating Mrs. X!
+
+Harriet Michaels:  What do you look for in a girl on your date?
+Charlie Mackenzie:  I know everyone always say a sense of humour, but I
+  really have to go with breast size...
+
+Charlie Mackenzie:  Didn't i order the LARGE capuchino?
+
+Stuart Mackenzie:  Would ya look at the size of that kid's head!!!  It's the
+  size of a planetoid and it has it's own weather system!!!  Look's like an
+  orange on a toothpick!!!
+
+Stuart Mackenzie:  I think I've been a bit hard on the lad, he's going to
+  cry himself to bed tonight, on his HUGE pillow.
+
+Stuart Mackenzie:  Let's get Pissed!!!
+
+May Mackenzie:  You're a wee sexy little bastard, aren't ya!!!
+
+
+# Some Girls
+
+[After the telephone interrupts Michael and Gabriella's foreplay, Michael
+  starts talking to his penis]
+Michael:  I don't believe this.  Do you believe this?
+
+
+# Some Kind of Wonderful
+
+Keith Nelson:  You can't judge a book by its cover.
+Watts:  Yeah, but you can tell how much it's gonna cost.
+
+[In the lockerroom]
+Girl:  I've just never seen a girl wearing boys underpants before.
+Watts:  Have you ever seen a girl with a drumstick shoved up her nose?
+Girl:  Oh, is that some kind of a threat?
+Watts:  It's some kind of a warning.
+
+Keith Nelson:  I'm sorry.  I'm sorry I was so hard on you.
+Watts:  Me too.
+Keith Nellson:  You always hurt the ones you love.
+Watts:  So when are you beating the shit out of Amanda Jones?
+
+
+# Sorority Babes in the Slimeball Bowl-O-Rama
+
+Spider:  It's too bad we had to kill her.  I really liked the outfit she had
+  on.
+
+
+# Soul Man
+
+Mark Watson:  Mom!  Dad!  There's something I got to tell you...  I'm
+  black.
+
+
+# Spaceballs
+
+Dark Helmet:  I hope it's a long ceremony, 'cause it's gonna be a short
+  honeymoon.
+
+Barf:  I know we need the money, but...
+Lone Star:  Listen!  We're not just doing this for money...  We're doing it
+  for a SHIT LOAD of money!
+Barf:  Oh, you're right.  And when you're right, you're right.  And you -
+  you're always right.
+
+Dark Helmet:  What's the matter, Colonel Sandurz?  CHICKEN???
+
+[Colonel Sandurz, Dark Helmet and the Video Operator are watching
+  _Spaceballs_ (qv), the movie]
+Colonel Sandurz:  That's too early.  Prepare to fast-forward!
+Video Operator:  Preparing to fast-forward!
+Colonel Sandurz:  Fast-forward!
+Video Operator:  Fast-forwarding, Sir!
+
+Lone Star:  What the hell was that noise?
+Dot Matrix:  That was my virgin-alarm.  It's programmed to go off before you
+  do!
+
+President Skroob:  Why didn't anyone tell me my ass was so big???
+
+[After the self-destruction mechanism has been activated]
+President Skroob:  Sandurz, Sandurz.  You got to help me.  I don't know what
+  to do.  I can't make decisions.  I'm a president! 
+
+[When Lone Star and Barf stops on the outer space gas-station]
+Waitress:  Ready to order?
+Woman in Diner:  Yeah, we'll both have the lunafish.
+
+[See _Alien (1979)_ (qv)]
+Kane:  Oh no.  Not again!
+
+Yogurt:  And may the schwartz be with you!
+
+
+# Spellbound
+
+Dr. Alex Brulov:  Women make the best psychoanalysts until they fall in
+  love.  After that they make the best patients.
+
+
+# Spies Like Us
+
+[Emmett Fritz-Hume and Austin Millbarge are surrounded by Ninja warriors]
+Austin Millbarge:  Show some balls, man!
+Emmett Fritz-Hume:  I think it's too late to try and impress them.
+
+
+# Splitting Heirs
+
+Tommy Patel:  You don't have to worry about me, dear.  I'm "bi"-sexual.
+  Whenever I want to have sex, I have to buy it.
+
+Brittle:  Congratulations, Sir.
+Henry Martin:  Eh, you can kiss ass later, Brittle.
+Brittle:  Thank you, Sir.
+
+Butler:  Drunk again, sir?
+Henry Martin:  That's okay, butler.  So are we.
+
+Adoption Agent:  She insisted that you were adopted by a member of the
+  working class to save you from the curse of money.
+Tommy Patel:  How very thoughtful...
+
+Duchess Lucinda:  "Stop"?  You can't just arouse a woman and then yell
+  "stop", even if you are English...
+
+Police Officer:  We believe foul play was involved.
+Tommy Patel:  Surely you don't think I...
+Police Officer:  I don't think anything, sir.  I'm a police officer.
+
+[After the moose-head falls down from the wall over Henry Martin]
+Henry Martin:  Get me out of this moose!
+
+Shadgrind:  So many of you orphans.  Unwanted children all over the place.
+  People were sex-mad in the 60s, seemed to do it just for fun...  Weird.
+
+Kitty:  That's Henry's mother, the black sheep in the family.  She took so
+  many strokes in the 60s they called her the U.S. open.
+
+
+# Stage Fright (1950)
+
+Charlotte Inwood:  He was an abominable man.  Why do women marry abominable
+  men?
+
+
+# Stakeout
+
+[Reading the police profile on Maria McGuire]
+Bill Reimers:  And, the moment we've all been waiting for... 300 pounds.
+Chris Lecce:  Three hundred pounds??!?
+Bill Reimers:  I would imagine that's fully clothed.
+Chris Lecce:  Oh my God, she could be the house! I hate this job!
+
+[After watching the svelte Maria McGuire undress]
+Bill Reimers:  To protect and to serve.
+Chris Lecce:  Ooo, I love my job, I love it so much!
+Bill Reimers:  But I would appreciate it if you would not act like a walking
+  hard-on while we're on the job.
+Chris Lecce:  Succinctly put.
+
+
+# Stand by Me
+
+Vern Tessio:  One food for the rest of my life?  That's easy.  Cherry pez.
+  Cherry-flavored pez.  There's no doubt about it.
+
+Vern Tessio:  Mighty Mouse versus Superman?  That's a tough one.
+
+
+# Star Trek III: The Search for Spock
+
+Captain James Tiberius Kirk:  As we say back on Earth; c'est la vie...
+
+
+# Star Trek IV: The Voyage Home
+
+She:  So you're from outer space...
+Captain James Tiberius Kirk:  No, I'm from Iowa.  I only work in outer
+  space.
+
+
+# Star Trek VI: The Undiscovered Country
+
+Spock:  Mr. Scott, I understand you are experiencing difficulties with the
+  warp engines?
+Scott:  There's nothing wrong with the bloody
+Spock:  Mr. Scott, if the Enterprise responds to hails and returns to
+  Starbase, there is a good chance that we will never see Captain Kirk or
+  Doctor McCoy alive again.
+Scott:  Could take weeks, sir...
+
+ 
+# Star Wars
+
+Princess Leia:  Help me Obi-wan Kenobi.  You're my only hope.
+
+Han Solo:  You've never heard of the Millennium Falcon?
+Luke Skywalker:  What a piece of junk!
+
+Darth Vader:  I find your lack of faith disturbing.
+Darth Vader:  Don't be so proud of this technological terror you've
+  constructed.  The ability to destroy a planet is insignificant next to the
+  power of the force.
+
+C3PO:  Oh listen to them R2.  They're dying.  Oh curse this metal body!  I
+  wasn't fast enough.
+
+Darth Vader:  I sense something.  A presence I haven't felt since...
+
+Obi-wan Kenobi:  You must learn the ways of the force if you're to come with
+  me to Alderaan.
+
+C3PO:  Don't call me a mindless philosopher, you overweight glob of grease!
+
+C3PO:  We're doomed!
+
+Han Solo:  Wonderful girl!  Either I'm going to kill her or I'm beginning to
+  like her.
+
+Obi-wan:  Who's the more foolish?  The fool or the fool who follows him?
+
+Han Solo:  Travelling through hyperspace ain't like dusting crops, boy.
+
+Leia:  Aren't you a little short for a stormtrooper?
+
+Han Solo:  Get in there you big furry oaf!  I don't care what you smell!
+
+Han:  This isn't going to work.
+Luke:  Why didn't you say so before?
+Han:  I did say so before!
+
+Darth Vader:  The Force is strong with this one.
+
+Darth Vader:  Commander, tear this ship appart until you've found those
+  plans.  And bring me the passengers, I want them alive!
+
+Princess Leia:  Darth Vader, only you could be so bold.
+
+Luke Skywalker:  But who would wanna slotter Jawas?
+
+Han Solo:  Over my dead body!
+Greedo:  That's the idea.  I've been looking forward to this for a long
+  time.
+Han Solo shoots Greedo under the table:  Yes, I BET you have.
+
+[R2D2 and Chewbacca are playing the holographic game on Millennium Falcon]
+Chewbacca:  Aaaaaaaaaaaaaaaarrrgh
+C3PO:  He made a fair move.  Screaming about it can't help it.
+Han Solo:  Give it to him.  It's not wise to upset a wookie.
+C3PO:  But Sir, nobody worries about upsetting a droid.
+Han Solo:  That's because droids don't pull peoples arms out of their
+  sockets if they lose.  Wookies are known to do that.
+C3PO:  I see your point, Sir.  I suggest a new strategy, R2...  Let the
+  wookie win.
+
+Han Solo:  Not a bad bit of rescuing.  You know, sometimes I amaze even
+  myself.
+Princess Leia Organa:  That doesn't seem too hard.
+
+Ben (Obi-Wan) Kenobi:  May the force be with you!
+
+
+# Strangers on a Train
+
+[First Line]
+Bruno Anthony:  I beg your pardon, but aren't you Guy Haines?
+
+Bruno Anthony:  Don't worry, I'm not going to shoot you, Mr. Haines.  It
+  might disturb mother.
+
+Bruno Anthony:  I have a theory that you should do everything before you
+  die.
+
+Guy Haines:  I may be old-fashioned, but I thought murder was against the
+  law.
+
+Bruno Anthony:  Everyone has somebody that they want to put out of the way.
+  Oh now, surely Madam, you're not going to tell me that there hasn't been a
+  time that you didn't want to dispose of someone.  Your husband, for
+  instance.
+
+
+# Stripes
+
+General Barnicke:  Where is your drill sergeant, men?
+John Winger:  Blown up sir.
+
+John Winger:  It's not the speed that's important, I just wish I hadn't
+  drunk all that cough syrup this morning.
+
+
+# Sullivan's Travels
+
+The Girl:  I liked you better as a bum.
+John Lloyd Sullivan:  I can't help what kind of people you like.
+
+John Lloyd Sullivan:  There's a lot to be said for making people laugh.  Did
+  you know that that's all some people have?
+
+
+# Sunset Boulevard
+
+Norma Desmond:  We didn't need dialogue.  We had *faces*.
+
+
+# Survivors, The
+
+Donald Quinelle:  What kind of man gives cigarettes to trees.
+
+
+# Suspicion (1941)
+
+[First line]
+Johnnie Aysgarth:  Oh, I beg your pardon.  Was that your leg?  I had no idea
+  we were going into a tunnel.  I thought the compartment was empty.
+
+Johnnie Aysgarth:  If you're going to kill someone, do it simply.
+
+Isobel Sedbusk:  I always think of my murderers as my heroes.
+
+
+# Taxi Driver
+
+Travis Bickle:  You talkin' to me?
+
+
+# Ten Commandments, The (1956)
+
+Nefertiti:  Oh Moses, Moses, you adorable, stubborn fool!
+
+
+# Tequila Sunrise
+
+Carlos:  Don't worry, buddy.  I won't kill her unless you approve.
+McKussic:  And if I don't approve?
+Carlos:  Then we'll talk until you do...
+
+
+# Terminator 2: Judgment Day
+
+The Terminator:  I need your clothes, boots and your motorcycle!
+Cigar Biker:  You forgot to say please...
+
+Dr. Silberman:  I'm sure it feels very real to you.
+Sarah Connor:  On August 29th 1997 it's gonna feel pretty fucking real to
+  you too.  Anybody not wearing 2 million sunblock is gonna have a real bad
+  day...  Get it?
+
+John Connor to The Terminator:  Now don't take this the wrong way, but
+  you're a terminator, right?
+
+John Connor:  You're not here to kill me - I figured out that for myself.
+  So what's the deal?
+Terminator:  My mission is to protect you.
+John Connor:  Yeah?  Who sent you?
+Terminator:  You did.  35 years from now you reprogrammed me to be your
+  protector here - in this time.
+John Connor:  This is deep...
+
+[John connor is by a telephone booth, wanting to call home]
+John Connor to Terminator:  You got a quarter?
+
+John Connor:  Did you call *moi* a dipshit?
+
+[Lewis, the Guard buys a cup of coffee, just before he is introduced to the
+  T-1000 (As Lewis)]
+Lewis, the Guard:  Hey, I got a full house!
+Gwen:  That's good Lewis.
+Lewis, the Guard:  Must be my lucky day...
+
+[Terminator have promised not to kill anybody, but to get into the hospital
+  he shoots the guard in his feet]
+Terminator:  He'll live.
+
+Dr. Silbermann:  You broke my arm!
+Sarah Connor:  There's 215 bones in the human body.  That's one.
+
+[Just like in _The Terminator_ (qv)]
+The Terminator:  Come with me if you want to live!
+
+Sarah Connor to The Terminator:  So, what's your story?
+
+The Terminator:  Stay here, I'll be back!
+
+T-1000:  Say...  That's a nice bike...
+
+The Terminator:  Hasta la vista, baby!
+
+
+
+# Terminator, The
+
+Nat to The Terminator:  Wow!  Don't make me bust you up, man!
+
+[Also in _Terminator 2: Judgment Day_ (qv)]
+Kyle Reese:  Come with me if you want to live!
+
+Kyle Reese:  Cyborgs don't feel pain...  I do.  Don't do that again.
+
+Dr. Silbermann:  How are you supposed to get back?
+Kyle Reese:  I can't.  Nobody gets home.  Nobody else comes through.  It's
+  just him - and me.
+
+The Terminator:  I'll be back!
+
+[The Terminator is choosing from a list of programmed responses to get rid
+  of someone knocking on his door]
+Terminator:  Fuck you, asshole.
+
+
+# Terror of Mechagodzilla
+
+She:  Please kill me...  Mecha-Godzilla's brain is installed in my stomach.
+He:  You may be a cyborg, but I still love you...
+
+
+# Thelma & Louise
+
+J.D. Tech:  You got an amazing story to tell your friends, if not you got a
+  tag on your toe.
+
+J.D. Tech:  Well now, I've always believed if done properly, armed robbery
+  doesn't have to be a totally unpleasant experience.
+
+Louise Sawyer:  You get what you settle for.
+
+
+# They Came from Within
+
+Forsythe:  He tells me that even old flesh is erotic flesh, that disease is
+  the love of two alien kinds of creatures for each other, that even dying
+  is an act of eroticism.
+
+
+# They Died with Their Boots On
+
+George Armstrong Custer:  We ride ... to hell.  Or to glory.  It depends on
+  your point of view.
+
+
+# They Live
+
+Nada:  I'm here to chew bubble gum and kick ass, and I'm all out of bubble
+  gum.
+
+
+# Thing From Another World, The
+
+[Last line]
+Reporter:  Watch the skies!  Keep watching the skies!
+
+
+# Thing, The (1982)
+
+Clark:  I dunno what the hell's in there, but it's big and pissed off
+  whatever it is.
+
+[Last line]
+MacReady:  Why don't we just wait here for a while ... see what happens.
+
+
+# Third Man, The
+
+Harry Lime:  In Italy for 30 years under the Borgias they had warfare,
+  terror, murder, and bloodshed, but they produced Michelangelo, Leonardo da
+  Vinci, and the Renaissance.  In Switzerland they had brotherly love --
+  they had 500 years of democracy and peace, and what did that produce?  The
+  cuckoo clock.
+
+
+# This Is Spinal Tap
+
+David St. Hubbins:  I'd probably feel a lot worse if I wasn't under such
+  heavy sedation.
+
+David St. Hubbins:  Dozens of people spontaneously combust each year - it's
+  just not widely reported.
+
+[Nigel Tufnel is proudly showing off his speakers]
+Nigel Tufnel:  These go to 11.
+
+Marty DiBergi:  Is it any louder?
+Nigel Tufnel:  Well, its one louder isn't it?  Its not ten.
+
+[Nigel Tufnel is showing Marty DiBergi one of his favorite guitars]
+Nigel Tufnel:  The sustain, listen to it.
+Marty DiBergi:  I don't hear anything.
+Nigel Tufnel:  Well you would though, if it were playing.
+
+
+# Three Amigos!
+
+[Dusty Bottoms and Lucky Day thinks Ned Nederlander is saying "mail" plane]
+Dusty Bottoms:  What is it doing here?
+Ned Nederlander:  I think it's a male plane.
+Dusty Bottoms:  How can you tell?
+Ned Nederlander:  Didn't you notice it's little balls?
+
+
+# To Catch a Thief
+
+Frances Stevens:  I've never caught a jewel thief before.  It's very
+  stimulating.
+
+John Robie:  You don't have to spend every day of your life proving your
+  honesty, but I do.
+
+[Last line]
+Frances Stevens:  So this is where you live?  Oh, Mother will love it up
+  here!
+
+
+# Tombstone
+
+[Doc Holliday is drunkenly playing a somber piece on the saloon piano, and a
+  drunken Cowboy is harassing him to play something by Stephen Foster]
+Cowboy:  Stephen Foster.  "Oh, Susannah", "Camptown Races".  Stephen
+  stinking Foster.
+Doc Holliday:  Ah, yes.  Well, this happens to be a nocturne.
+Cowboy:  A which?
+Doc Holliday:  You know, Frederic fucking Chopin.
+ 
+Cowboy:  Why, it's the drunk piano player.  You're so drunk, you can't hit
+  nothin'.  In fact, you're probably seeing double.
+[Cowboy draws a knife, and Doc Holliday takes out a second gun]
+Doc Holliday:  I have two guns, one for each of ya.
+ 
+Doc Holliday:  It seems poker's just not your game, Ike.  I know...  Let's
+  have a spelling contest!  [cracks up laughing]
+
+Wyatt Earp:  Are you gonna do something, or just stand there and bleed?
+
+Wyatt Earp:  You tell him I'm coming!  And hell's coming with me!
+
+Doc Holliday to Johnny Ringo:  Why Johnny Ringo, you look like someone just
+  walked over your grave.
+
+John Ringo:  I want your blood.  And I want your soul.  And I want them both
+  right now!
+
+Doc Holliday:  I'm your huckleberry.
+
+[Wyatt Earp has just found out that the devil in a play was performed by a
+  woman]
+Wyatt Earp:  Well, I'll be damned.
+Doc Holliday:  You may indeed, if you get lucky.
+ 
+Doc Holliday:  I have not yet begun to defile myself.
+ 
+Doc Holliday:  It's true, you are a good woman.  Then again, you may be the
+  antichrist.
+ 
+
+# Tootsie
+
+[Michael Dorsey as Dorothy Michaels]
+Dorothy Michaels:  What kind of mother would I be if I didn't give my girls
+  tits ... tips?
+
+
+# Top Gun (1986)
+
+Maverick:  She's lost that loving feeling.
+Goose:  No, no she hasn't.
+Maverick:  Oh, yes she has.
+Goose:  I hate it when she does that.
+
+
+# Top Secret! (1984)
+
+German Officer on the telephone:  ...well, let me know if his condition
+  improves.
+German Officer to the people in the room:  ...he's dead.
+
+
+# Total Recall
+
+Douglas Quaid:  I'll be back!
+
+Douglas Quaid after shooting his "wife":  Consider that a divorce!
+
+
+# Treasure of the Sierra Madre, The
+
+[This is the origination of this quote]
+Gold Hat:  Badges?  We ain't got no badges.  We don't need no badges.  I
+  don't have to show you any stinking badges.
+
+
+# Tremors
+
+Valentine McKee:  You see, we plan ahead, that way we don't do anything
+  right now.
+
+Earl Bass:  Damn it Valentine, you never plan ahead, you never take the long
+  view, I mean here it is Monday and I'm already thinking of Wednesday....
+  It is Monday right?
+
+[Earl Bass and Valentine McKee are about to meet Rhonda LeBeck.  Valentine
+  McKee pictures her]
+Valentine McKee:  You will have; long blonde hair, big green eyes, world
+  class breasts, ass that won't quit and legs that go all the way up.
+
+[Earl Bass and Valentine McKee have just been chased by a 30 feet long
+  monster]
+Rhonda LeBeck:  Did you notice anything weird a minute ago?
+
+Valentine McKee:  This valley is just one long smorgasbord.
+
+Earl Bass:  Damn it and listen to me, I'm older and I'm wiser.
+Valentine McKee:  Yeah, well you're half right.
+
+[Burt Gummer looks at the monster fought off with his "toys"]
+Burt Gummer:  Guess you broke into the wrong God damn rec room, didn't ya!
+
+[Burt Gummer looks at his bomb shelter for perhaps the last time]
+Burt Gummer:  Food for five years, a thousand gallons of gas, air
+  filtration, water filtration, geiger counter.  Bomb shelter!
+  Underground...  God damn monsters.
+
+
+# Trouble with Harry, The
+
+[Upon finding the Captain dragging a body along the ground]
+Miss Graveley:  What seems to be the trouble, Captain?
+
+[The Captain and Miss Graveley have afternoon tea together]
+Captain:  A real handsome man's cup.
+Miss Graveley:  It's been in the family for years.  My father always used it
+  ... until he died.
+Captain:  I trust he died peacefully.  Slipped away in the night?
+Miss Graveley:  He was caught in a threshing machine.
+
+[Referring to Harry Worp]
+Jennifer Rogers:  He looked exactly the same when he was alive, only he was
+  vertical.
+
+Captain:  Marriage is a good way to spend the winter.
+
+
+# True Lies
+
+Mrs. Tasker:  Have you ever killed anyone?
+Harry Tasker:  Yeah, but they were all bad.
+
+[While launching a Harrier missile, from which Salim Abu Aziz is hanging] 
+Harry Tasker:  You're fired!
+
+Harry Tasker:  There *is* no us, you psychotic bitch!
+
+Gib:  Women.  Can't live with 'em.  Can't kill 'em!
+
+
+# True Romance
+
+Clarence Worley:  Something this last week has taught me; it's better to
+  have a gun and not need it than to need a gun and not have it.
+
+Clifford Worley:  Who are you?
+Vincenzo Coccotti:  I'm the Anti-Christ.  You get me in a vendetta kind of
+  mood, you will tell the angels in heaven that you had never seen evil so
+  singularly personified as you did in the face of the man who killed you.
+  My name is Vincenzo Coccotti.
+
+[Don Vincenzo is complaining about how lousy Clifford Worley is to lie]
+Vincenzo Coccotti:  Now, what we have got here is a little game of show and
+  tell, and you don't wanna show me nothing and tell me everything.
+
+
+# Turner & Hooch
+
+Amos Reed:  Let him go, Hooch!  I'm sorry, Scott.  I don't have the
+  hand-strength I used to.  You're OK, aren't you?
+Scott Turner:  Yeah, yeah, I'm fine.  I was looking forward to a nice quiet
+  cup of coffee, BUT NOW I'M AWAKE!
+
+Emily Carson:  Well, it's a nice night, and I have to walk Camille.  Do you
+  want to take a walk with me?
+Scott Turner:  No.  No.  Well, you see, I'm starting to like you, and if
+  we're going to walk I'm just going to like you even more, and then one day
+  we might even end up in love and everything will go on fine for a while,
+  but-but then one day *bang* you're gonna call me a selfish compulsive
+  bachelor.  You gonna pull your hair, you gonna scream and you gonna say
+  you never want to see me again because I drive you crazy, and I'm a lousy
+  shot.  Now, who needs that?  Good night.
+
+
+# Twins
+
+Julius Benedict:  If you're lying, I'll be back!
+
+
+# UHF
+
+[George and Bob just got fired again]
+Bob:  How could you do this to me?  I knew this was gonna happen!
+George Newman:  You're right, Bob.  I'm sorry.  What can I say?  I-I'm a
+  miserable worthless hunk of slime.  Here, I want you to take this crowbar
+  and just bash my head right in.  Go ahead.  Really!  Just BASH my head
+  right in!
+Bob:  George, you know I can't do that.  You still owe me 5 bucks.
+
+Bob: I don't know about this, George.  We don't know the first thing about
+  what goes on in a television station.
+George Newman:  Don't worry, Bob.  It's just like working in a fish-market.
+  Except you don't have to clean and gut fish all day.
+
+[In the "Spatula City" advertising commercial]
+Sy Greenblum:  Hello, this is Sy Greenblum, president of Spatula City.  I
+  like the spatulas so much, I bought the company.
+
+Stanley Spadowski:  George, you know I was wondering, like if you were
+  traveling through outer space, I mean like you're going real fast, like
+  the speed of light, you know ...hoooohhhhh... and all of a sudden you
+  started screaming ...aaaahhhhh aaaaahhhhh...  Do you think your brain
+  would blow up?
+Bob:  Guys, I'm trying to work...  Do you mind?
+Stanley Spadowski:  I don't mind.  Go right ahead...  Do you mind, George?
+
+Stanley Spadowski:  "These floors are dirty as hell, and I'm not gonna take
+  it any more!"
+
+[See _The Treasure of the Sierra Madre_ (qv)]
+Raul Hernandez:  Badgers?  Badgers?  We don't need no stinking badgers!
+
+R.J. Fletcher:  This is an embarrassment.  A disgrace.  What do you think
+  R.J. Fletcher Senior would be saying if he were alive today?
+Richard Fletcher:  "Help me out of this box, I can't breathe in here!  Help,
+  let me out!"
+
+Stanley Spadowski:  George?  What's the matter?
+George Newman:  Stanley, you don't want to know.
+Stanley Spadowski:  Huh?  Why did I ask?
+
+
+# Under Siege (1992)
+
+William Strannix:  Damn, I'm good.
+
+Admiral Bates:  This is Admiral Bates speaking.  I am trying to get a hold
+  of Chief Ryback.  Is he about?
+Jordan Tate:  He is in a gunfight right now.  I'm gonna have to take a
+  message.
+
+William Strannix:  All my life, Saturday morning cartoons...  The best!
+
+
+# Unforgiven (1992)
+
+William Munny:  I've killed women and children.  I've killed just about
+  every thing that walks or crawls.  And I'm here to kill you, Little Bill,
+  for what you done to Ned.
+
+[Little Bill Daggett is lying on the floor helpless as William Munny points
+  Ned Logan's rifle at him]
+Little Bill Daggett:  I don't deserve to die like this!  I was building a
+  house!
+William Munny shooting:  Deserve's got nothin' to do with it.
+
+Kid:  Yeah, well, I guess he had it comin'.
+William Munny:  We all got it comin', kid.
+
+
+# Untouchables, The
+
+Capone:  Somebody messes with me, I'm gonna mess with him.
+
+Jim Malone:  You wanna get Capone?  Here's how you get him.  He pulls a
+  knife, you pull a gun.  He sends one of yours to the hospital, you send
+  one of his to the morgue.  That's the Chicago way.  And that's how you get
+  Capone!
+
+[Last lines]
+Reporter:  Word is they're going to repeal Prohibition.  What'll you do
+  then?
+Eliot Ness:  I think I'll have a drink.
+
+
+# Up in Smoke (1978)
+
+Mr. Stoner:  Why don't you go out and get a job, like that God damn
+  Finkelstein shit kid!
+
+
+# Up the Creek (1984)
+
+Bob McGraw to Heather Merriweather:  No, thanks, I've been dressing myself
+  for years.  And when this is over, and someone has won this damn thing,
+  I'd like to think I can jump on you again sometime.
+
+Bob McGraw:  I like a woman who's not afraid to play hard to get.
+(Jennifer Runyon Jennifer Runyon):  I like a man who's not afraid to play
+  hard.  You know something, Bob McGraw, you look a little warm.  Why don't
+  you slip into something more comfortable.
+
+
+# Vertigo
+
+[First Line]
+Cop:  Give me your hand.  Give me your hand.
+
+John Fergusson:  You shouldn't keep souvenirs of a killing.  You shouldn't
+  have been that sentimental.
+
+
+# Voyage (1993) (TV)
+
+[Talking about the Freeland couple they just met]
+Catherine "Kit" Norvell:  You think she is attractive, don't you?
+Morgan Norvell:  You think he is?
+Catherine "Kit" Norvell:  Why do we always answer questions with questions?
+Morgan Norvell:  How do you mean?
+
+
+# Wall Street
+
+Bud Fox:  Why do you need to wreck this company?
+Gordon Gecco:  Because it's wreckable, all right!
+
+
+# War of the Roses, The
+
+[Finding out that they are going to get a divorce]
+Oliver Rose:  And you better get yourself a damn good lawyer!
+Barbara Rose:  Best your money can buy!
+
+Gavin D'Amato:  Oliver, my father used to say that a man can never out-do a
+  woman when it comes to love and revenge.
+
+[Oliver Rose pees on the fish Barbara Rose had prepared for the guests]
+Barbara Rose:  I would never humiliate you like this!
+Oliver Rose:  You're not equipped to, honey.
+
+
+# Wayne's World
+
+Mikita's Manager, Glen to the camera:  I'd never done a crazy  thing in my
+  life before that night.  Why is it that if a man kills another man in
+  battle it's called heroic, yet if he kills a man in the heat of passion
+  it's called murder.
+
+Garth Algar:  That is a babe!  She makes me feel kinda funny, like when we
+  used to climb the rope in gym-class.
+
+[Talking about Claudia Schiffer]
+Wayne Campbell:  She's a babe.
+Garth Algar:  She's magically babelicious.
+Wayne Campbell:  She tested very high on the stroke-ability scale.
+
+Benjamin:  First let me get this out of the way; I'm a big fan.
+Garth Algar:  You are?
+Benjamin:  The way I see it; your show is capable of so much more.
+Garth Algar:  Well, we'll try harder, OK?  Just give us a second chance.
+  Just don't go and cancel us without giving us a second chance!
+
+[Instead of saying "Excuse me, I beg your pardon?" (also in _Wayne's World
+  2_ (qv))]
+Wayne Campbell:  Exsqueeze me?  Baking powder?
+
+Benjamin:  Do you have a lawyer?
+Wayne Campbell:  Yes!  Ahm, no.  We're between lawyers right now.  You see,
+  our first lawyer screwed our affairs so bad.
+Garth Algar:  That's right.  I walked right to that office - that's what I
+  did - and I reached across that desk and I grabbed him by his fat head and
+  I  said "Listen man!  I'm not going to jail for YOU or for anybody!".
+
+Terry:  Wayne!  Wayne!  Garth told me about the show, man.  I love you man.
+Wayne Campbell:  Yea, and I love you too, Terry.
+Terry:  No no no, I mean it man.  I LOVE you!
+Wayne Campbell:  No, I-I mean it.  I love you.
+Terry:  No you don't, man.  I love you.
+Wayne Campbell being hugged by Terry:  Garth!  Hey, come over here, I think
+  Terry has something he wants to say to you.
+Terry:  I love you, man.
+Garth Algar:  Thank you!
+
+Russel:  It will be Terry's job to give the actors their hand cue.
+Wayne Campbell:  Exscuse me, Russel, but I believe I requested the hand
+  job...
+
+Benjamin Oliver:  So Garth, how do you like being in a studio?
+Garth Algar:  Ahm, it's it's like a new pair of underwear, you know...  At
+  first it's constrictive, but after a while it becomes a part of you.
+
+[Wayne and Garth is lying on the hood of the merth-mobile, staring at the
+  starlit sky]
+Garth Algar:  Sometimes I wish I could boldly go where no man has gone
+  before ... but I'll probably stay in Aurora.  What are you thinking
+  about?
+Wayne Campbell:  Cassandra.  She's a fox.  In french she would be called "la
+  renarde" and she would be hunted with only her cunning to protect her.
+Garth Algar:  She's a babe.
+Wayne Campbell:  She's a robo-babe.  In latin she would be called "babia
+  majora".
+Garth Algar:  If she were a president she would be Baberaham Lincoln.
+[A brief pause]
+Garth Algar:  Did you ever find Bugs Bunny attractive when he put on a dress
+  and played girl bunny?
+Wayne Campbell cracks up laughing:  No...  No!
+Garth Algar:  Neither did I.  I was just asking.
+
+Mikita's Manager, Glen:  Anything wrong, Davy?
+Davy:  Yeah, I got paid today.
+Mikita's Manager, Glen:  Yeah, I know what that's like.
+Davy:  No.  You don't understand.  They laid me off.  I got one of these.
+Mikita's Manager, Glen:  Yeah, I know how that feels.
+Davy:  Know what I'd like to do?
+Mikita's Manager, Glen:  Yeah I know what you'd like to do.  You'd like to
+  find the guy who did it, rip his still beating heart out of his chest and
+  hold it in front of his face so he can see how black it is before he
+  dies.
+Davy:  Actually, I was thinking of filing a disagreement with the union.
+Mikita's Manager, Glen:  Well, the world's a twisted place.
+
+Mikita's Manager, Glen:  You know, if you stab a man in the dead of winter,
+  steam will rise up from the wounds.  Indians believed it was his soul
+  escaping from his body.
+
+Garth Algar:  OK ... First I'll access the secret military spy sattelite
+  that is in geosynchronous orbit over Mid-West.  Then I'll ID the limo by
+  the vanity plate "MR. BIGGG" and get his approximate position.  Then I'll
+  reposition the transmission dish on the remote truck to 17,32 degrees
+  east, hit WESTAR 4 over the Atlantic, bounce the signal back into the
+  aerosphere up to COMSAT 6, beam it back to SATCOM 2 transmitter number 137
+  and down on the dish on the back of Mr. Big's limo...  It's almost too
+  easy.
+
+[See _Terminator 2: Judgment Day_ (qv)]
+[Wayne Campbell is stopped by a traffic cop]
+Wayne Campbell:  Yes, officer, is there a problem?
+T-1000:  Have you seen this boy?
+
+Cassandra:  I don't believe I've ever had French champagne before...
+Benjamin Kane:  Oh, actually all champagne is French, it's named after the
+  region.  Otherwise it's sparcling white wine.  Americans of course don't
+  recognize the convention so it becomes that thing of calling all of their
+  sparkling white champagne, even though by definition they're not.
+Wayne Campbell:  Ah yes, it's a lot like _"Star Trek: The Next Generation"_
+  (qv).  In many ways it's superior but will never be as recognized as the
+  original.
+
+Wayne and Garth to Alice Cooper:  We're not worthy!  We're not worthy!
+
+Wayne Campbell:  I know I don't have his looks.  I know I don't have his
+  money.  I know I don't have his connections, his knowledge of fine wines.
+  I know sometimes when I eat I get this clicking sound in my jaw...
+
+[See also the crazy-credits for quotes]
+
+
+# Wayne's World 2
+
+[Pickup-line]
+Honey Horne:  So, would you like to have dinner one night?
+Garth Algar:  Oh, I like to have dinner every night.
+
+Honey Horne:  I bet you like to be in control...
+Garth Algar:  Yes, like when I was 17, my sister wanted to loan my Def
+  Leppard.  I said "No way!".
+
+Honey Horne:  Take me, Garth!
+Garth Algar:  Where?
+
+[Instead of saying "Excuse me, I beg your pardon?" (also in _Wayne's World_
+  (qv))]
+Wayne Campbell:  Exsqueeze me?  A baking-powder?
+
+
+# When Harry Met Sally...
+
+Harry Burns:  No man can be friends with a woman he finds attractive.  He
+  always wants to have sex with her.
+Sally Albright:  So you are saying that man can be friends with a woman he
+  finds unattractive?
+Harry Burns:  No, you pretty much want to nail them too.
+
+Jess:  You made a woman meow?
+
+
+# Who Framed Roger Rabbit
+
+Jessica:  I'm not bad, I'm just drawn that way.
+
+Jessica:  I love you more than any woman's ever loved a rabbit.
+
+
+# Why Me? (1990)
+
+Gus Cardinale:  Bruno, that's the stupidest idea I've ever heard.
+Bruno:  Don't worry, there's plenty of more where that came from...
+
+Francis Mahoney:  What's the matter?  Did you get your face caught in a
+  zipper?
+
+[Gus Cardinale is hanging in a wire outside a skyscraper when two CIA agents
+  appear at the roof]
+CIA Agent:  Hey, don't try anything stupid down there.
+Gus Cardinale:  What could be fucking stupider than this?
+
+
+# Will Success Spoil Rock Hunter?
+
+Rita Marlowe:  I picked him up, I can pick him down.
+
+
+# Willy Wonka and the Chocolate Factory
+
+Willy Wonka:  No other factory in the world mixes its chocolate by
+  waterfall.
+
+Willy Wonka:  Are the hell fires a-glowing?  Is the reaper a-mowing?  So the
+  danger must be growing!
+
+Willy Wonka:  Bubbles, bubbles everywhere, and not a drop to drink!
+
+Willy Wonka:  If the good Lord had intended us to walk he wouldn't have
+  invented roller-skates.
+
+Willy Wonka:  Everything inside is eatable, I mean edible, I mean everything
+  can be eaten.
+
+Willy Wonka:  So much time and so little to do ... strike that, reverse it.
+
+
+# Witness (1985)
+
+Rachel Lapp:  I just don't like my son spending all his time with a man who
+  carries a gun and goes around whacking people.
+
+John Book:  Whacking, I'm hell at whacking.
+
+John Book:  How do I look - I mean, do I look Amish?
+
+
+# Woman of the Year (1942)
+
+[Last Line]
+Sam Craig:  I've just launched Gerald.
+
+
+# Working Girl
+
+[When Cyn and Tess McGill are looking through Katherine Parker's wardrobe
+  for a dress]
+Cyn:  Six Thousand Dollars?  It's not even leather!
+
+
+# Wrong Man, The (1957)
+
+Lt. Bowers:  An innocent man has nothing to fear, remember that.
+
+
+# Wrong Trousers, The
+
+Wallace:  Cracking toast Gromit!
+
+Wallace:  They're the wrong trousers Gromit, and they've gone wrong!
+
+
+# Young Guns (1988)
+ 
+Richard Brewer:  Papers can't do anything right.
+ 
+"Dirty Steve" Stephens:  Did you guys see the size of that chicken?
+ 
+Charley Bowdre:  Hey, Chavez, how come they ain't killing us?
+"Dirty Steve" Stephens:  Because we're in the spirit world, asshole.  They
+  can't see us.
+
+William H. Bonney:  Reap the whirlwind, Brady!  Reap it!
+ 
+William H. Bonney:  Trying to make it to mexico, that's the test of all
+  tests.  I'm in.
+Josiah G. Scurlock:  I'm really not liking him.
+
+William H. Bonney:  If we're caught, we're gonna hang...  But there's many a
+  slip twixt the cup and the lip.
+
+William H. Bonney:  You know, Sir, I do admire you, and I sure would like to
+  touch the gun that's gonna kill Billy the Kid.
+
+William H. Bonney:  "Dear Governor Axtell.  I've heard that you will give
+  200 dollars for my head.  Perhaps we should meet and talk.  I am at the
+  Juarez village at the border.  Send 3 men, and instruct them not to shoot,
+  as I am unarmed.  In short, Sir; I surrender.  Your obedient servant
+  William H. Bonney.  PS:  I changed my mind.  Kiss my ass!"
+ 
+Alex McSween:  I'm not leaving my house.
+William H. Bonney:  Alex, if you stay they're gonna kill you.  And then I'm
+  gonna have to to go around and kill all the guys who killed you.  That's a
+  lot of killing.
+ 
+[The "Regulators" are surronded by 20-30 men in Alex McSween's house]
+Josiah G. "Doc" Scurlock:  Billy, what are we gonna do now?
+William H. Bonney:  We're gonna show these guys they've finally met their
+  match!
+ 
+[When the cavalry arrives]
+Josiah G. "Doc" Scurlock:  Billy, we're good, but this is getting
+  ridiculous.
+William H. Bonney:  I like these odds...
+
+"Dirty Steve" Stephens:  Damn good riding with you, Chavez.
+Jose Chavez Y Chavez:  Many nights, my friend...  Many nights I've put a
+  blade to your throat while you were sleeping.  Glad I never killed you,
+  Steve.  You're all right...
+
+
+
+
+# Young Guns II
+
+Charles Phalen:  William H. Bonney, heh?  Billy the Kid was shot and killed
+  by Pat Garret.  Everybody knows that, it's common knowledge.
+William H. Bonney (the Old):  There are other lawyers around, you piece of
+  chicken shit.  Get back in the vehicle and drive before I make it 22 just
+  for the hell of it.
+
+[Last line a lot of people heard]
+William H. Bonney:  Yoohoo.  I'll make you famous!
+
+Doc Scurlock:  You son of a bitch!  You're starting to believe what they're
+  writing about you, aren't you?  Let me tell you what you really are!  You
+  rode a 14 year old boy straight to his grave, ant the rest of us straight
+  to hell...  Straight to hell!  William H. Bonney!  You are NOT a god!
+William H. Bonney:  Why don't you pull the trigger and find out?
+
+Judge Bristol:  ...and there be hanged by the neck till he be dead, dead,
+  dead.  Now, do you have anything to say, young man?
+William H. Bonney:  Yes I do, your Honor.  You can go to hell, hell, hell.
+
+William H. Bonney:  "Buckshot George", that's your name.  You wanted a name,
+  that's it.  "Buckshot George".  It's a good name.
+Hendry French:  My name is Hendry William French.
+William H. Bonney:  That's a good name too.
+
+Tom O'Tolliard:  What's scum?
+William H. Bonney:  Well Tom, that's bad types.  Politicians, bankers,
+  cattle-kings...  Scum...
+
+
+# Zelig
+
+[Leonard Zelig is apologizing on radio to all the people he misrepresented
+  himself to]
+Leonard Zelig:  I especially want to apologize to the Trochman family in
+  Detroit..... I never delivered a baby before, and I just thought that ice
+  tongs were the way to do it.
+
+
+# Zulu
+
+Private:  Why us?  Why does it have to be us?
+Sergeant:  Because we're here lad.
+
+Reverend Otto Witt:  1,000 British soldiers have been massacred.  While I
+  stood here talking peace, a war has started.
+
+Private Henry Hook:  Rourke's Drift...  It'd take an Irishman to give his
+  name to a rotten stinking middle o' nowhere hole like this.
+
+Lieutenant John Chard:  What's our strength?
+Lieutenant Gonville Bromhead:  7 officers including surgeon, commercaries
+  and so on, Ardndorff now I suppose, wounded and sick 36, fit for duty 97
+  and about 40 native levies. Not much of an army for you.
+
+Reverend Otto Witt:  There are 4,000 Zulus coming against you, you must
+  abandon this mission.
+
+Lieutenant Gonville Bromhead:  Damn the levies man...  Cowardly blacks!
+Ardndorff:  What the hell do you mean "cowardly blacks"?  They died on your
+  side didn't they?  And who the hell do you think is coming to wipe out
+  your little command?  The Grenadier Guards?
+
+Lieutenant Gonville Bromhead:  60!, we got at least 60 wouldn't you say?
+Ardndorff:  That leaves only 3,940.
+
+Colour Sergeant Bourne:  It's a miracle.
+Lieutenant John Chard:  If it's a miracle Colour Sergeant, it's a short
+  chamber Boxer Henry, point 4-5 caliber miracle.
+Colour Sergeant Bourne:  And a bayonet sir, with some guts behind.
+
+
+
+-----------------------------------------------------------------------------
+
+COPYING POLICY
+==============
+
+This file is part of the rec.arts.movies movie database.  The objective of
+the database is to provide useful and up to date movie information *freely*
+available on-line, across as many systems and platforms as possible.  This
+file is NOT public domain, however, permission is granted to distribute it
+freely in an ELECTRONIC FORM ONLY, providing the following conditions are met:
+Firstly, all the header and trailer information (including this notice and
+the details on how to access the database) remain in tact, and secondly, that
+NO FEE OF ANY KIND is charged for its distribution.  The data has been given
+freely by users of the database over the years and managed on a volunteer
+basis, therefore we do not feel it appropriate for anyone to profit from its
+distribution.  Please contact the various database managers directly (e-mail
+addresses in the header) for more information.
+
+Lars J
+--
+  The contents of this .signature is fictitious.  No similarity to actual
+   .signatures, digital or hardcopy, is intended or should be inferred.
+
+                    Lars Joergen Aas - larsa@edb.tih.no
