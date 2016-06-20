@@ -1,0 +1,50 @@
+--
+-- SET SYNTAX TO SQL
+--
+
+  [1] Cadastra usuário
+    'send (formulario com user e pass)'
+      http://localhost:9999/register
+    'response'
+      {"status": "success","msg": "User registered"}
+
+  [2] Registrar um client(uri)
+    'send (formulario com uri)'
+      http://localhost:9999/clientRegister
+    'response'
+      {"status": "success",
+        "client_id": "79nGYKR6rs3IhBO2",
+        "client_secret": "5DY49lFh2DstEAQhGlKga3acYPeBz1",
+        "msg": "User saved. Feel free to get an access token from /oauth/token now"
+      }
+
+  [3] Gerar authorization code
+    'send'
+      http://localhost:9999/oauth/authorise?response_type=code&client_id=79nGYKR6rs3IhBO2&redirect_uri=http://www.bb.com.br/
+      SE NAO ESTIVER LOGADO VAI SER REDIRECIONADO PARA TELA DE LOGIN EM:
+        http://localhost:9999/login?redirect=/oauth/authorise&client_id=79nGYKR6rs3IhBO2&redirect_uri=http://www.bb.com.br/
+    'response'
+      url redirecionada com code concatenado na url:
+        https://github.com/?code=4e03421e5a6e084b21df80fead3d1f7b7c33f429
+
+  [4] Get Bearer access_token
+    'send ( com parametros em urlencoded)'
+      http://localhost:9999/oauth/token
+      params: grant_type, username, password, client_id, client_secret, code
+    'response'
+      {"token_type": "bearer","access_token": "3d9b544714ad66f962a07838c73a6aa39ec12260","expires_in": 86400}
+
+  [5] Api Random
+    'send com access token'
+      http://localhost:9999/api/random?access_token=d2cb5006f991bd51c4b0d43a0e7249502d19e996
+
+
+GRANT: Authorization_code
+    params: grant_type=authorization_code, client_id, client_secret, scope, username, password, code
+GRANT: Password
+    params: grant_type=password,           client_id, client_secret, scope, username, password
+
+GRANT: CLIENT_CREDENTIALS
+    params: grant_type=client_credentials, client_id, client_secret, scope
+
+GRANT: IMPLICIT

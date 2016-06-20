@@ -1,14 +1,16 @@
-var express = require("express"),
-    http = require("http"),
+var express = require('express'),
+    cors = require('cors'),
+    http = require('http'),
     bodyParser = require('body-parser'),
     oauthserver = require('oauth2-server'),
     routes = require('./routes.js'),
     port = 9999,
     cookieParser = require('cookie-parser'),
-    session = require('express-session')
+    session = require('express-session');
 
 var app = express();
 var server = app.listen(port);
+app.use(cors());
 app.use(cookieParser());
 app.use(session({secret: 'FFKPSDFKPWFKPW24324-09cd'}));
 
@@ -23,20 +25,20 @@ app.oauth = oauthserver({
 });
 //routes
 app.all('/oauth/token', app.oauth.grant());
-app.get("/clientRegister", routes.getClientRegister);
-app.post("/clientRegister", routes.postClientRegister);
-app.get("/getToken", routes.getAToken);
-app.get("/register", routes.getRegister);
-app.get("/", routes.home);
-app.post("/register", routes.postRegister);
-app.get("/login", routes.login);
-app.post("/login", routes.postLogin);
+app.get('/clientRegister', routes.getClientRegister);
+app.post('/clientRegister', routes.postClientRegister);
+app.get('/getToken', routes.getAToken);
+app.get('/register', routes.getRegister);
+app.get('/', routes.home);
+app.post('/register', routes.postRegister);
+app.get('/login', routes.login);
+app.post('/login', routes.postLogin);
 //our pointless api endpoints
-app.get("/api/random", app.oauth.authorise(), routes.getQuoteRandom);
-app.get("/api/id/:id", app.oauth.authorise(), routes.getQuoteById);
+app.get('/api/random', app.oauth.authorise(), routes.getQuoteRandom);
+app.get('/api/id/:id', app.oauth.authorise(), routes.getQuoteById);
 //TODO: complete these routes that actually make implementing OAuth meaningful
-app.get("/api/user/get/quote", app.oauth.authorise(), routes.getUserQuotes);
-app.get("/api/user/add/quote", app.oauth.authorise(), routes.addUserQuote);
+app.get('/api/user/get/quote', app.oauth.authorise(), routes.getUserQuotes);
+app.get('/api/user/add/quote', app.oauth.authorise(), routes.addUserQuote);
 
 
 
@@ -48,8 +50,8 @@ app.get('/oauth/authorise', function (req, res, next) {
     return res.redirect('/login?redirect=' + req.path + '&client_id=' +
     req.query.client_id + '&redirect_uri=' + req.query.redirect_uri);
   }
-  //TODO:  SHOW THEM  "do you authorise xyz app to access your content?" page
-  req.body.allow = "yes";
+  //TODO:  SHOW THEM  'do you authorise xyz app to access your content?' page
+  req.body.allow = 'yes';
   next();
 }, app.oauth.authCodeGrant(function (req, next) {
   // The first param should to indicate an error
@@ -63,8 +65,8 @@ app.post('/oauth/authorise', function (req, res, next) {
     return res.redirect('/login?client_id=' + req.query.client_id +
     '&redirect_uri=' + req.query.redirect_uri);
   }
-  //TODO:  SHOW THEM  "do you authorise xyz app to access your content?" page
-  req.body.allow = "yes";
+  //TODO:  SHOW THEM  'do you authorise xyz app to access your content?' page
+  req.body.allow = 'yes';
   next();
 }, app.oauth.authCodeGrant(function (req, next) {
   // The first param should to indicate an error

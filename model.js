@@ -1,18 +1,45 @@
+/**
+  Authorization Code grant
+    getAccessToken
+    getClient
+    saveAuthorizationCode
+
+  Password grant
+    getAccessToken
+    getClient
+    getUser
+    saveToken
+
+  Refresh token grant
+    getAccessToken
+    getClient
+    getRefreshToken
+    saveToken
+
+  Client Credentials grant
+    getAccessToken
+    getClient
+    saveToken
+
+
+**/
+
   var model = module.exports,
-    databaseUrl = "oauth",
-    collections = ['oauth_access_tokens', 'oauth_clients', "oauth_refresh_tokens", "users", 'oauth_codes'],
-    db = require("mongojs")(databaseUrl, collections);
+    databaseUrl = 'oauth',
+    collections = ['oauth_access_tokens', 'oauth_clients', 'oauth_refresh_tokens', 'users', 'oauth_codes'],
+    db = require('mongojs')(databaseUrl, collections);
 
 
 model.getAccessToken = function (bearerToken, callback) {
     db.oauth_access_tokens.find({'access_token': bearerToken}, function (err, users) {
       if (err || !users || !users.length) return callback(err);
       // This object will be exposed in req.oauth.token
-      // The user_id field will be exposed in req.user (req.user = { id: "..." }) however if
+      // The user_id field will be exposed in req.user (req.user = { id: '...' }) however if
       // an explicit user object is included (token.user, must include id) it will be exposed
       // in req.user instead
       var token = users[0];
       callback(null, {
+        fausto: 'aegaleraaa',
         accessToken: token.access_token,
         clientId: token.client_id,
         expires: token.expires,
@@ -22,12 +49,13 @@ model.getAccessToken = function (bearerToken, callback) {
 };
 
 model.getClient = function (clientId, clientSecret, callback) {
-  db.oauth_clients.find({"client_id":  clientId}, function(err,users) {
+  db.oauth_clients.find({'client_id':  clientId}, function(err,users) {
     if (err || !users.length) return callback(err);
     var client = users[0];
     if (clientSecret !== null && client.client_secret !== clientSecret) return callback();
     // This object will be exposed in req.oauth.client
     callback(null, {
+      fausto: 'aegaleraaa',
       clientId: client.client_id,
       clientSecret: client.client_secret,
       redirectUri: client.redirect_uri,
@@ -38,7 +66,7 @@ model.getClient = function (clientId, clientSecret, callback) {
 
 /* REFRESH TOKEN IS NOT TESTED */
 model.getRefreshToken = function (bearerToken, callback) {
-  db.oauth_refresh_tokens.find({"refresh_token" : bearerToken}, function(err,users) {
+  db.oauth_refresh_tokens.find({'refresh_token' : bearerToken}, function(err,users) {
     callback(err, users && users.length ? users[0] : false);
   });
 };
@@ -54,8 +82,10 @@ model.grantTypeAllowed = function (clientId, grantType, callback) {
   }
 };
 
+// renamed to saveToken in version 3.x
 model.saveAccessToken = function (accessToken, clientId, expires, userId, callback) {
   db.oauth_access_tokens.save({access_token : accessToken, client_id : clientId, user_id: userId, expires: expires},function(err,saved) {
+    console.log('err',err);
       callback(err);
   })
   /*
@@ -78,13 +108,14 @@ model.saveRefreshToken = function (refreshToken, clientId, expires, userId, call
  * Required to support password grant type
  */
 model.getUser = function (username, password, callback) {
-  db.users.find({"username":  username, password: password},function(err,users) {
+  db.users.find({'username':  username, password: password},function(err,users) {
     callback(err, users && users.length ? users[0] : false);
   })
 };
 
 
 //auth code grant type
+// renamed to saveAuthorizationCode in versin 3.x
 model.saveAuthCode = function(authCode, clientId, expires, user, callback) {
   var code = {
     authCode: authCode,
@@ -95,6 +126,7 @@ model.saveAuthCode = function(authCode, clientId, expires, user, callback) {
   db.oauth_codes.save(code, callback);
 };
 
+ // renamed to getAuthorizationCode in version 3.x
 model.getAuthCode = function(bearerCode,callback) {
   db.oauth_codes.find({authCode: bearerCode},function(err,codes) {
     code = codes[0];
