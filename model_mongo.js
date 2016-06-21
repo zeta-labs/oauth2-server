@@ -39,7 +39,6 @@ model.getAccessToken = function (bearerToken, callback) {
       // in req.user instead
       var token = users[0];
       callback(null, {
-        fausto: 'aegaleraaa',
         accessToken: token.access_token,
         clientId: token.client_id,
         expires: token.expires,
@@ -58,8 +57,7 @@ model.getClient = function (clientId, clientSecret, callback) {
       fausto: 'aegaleraaa',
       clientId: client.client_id,
       clientSecret: client.client_secret,
-      redirectUri: client.redirect_uri,
-      userId: client._id
+      redirectUri: client.redirect_uri
     });
   });
 };

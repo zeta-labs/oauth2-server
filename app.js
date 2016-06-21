@@ -3,7 +3,8 @@ var express = require('express'),
     http = require('http'),
     bodyParser = require('body-parser'),
     oauthserver = require('oauth2-server'),
-    routes = require('./routes.js'),
+    routes = require('./routes_pg.js'),
+    // routes = require('./routes_mongo.js'),
     port = 9999,
     cookieParser = require('cookie-parser'),
     session = require('express-session');
@@ -17,7 +18,8 @@ app.use(session({secret: 'FFKPSDFKPWFKPW24324-09cd'}));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.oauth = oauthserver({
-    model: require('./model.js'), // See below for specification
+    model: require('./model_pg.js'), // See below for specification
+    // model: require('./model_mongo.js'), // See below for specification
     grants: ['password', 'authorization_code'],
     debug: true,
     accessTokenLifetime: 60 * 60 * 24,
