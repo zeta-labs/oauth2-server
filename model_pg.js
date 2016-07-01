@@ -24,25 +24,48 @@
 
 var model = module.exports,
     pg    = require('pg'),
-    pgConn= 'postgres://postgres:postgres@localhost/oauth';
-    // pgp   = require('pg-promise')({}),
-    // db    = pgp('postgres://postgres:postgres@localhost/oauth'),
+    pgConn= 'postgres://postgres:postgres@localhost/oauth',
+    OAuth2Error = require('oauth2-server/lib/error');
 
 model.getAccessToken = function (bearerToken, callback) {
-    db.oauth_access_tokens.find({'access_token': bearerToken}, function (err, users) {
-      if (err || !users || !users.length) return callback(err);
-      // This object will be exposed in req.oauth.token
-      // The user_id field will be exposed in req.user (req.user = { id: '...' }) however if
-      // an explicit user object is included (token.user, must include id) it will be exposed
-      // in req.user instead
-      var token = users[0];
+  pg.connect(pgConn, function(err, client, done) {
+    if (err) {
+      console.error('pg connection error ', err);
+      callback(err);
+    }
+    client.query('SELECT * FROM access_tokens WHERE value = $1;', [bearerToken], function(err, result) {
+      done();
+
+      if (err || !result.rows.length) return callback(err);
+      var token = result.rows[0];
+
       callback(null, {
-        accessToken: token.access_token,
+        accessToken: token.value,
         clientId: token.client_id,
-        expires: token.expires,
+        expires: token.expires_in,
         userId: token.userId
       });
     });
+  });
+};
+
+// renamed to saveToken in version 3.x
+model.saveAccessToken = function (accessToken, clientId, expires, user, callback) {
+  pg.connect(pgConn, function(err, client, done) {
+    if (err) {
+      console.error('pg connection error ', err);
+      callback(err);
+    }
+
+    client.query('INSERT INTO access_tokens(value, expires_in, client_id, user_id) VALUES ($1, $2, $3, $4);', [accessToken,expires,clientId,user.id], function(err, result) {
+      done();
+      if(err) {
+        console.error('error running query', err);
+        callback(err);
+      }
+      callback();
+    });
+  });
 };
 
 model.getClient = function (clientId, clientSecret, callback) {
@@ -52,9 +75,10 @@ model.getClient = function (clientId, clientSecret, callback) {
     }
     client.query('SELECT * FROM clients WHERE id = $1;', [clientId], function(err, resultClients) {
       done();
-      if (err || !resultClients.length) return callback(err);
 
-      var resultClient = resultClients[0];
+      if (err || !resultClients.rows.length) return callback(err);
+
+      var resultClient = resultClients.rows[0];
       if (clientSecret !== null && resultClient.secret !== clientSecret) return callback();
       callback(null, {
         clientId: resultClient.id,
@@ -81,21 +105,6 @@ model.grantTypeAllowed = function (clientId, grantType, callback) {
   if (grantType === 'password') {
       return callback(false, /*authorizedClientIds.indexOf(clientId.toLowerCase()) >= 0*/true);
   }
-};
-
-// renamed to saveToken in version 3.x
-model.saveAccessToken = function (accessToken, clientId, expires, userId, callback) {
-  db.oauth_access_tokens.save({access_token : accessToken, client_id : clientId, user_id: userId, expires: expires},function(err,saved) {
-    console.log('err',err);
-      callback(err);
-  })
-  /*
-  client.query('INSERT INTO oauth_access_tokens(access_token, client_id, user_id, expires) ' +
-      'VALUES ($1, $2, $3, $4)', [accessToken, clientId, userId, expires],
-      function (err, result) {
-          callback(err);
-    });
-  */
 };
 
 /* REFRESH TOKEN IS NOT TESTED */
@@ -128,22 +137,45 @@ model.getUser = function (username, password, callback) {
 //auth code grant type
 // renamed to saveAuthorizationCode in versin 3.x
 model.saveAuthCode = function(authCode, clientId, expires, user, callback) {
-  var code = {
-    authCode: authCode,
-    clientId: clientId,
-    userId: user.id
-  };
-  if (expires) code.expires = parseInt(expires / 1000, 10);
-  db.oauth_codes.save(code, callback);
+  pg.connect(pgConn, function(err, client, done) {
+    if (err) {
+      return console.error('pg connection error ', err);
+    }
+
+    client.query('INSERT INTO codes(value, expires_in, client_id, user_id) VALUES ($1, $2, $3, $4);', [authCode,parseInt(expires / 1000, 10),clientId,user.id], function(err, result) {
+      done();
+      if(err) {
+        return console.error('error running query ##', err);
+      }
+      var oauthCode = result.rows[0];
+      callback();
+    });
+  });
 };
 
  // renamed to getAuthorizationCode in version 3.x
 model.getAuthCode = function(bearerCode,callback) {
-  db.oauth_codes.find({authCode: bearerCode},function(err,codes) {
-    code = codes[0];
-    if (code && code.expires) {
-        code.expires = new Date(code.expires * 1000);
+  pg.connect(pgConn, function(err, client, done) {
+    if (err) {
+      return console.error('pg connection error ', err);
     }
-    callback(err,code);
-  })
+    client.query('SELECT * FROM codes WHERE value = $1;', [bearerCode], function(err, result) {
+      done();
+      if (err || !result.rows.length) return callback(err);
+
+      var code = result.rows[0];
+      if (code && code.expires_in) {
+        // code.expires_in = new Date(code.expires_in * 1000);
+        code.expires_in = code.expires_in * 1000;
+      }
+
+      var authorizationCode = {
+        clientId: code.client_id,
+        expires: code.expires_in,
+        userId: code.user_id
+      }
+
+      callback(err,authorizationCode);
+    });
+  });
 };

@@ -10,10 +10,11 @@
     "express": "^4.13.0",
     "express-session": "^1.11.3",
     "mongojs": "^2.4.0",
-    "oauth2-server": "^2.4.1",
+    "node-oauth2-server": "zeta-labs/node-oauth2-server#v2.2.2.zeta",
     "pg": "^5.1.0",
     "pg-promise": "^4.7.5",
-    "promise-pg": "^0.1.0"
+    "promise-pg": "^0.1.0",
+    "request": "^2.72.0"
   },
   "devDependencies": {},
   "scripts": {
