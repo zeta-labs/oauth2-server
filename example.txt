@@ -21,8 +21,7 @@
   [3] Gerar authorization code
     'send'
       response_type client_id redirect_uri
-      http://localhost:9999/oauth/authorize?response_type=code&client_id=49cf944b-2460-452e-ab4b-37f1e838367e&redirect_uri=http://www.google.com.br
-      http://localhost:9999/oauth/authorize?response_type=code&client_id=79nGYKR6rs3IhBO2&redirect_uri=http://www.bb.com.br/
+      http://localhost:9990/oauth/authorize?response_type=code&client_id=1e411d7b-0984-46ea-b41c-ac2a1d7bbe0d&redirect_uri=http://www.google.com.br
       SE NAO ESTIVER LOGADO VAI SER REDIRECIONADO PARA TELA DE LOGIN EM:
         http://localhost:9999/login?redirect=/oauth/authorize&client_id=79nGYKR6rs3IhBO2&redirect_uri=http://www.bb.com.br/
     'response'

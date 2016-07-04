@@ -43,7 +43,7 @@ model.getAccessToken = function (bearerToken, callback) {
         accessToken: token.value,
         clientId: token.client_id,
         expires: token.expires_in,
-        userId: token.userId
+        userId: token.user_id
       });
     });
   });
@@ -84,6 +84,62 @@ model.getClient = function (clientId, clientSecret, callback) {
         clientId: resultClient.id,
         clientSecret: resultClient.secret,
         redirectUri: resultClient.redirect_uri
+      });
+    });
+  });
+};
+
+model.getPermittedResources = function (userId, resourceType, callback) {
+  pg.connect(pgConn, function(err, client, done) {
+    if (err) {
+      return console.error('pg connection error ', err);
+    }
+    var query = 'SELECT rs.id, rs.name, rs.uri, ur.options FROM users_has_resources ur JOIN ' + resourceType + ' rs ON ur.resource_id = rs.id AND ur.user_id = $1 AND ur.resource_type = $2 AND ur.permission = TRUE;'
+    client.query(query, [userId,resourceType], function(err, result) {
+      done();
+      console.error(err);
+      if (err) {
+        callback(err);
+        return;
+      }
+      if (result.rows.length === 0) {
+        callback(true);
+        return;
+      }
+      callback(null, result.rows);
+    });
+  });
+};
+
+model.getResourcePermission = function (userId, resourceType, resourceId, callback) {
+  pg.connect(pgConn, function(err, client, done) {
+    if (err) {
+      return console.error('pg connection error ', err);
+    }
+    var query = 'SELECT r.name, r.uri, p.* FROM users_has_resources p JOIN ' + resourceType + ' r ON r.id = p.resource_id AND p.user_id = $1 AND p.resource_type = $2 AND p.resource_id = $3;'
+    client.query(query, [userId,resourceType,resourceId], function(err, result) {
+      done();
+
+      if (err) {
+        callback(err);
+        return;
+      }
+      if (result.rows.length === 0) {
+        callback(true);
+        return;
+      }
+
+      var resourcePermission = result.rows[0];
+
+      callback(null, {
+        name: resourcePermission.name,
+        uri: resourcePermission.uri,
+        userId: resourcePermission.user_id,
+        resourceId: resourcePermission.resource_id,
+        resourceType: resourcePermission.resource_type,
+        createdAt: resourcePermission.created_at,
+        options: resourcePermission.options,
+        permission: resourcePermission.permission
       });
     });
   });

@@ -7,17 +7,38 @@ exports.user = function(req,res) {
 
   if(exports.isValidCredentials(username,password)){
     pg.connect(pgConn, function(err, client, done) {
-      if (err) return exports.respondsWith({response: res,type: 'server_error',description: 'Database connection error.'});
+      if (err) {
+        return exports.respondsWith({
+          response: res,
+          type: 'server_error',
+          description: 'Database connection error.',
+          contentType: 'application/json'
+        });
+      }
 
       client.query('INSERT INTO users(username, password) VALUES ($1, $2);', [username,password], function(err, result) {
         done();
-        if(err) return exports.respondsWith({response: res,type: 'server_error'});
+        if(err) {
+          return exports.respondsWith({
+            response: res,
+            type: 'server_error',
+            contentType: 'application/json'
+          });
+        }
 
-        exports.respondsWith({response: res, type: 'success', status: 201});
+        exports.respondsWith({response: res,
+          type: 'success',
+          status: 201,
+          contentType: 'application/json'
+        });
       });
     });
   }else {
-    exports.respondsWith({response: res, type:'invalid_request', description: 'Invalid credentials.'});
+    exports.respondsWith({response: res,
+      type:'invalid_request',
+      description: 'Invalid credentials.',
+      contentType: 'application/json'
+    });
   }
 };
 
@@ -29,7 +50,7 @@ exports.client = function(req,res) {
 
     client.query('INSERT INTO clients(redirect_uri) VALUES ($1) RETURNING id, secret;', [redirectUri], function(err, result) {
       done();
-      if(err) return exports.respondsWith({response: res, type: 'server_error'});
+      if(err) return exports.respondsWith({response: res, type: 'server_error', contentType: 'application/json'});
 
       var client = result.rows[0];
       res.end(JSON.stringify({
@@ -42,19 +63,34 @@ exports.client = function(req,res) {
 }
 
 exports.login = function(req,res) {
-
   var redirect = req.query.redirect ? req.query.redirect : null,
       username = req.body.username || '',
       password = req.body.password || '';
 
+  req.session.clientId = req.query.client_id ? req.query.client_id : '';
+  req.session.redirectUri = req.query.redirect_uri ? req.query.redirect_uri : '';
+
   if(exports.isValidCredentials(username,password)){
 
     pg.connect(pgConn, function(err, client, done) {
-      if (err) return exports.respondsWith({response: res,type: 'server_error',description: 'Database connection error.'});
+      if (err) {
+        return exports.respondsWith({
+          response: res,
+          type: 'server_error',
+          description: 'Database connection error.',
+          contentType: 'application/json'
+        });
+      }
 
       client.query('SELECT * FROM users WHERE username = $1 AND password = $2;', [username,password], function(err, result) {
         done();
-        if(err) return exports.respondsWith({response: res,type: 'server_error'});
+        if(err) {
+          return exports.respondsWith({
+            response: res,
+            type: 'server_error',
+            contentType: 'application/json'
+          });
+        }
 
         var user = result.rows;
         if (user && user.length) {
@@ -71,14 +107,29 @@ exports.login = function(req,res) {
             });
             res.end();
           }
-          exports.respondsWith({response: res, type: 'success', status: 200, description: 'Logged in.'});
+          exports.respondsWith({
+            response: res,
+            type: 'success',
+            status: 200,
+            description: 'Logged in.'
+          });
         }else {
-          exports.respondsWith({response: res, type:'access_denied', description: 'Wrong username or password.'});
+          exports.respondsWith({
+            response: res,
+            type:'access_denied',
+            description: 'Wrong username or password.',
+            contentType: 'application/json'
+          });
         }
       });
     });
   }else {
-    exports.respondsWith({response: res, type:'invalid_request', description: 'Invalid credentials.'});
+    exports.respondsWith({
+      response: res,
+      type:'invalid_request',
+      description: 'Invalid credentials.',
+      contentType: 'application/json'
+    });
   }
 }
 
@@ -90,9 +141,13 @@ exports.respondsWith = function(responseObject){
   var response    = responseObject.response,
       type        = responseObject.type,
       description = responseObject.description,
-      status      = responseObject.status;
+      status      = responseObject.status,
+      contentType = responseObject.contentType;
 
-  response.setHeader('Content-Type', 'application/json');
+  if(contentType){
+    //'application/json'
+    response.setHeader('Content-Type',contentType);
+  }
 
   switch(type) {
     case 'success':
