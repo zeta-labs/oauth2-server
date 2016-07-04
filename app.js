@@ -3,12 +3,12 @@ var cors = require('cors');
 var http = require('http');
 var bodyParser = require('body-parser');
 var oauthserver = require('node-oauth2-server');
-var routes = require('./routes_pg.js');
+var routes = require('./routes.js');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var app = express();
 var request = require('request');
-var models = require('./model_pg.js');
+var models = require('./model.js');
 var MemcachedStore = require('connect-memcached')(session);
 
 //MIDDLEWARES
