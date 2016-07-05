@@ -1,3 +1,40 @@
+CREATE EXTENSION "uuid-ossp";
+
+-- Table: clients
+-- DROP TABLE clients;
+
+CREATE TABLE clients
+(
+  id uuid NOT NULL DEFAULT uuid_generate_v4(),
+  secret uuid NOT NULL DEFAULT uuid_generate_v4(),
+  redirect_uri character varying,
+  CONSTRAINT clients_pkey PRIMARY KEY (id)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE clients
+  OWNER TO postgres;
+
+-- Table: users
+-- DROP TABLE users;
+
+CREATE TABLE users
+(
+  id uuid NOT NULL DEFAULT uuid_generate_v4(),
+  username character varying,
+  password character varying,
+  email character varying,
+  active boolean,
+  created_at time without time zone,
+  CONSTRAINT users_pkey PRIMARY KEY (id)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE users
+  OWNER TO postgres;
+
 -- Table: access_tokens
 -- DROP TABLE access_tokens;
 
@@ -21,24 +58,6 @@ WITH (
 );
 ALTER TABLE access_tokens
   OWNER TO postgres;
-
-
--- Table: clients
--- DROP TABLE clients;
-
-CREATE TABLE clients
-(
-  id uuid NOT NULL DEFAULT uuid_generate_v4(),
-  secret uuid NOT NULL DEFAULT uuid_generate_v4(),
-  redirect_uri character varying,
-  CONSTRAINT clients_pkey PRIMARY KEY (id)
-)
-WITH (
-  OIDS=FALSE
-);
-ALTER TABLE clients
-  OWNER TO postgres;
-
 
 -- Table: codes
 -- DROP TABLE codes;
@@ -80,27 +99,6 @@ WITH (
 );
 ALTER TABLE services
   OWNER TO postgres;
-
-
--- Table: users
--- DROP TABLE users;
-
-CREATE TABLE users
-(
-  id uuid NOT NULL DEFAULT uuid_generate_v4(),
-  username character varying,
-  password character varying,
-  email character varying,
-  active boolean,
-  created_at time without time zone,
-  CONSTRAINT users_pkey PRIMARY KEY (id)
-)
-WITH (
-  OIDS=FALSE
-);
-ALTER TABLE users
-  OWNER TO postgres;
-
 
 -- Table: users_has_resources
 -- DROP TABLE users_has_resources;
