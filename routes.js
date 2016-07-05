@@ -9,6 +9,20 @@ exports.isValidCredentials = function(username, password){
   return (username && username.match('^[A-Za-z0-9-_\^]{5,30}$') && password && password.length > 2)? true : false;
 };
 
+
+exports.createUser = function(user, callback) {
+  knex('users')
+    .insert(user)
+    .returning('*')
+    .then(function(data) {
+      callback(null,data);
+    })
+    .catch(function(error) {
+      callback(error);
+    });
+};
+
+
 exports.user = function(req,res) {
   var username = req.body.username || '';
   var password = req.body.password || '';

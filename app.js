@@ -98,7 +98,20 @@ app.post('/oauth/authorize', function (req, res, next) {
     next(null, req.body.allow === 'yes', req.session.user, req.session.user);
 }));
 
-app.post('/users', routes.user);
+app.post('/users', function(req, res){
+  var services = routes; //TODO
+  services.createUser(req.body, function(error, user){
+    if(error) {
+      res.status(500);
+      res.json(error);
+    }
+    res.status(201);
+    res.location('/users/' + user.id)
+    console.log(req);
+    res.json(user);
+    re
+  });
+});
 
 app.post('/clients', routes.client);
 
