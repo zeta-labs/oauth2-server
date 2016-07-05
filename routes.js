@@ -1,40 +1,41 @@
-var pgConn = 'postgres://postgres:postgres@localhost/oauth'
-    pg     = require('pg');
+var pgConn = 'postgres://postgres:postgres@localhost:5432/oauth';
+var pg = require('pg');
+var knex = require('knex')({
+  client: 'pg',
+  connection: pgConn
+});
+// var _ = require('lodash');
+
+
+exports.isValidCredentials = function(username, password){
+  return (username && username.match('^[A-Za-z0-9-_\^]{5,30}$') && password && password.length > 2)? true : false;
+};
 
 exports.user = function(req,res) {
-  var username = req.body.username || '',
-      password = req.body.password || '';
+  var username = req.body.username || '';
+  var password = req.body.password || '';
 
   if(exports.isValidCredentials(username,password)){
-    pg.connect(pgConn, function(err, client, done) {
-      if (err) {
-        return exports.respondsWith({
-          response: res,
-          type: 'server_error',
-          description: 'Database connection error.',
-          contentType: 'application/json'
-        });
-      }
-
-      client.query('INSERT INTO users(username, password) VALUES ($1, $2);', [username,password], function(err, result) {
-        done();
-        if(err) {
-          return exports.respondsWith({
-            response: res,
-            type: 'server_error',
-            contentType: 'application/json'
-          });
-        }
-
-        exports.respondsWith({response: res,
-          type: 'success',
-          status: 201,
-          contentType: 'application/json'
-        });
+    knex('users').insert({username: username, password: password})
+    .then(function(resp) {
+      exports.respondsWith({
+        response: res,
+        type: 'success',
+        status: 201,
+        contentType: 'application/json'
+      });
+    })
+    .catch(function(err) {
+      exports.respondsWith({
+        response: res,
+        type: 'server_error',
+        description: 'Database connection error.',
+        contentType: 'application/json'
       });
     });
   }else {
-    exports.respondsWith({response: res,
+    exports.respondsWith({
+      response: res,
       type:'invalid_request',
       description: 'Invalid credentials.',
       contentType: 'application/json'
@@ -132,10 +133,6 @@ exports.login = function(req,res) {
     });
   }
 }
-
-exports.isValidCredentials = function(username, password){
-  return (username && username.match('^[A-Za-z0-9-_\^]{5,30}$') && password && password.length > 2)? true : false;
-};
 
 exports.respondsWith = function(responseObject){
   var response    = responseObject.response,
