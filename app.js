@@ -19,7 +19,7 @@ app.use(session({
   secret : '6f8c27af-7deb-4df5-b0c0-91a6b4d9dc9d',
   key: 'session',
   store : new MemcachedStore({
-    hosts: ['192.168.99.1:11211'],
+    hosts: ['127.0.0.1:11211'],
     secret: 'ed1a7901-d342-424e-bce0-38744335358d'
   })
 }));
