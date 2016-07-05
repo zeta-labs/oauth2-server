@@ -4,8 +4,6 @@ var knex = require('knex')({
   client: 'pg',
   connection: pgConn
 });
-// var _ = require('lodash');
-
 
 exports.isValidCredentials = function(username, password){
   return (username && username.match('^[A-Za-z0-9-_\^]{5,30}$') && password && password.length > 2)? true : false;
@@ -16,30 +14,16 @@ exports.user = function(req,res) {
   var password = req.body.password || '';
 
   if(exports.isValidCredentials(username,password)){
-    knex('users').insert({username: username, password: password})
+    knex('users')
+    .insert({username: username, password: password})
     .then(function(resp) {
-      exports.respondsWith({
-        response: res,
-        type: 'success',
-        status: 201,
-        contentType: 'application/json'
-      });
+      exports.respondsWith({response: res,type: 'success',status: 201,contentType: 'application/json'});
     })
     .catch(function(err) {
-      exports.respondsWith({
-        response: res,
-        type: 'server_error',
-        description: 'Database connection error.',
-        contentType: 'application/json'
-      });
+      exports.respondsWith({response: res, type: 'server_error', description: 'Database connection error.', contentType: 'application/json'});
     });
   }else {
-    exports.respondsWith({
-      response: res,
-      type:'invalid_request',
-      description: 'Invalid credentials.',
-      contentType: 'application/json'
-    });
+    exports.respondsWith({response: res, type:'invalid_request', description: 'Invalid credentials.', contentType: 'application/json'});
   }
 };
 
@@ -59,82 +43,37 @@ exports.client = function(req,res) {
 }
 
 exports.login = function(req,res) {
-  var redirect = req.query.redirect ? req.query.redirect : null,
-      username = req.body.username || '',
-      password = req.body.password || '';
+  var redirect = req.query.redirect ? req.query.redirect : null;
+  var username = req.body.username || '';
+  var password = req.body.password || '';
 
   req.session.clientId = req.query.client_id ? req.query.client_id : '';
   req.session.redirectUri = req.query.redirect_uri ? req.query.redirect_uri : '';
 
-  if(exports.isValidCredentials(username,password)){
-
-    pg.connect(pgConn, function(err, client, done) {
-      if (err) {
-        return exports.respondsWith({
-          response: res,
-          type: 'server_error',
-          description: 'Database connection error.',
-          contentType: 'application/json'
-        });
-      }
-
-      client.query('SELECT * FROM users WHERE username = $1 AND password = $2;', [username,password], function(err, result) {
-        done();
-        if(err) {
-          return exports.respondsWith({
-            response: res,
-            type: 'server_error',
-            contentType: 'application/json'
-          });
-        }
-
-        var user = result.rows;
-        if (user && user.length) {
-          req.session.user = {
-            id: user[0].id,
-            user: username
-          }
-          if (redirect && req.session.clientId) {
-            res.writeHead(307, {'Location': redirect +
-                                '?response_type=code&client_id=' +
-                                req.session.clientId +
-                                '&redirect_uri=' +
-                                (req.session.redirectUri ? req.session.redirectUri : '')
-            });
-            res.end();
-          }
-          exports.respondsWith({
-            response: res,
-            type: 'success',
-            status: 200,
-            description: 'Logged in.'
-          });
-        }else {
-          exports.respondsWith({
-            response: res,
-            type:'access_denied',
-            description: 'Wrong username or password.',
-            contentType: 'application/json'
-          });
-        }
-      });
-    });
-  }else {
-    exports.respondsWith({
-      response: res,
-      type:'invalid_request',
-      description: 'Invalid credentials.',
-      contentType: 'application/json'
-    });
-  }
+  knex.select('*')
+  .from('users')
+  .where({username: username, password: password})
+  .then(function(result) {
+    var user = result[0];
+    req.session.user = {id: user.id,user: user.username};
+    if (redirect && req.session.clientId) {
+      var location = {'Location': `${redirect}?response_type=code&client_id=${req.session.clientId}&redirect_uri=${req.session.redirectUri}`};
+      res.writeHead(307, location);
+      res.end();
+    }
+    exports.respondsWith({response: res, type: 'success', status: 200, description: 'Logged in.'});
+  }).catch(function(error) {
+    console.log(error);
+    exports.respondsWith({response: res, type: 'server_error', description: 'Database connection error.', contentType: 'application/json'});
+  });
 }
 
 exports.respondsWith = function(responseObject){
-  var response    = responseObject.response,
-      type        = responseObject.type,
-      description = responseObject.description,
-      status      = responseObject.status,
-      contentType = responseObject.contentType;
+  var response = responseObject.response;
+  var type = responseObject.type;
+  var description = responseObject.description;
+  var status = responseObject.status;
+  var contentType = responseObject.contentType;
 
   if(contentType){
     //'application/json'
