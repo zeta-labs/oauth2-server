@@ -8,7 +8,9 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var app = express();
 var request = require('request');
-var models = require('./model.js');
+// var models = require('./model.js');
+var models = require('./models');
+var User = models.User;
 var MemcachedStore = require('connect-memcached')(session);
 
 //MIDDLEWARES
@@ -32,6 +34,20 @@ app.oauth = oauthserver({
     accessTokenLifetime: 60 * 60 * 24,
     clientIdRegex: '^[A-Za-z0-9-_\^]{5,36}$'
 });
+
+/**
+app.get('/', function(req, res) {
+
+  // User.findAll()
+  //   .then(function(users) {
+  //     console.log(users);
+  //   });
+
+  console.log(User.test());
+  res.json({status: 'ok'});
+
+});
+**/
 
 app.get('/:view?', function(req, res){
   var teste = req.params.view || 'index';
@@ -106,8 +122,10 @@ app.post('/login', routes.login);
 
 //SERVER
 var server = http.createServer(app);
-server.listen(process.argv[2] || 9999, function(){
-  var host = server.address().address;
-  var port = server.address().port;
-  console.log(`Web server listening at http://${host}:${port}`);
-});
+// models.sequelize.sync().then(function () {
+  server.listen(process.argv[2] || 9999, function(){
+    var host = server.address().address;
+    var port = server.address().port;
+    console.log(`Web server listening at http://${host}:${port}`);
+  });
+// });

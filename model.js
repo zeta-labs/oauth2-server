@@ -22,10 +22,10 @@
     saveToken
 **/
 
-var model = module.exports,
-    pg    = require('pg'),
-    pgConn= 'postgres://postgres:postgres@localhost/oauth',
-    OAuth2Error = require('oauth2-server/lib/error');
+var model = module.exports;
+var pg = require('pg');
+var pgConn = 'postgres://postgres:postgres@localhost/oauth';
+var OAuth2Error = require('oauth2-server/lib/error');
 
 model.getAccessToken = function (bearerToken, callback) {
   pg.connect(pgConn, function(err, client, done) {
