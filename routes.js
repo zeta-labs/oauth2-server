@@ -56,22 +56,6 @@ exports.client = function(req,res) {
   .catch(function(err) {
     exports.respondsWith({response: res, type: 'server_error', contentType: 'application/json'});
   });
-
-  // pg.connect(pgConn, function(err, client, done) {
-  //   if (err) return exports.respondsWith({response: res, type: 'server_error',description: 'Database connection error.'});
-  //
-  //   client.query('INSERT INTO clients(redirect_uri) VALUES ($1) RETURNING id, secret;', [redirectUri], function(err, result) {
-  //     done();
-  //     if(err) return exports.respondsWith({response: res, type: 'server_error', contentType: 'application/json'});
-  //
-  //     var client = result.rows[0];
-  //     res.end(JSON.stringify({
-  //         client_id : client.id,
-  //         client_secret: client.secret,
-  //         redirect_uri: client.redirect_uri
-  //     }));
-  //   });
-  // });
 }
 
 exports.login = function(req,res) {
