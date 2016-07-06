@@ -52,6 +52,20 @@ class UserService {
     })
     .catch(error);
   }
+
+  find(user,callback) {
+
+    let error = error => callback(error);
+
+    this.knex.select('*')
+    .from('users')
+    .where(user)
+    .then(rows => {
+      callback(null,rows[0]);
+    })
+    .catch(error);
+  }
+
 }
 
 module.exports = new UserService(knex, validate);

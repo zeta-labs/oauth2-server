@@ -5,7 +5,6 @@ var cors = require('cors');
 var http = require('http');
 var bodyParser = require('body-parser');
 var oauthserver = require('node-oauth2-server');
-var services = require('./services/index.js');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var app = express();
@@ -14,6 +13,7 @@ var models = require('./model.js');
 var MemcachedStore = require('connect-memcached')(session);
 
 var users = require('./services/users.js');
+var clients = require('./services/clients.js');
 
 //MIDDLEWARES
 app.use(cors());
@@ -121,13 +121,13 @@ app.post('/users', function(req, res){
 });
 
 app.post('/clients', function(req, res){
-  services.client.create(req.body, function(error,client){
+  clients.create(req.body, function(error,client){
     if(error){
       res.status(500);
       res.json(error); //TODO tratar erros
     }
     res.status(201);
-    res.location(`${req.protocol}://${req.get('host')}${req.originalUrl}/${client.id}`);
+    res.location(res.url(['clients', client.id]));
     res.json({client_id: client.id, client_secret: client.secret, redirect_uri: client.redirect_uri});
   });
 });
@@ -136,20 +136,20 @@ app.post('/login', function(req, res){
   req.session.clientId = req.query.client_id ? req.query.client_id : null;
   req.session.redirectUri = req.query.redirect_uri ? req.query.redirect_uri : null;
 
-  services.user.get(req.body,function(error,user){
-      if(error){
-        res.status(500);
-        res.json(error); //TODO tratar erros
-      } else if(user) {
-        req.session.user = {id: user.id, user: user.username};
-        if (req.query.redirect && req.session.clientId) {
-          var location = {'Location': `${req.query.redirect}?response_type=code&client_id=${req.session.clientId}&redirect_uri=${req.session.redirectUri}`};
-          res.writeHead(307, location);
-          res.end();
-        }
-        res.status(200);
-        res.json({description: 'Logged in.'});
+  users.find(req.body,function(error,user){
+    if(error){
+      res.status(500);
+      res.json(error); //TODO tratar erros
+    } else if(user) {
+      req.session.user = {id: user.id, user: user.username};
+      if (req.query.redirect && req.session.clientId) {
+        var location = {'Location': `${req.query.redirect}?response_type=code&client_id=${req.session.clientId}&redirect_uri=${req.session.redirectUri}`};
+        res.writeHead(307, location);
+        res.end();
       }
+      res.status(200);
+      res.json({description: 'Logged in.'});
+    }
   });
 });
 

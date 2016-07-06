@@ -1,18 +1,28 @@
-var pgConn = 'postgres://postgres:postgres@localhost:5432/oauth';
-var pg = require('pg');
+'use strict'
+
 var knex = require('knex')({
   client: 'pg',
-  connection: pgConn
+  connection: 'postgres://postgres:postgres@localhost:5432/oauth'
 });
 
-exports.createClient = function(client,callback) {
-  knex('clients')
+class ClientService{
+
+  constructor(knex){
+    this.knex = knex;
+  }
+
+  create(client, callback){
+    
+    let error = error => callback(error);
+
+    this.knex('clients')
     .insert(client)
     .returning('*')
-    .then(function(data) {
-      callback(null,data[0]);
+    .then(rows => {
+      callback(null, rows[0])
     })
-    .catch(function(err) {
-      callback(error);
-    });
-};
+    .catch(error);
+  }
+}
+
+module.exports = new ClientService(knex);
