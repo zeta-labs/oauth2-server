@@ -111,7 +111,7 @@ app.use(function (req, res, next) {
 
 app.post('/users', function(req, res){
   users.create(req.body, function(error, user){
-    if(error) {
+    if (error) {
       res.status(422).json(error);
       return;
     }
@@ -122,7 +122,7 @@ app.post('/users', function(req, res){
 
 app.post('/clients', function(req, res){
   clients.create(req.body, function(error,client){
-    if(error){
+    if (error) {
       res.status(500);
       res.json(error); //TODO tratar erros
     }
@@ -137,10 +137,10 @@ app.post('/login', function(req, res){
   req.session.redirectUri = req.query.redirect_uri ? req.query.redirect_uri : null;
 
   users.find(req.body,function(error,user){
-    if(error){
+    if (error) {
       res.status(500);
       res.json(error); //TODO tratar erros
-    } else if(user) {
+    } else if (user) {
       req.session.user = {id: user.id, user: user.username};
       if (req.query.redirect && req.session.clientId) {
         var location = {'Location': `${req.query.redirect}?response_type=code&client_id=${req.session.clientId}&redirect_uri=${req.session.redirectUri}`};

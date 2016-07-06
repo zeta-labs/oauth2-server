@@ -14,23 +14,21 @@ class UserService {
     this.knex = knex;
     this.validate = validate;
     this.constraints = {
-      create: {
-        username: {
-          presence: true,
-          length: {
-            minimum: 5,
-            maximum: 30
-          },
-          format: {
-            pattern: /^[A-Za-z0-9-_\^]{5,30}$/
-          }
+      username: {
+        presence: true,
+        length: {
+          minimum: 5,
+          maximum: 30
         },
-        password: {
-          presence: true,
-          length: {
-            minimum: 5,
-            maximum: 30
-          }
+        format: {
+          pattern: /^[A-Za-z0-9-_\^]{5,30}$/
+        }
+      },
+      password: {
+        presence: true,
+        length: {
+          minimum: 5,
+          maximum: 30
         }
       }
     };
@@ -55,15 +53,13 @@ class UserService {
 
   find(user,callback) {
 
-    let error = error => callback(error);
-
     this.knex.select('*')
     .from('users')
     .where(user)
     .then(rows => {
       callback(null,rows[0]);
     })
-    .catch(error);
+    .catch(error => callback(error));
   }
 
 }

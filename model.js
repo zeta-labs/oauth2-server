@@ -1,3 +1,4 @@
+'use strict'
 /**
   Authorization Code grant
     getAccessToken
@@ -22,71 +23,58 @@
     saveToken
 **/
 
-var model = module.exports,
-    pg    = require('pg'),
-    pgConn= 'postgres://postgres:postgres@localhost/oauth';
+var model = module.exports;
+var pg = require('pg');
+var pgConn = 'postgres://postgres:postgres@localhost/oauth';
+var users = require('./services/users.js');
+var clients = require('./services/clients.js');
+var accessTokens = require('./services/access_tokens.js');
+
+/*
+ * Required to support password grant type
+ */
+model.getUser = function (username, password, callback) {
+  users.find({ username, password }, callback);
+};
+
+model.getClient = function (clientId, clientSecret, callback) {
+  clients.find({id: clientId}, function(error, client){
+    if (error) { callback(error); }
+    callback(null, {
+      clientId: client.id,
+      clientSecret: client.secret,
+      redirectUri: client.redirect_uri
+    });
+  });
+};
 
 model.getAccessToken = function (bearerToken, callback) {
-  pg.connect(pgConn, function(err, client, done) {
-    if (err) {
-      console.error('pg connection error ', err);
-      callback(err);
-    }
-    client.query('SELECT * FROM access_tokens WHERE value = $1;', [bearerToken], function(err, result) {
-      done();
-
-      if (err || !result.rows.length) return callback(err);
-      var token = result.rows[0];
-
-      callback(null, {
-        accessToken: token.value,
-        clientId: token.client_id,
-        expires: token.expires_in,
-        userId: token.user_id
-      });
+  accessTokens.find({value: bearerToken},function(error, token){
+    if (error) { callback(error); }
+    callback(null, {
+      accessToken: token.value,
+      clientId: token.client_id,
+      expires: token.expires_in,
+      userId: token.user_id
     });
   });
 };
 
 // renamed to saveToken in version 3.x
 model.saveAccessToken = function (accessToken, clientId, expires, user, callback) {
-  pg.connect(pgConn, function(err, client, done) {
-    if (err) {
-      console.error('pg connection error ', err);
-      callback(err);
-    }
 
-    client.query('INSERT INTO access_tokens(value, expires_in, client_id, user_id) VALUES ($1, $2, $3, $4);', [accessToken,expires,clientId,user.id], function(err, result) {
-      done();
-      if(err) {
-        console.error('error running query', err);
-        callback(err);
-      }
-      callback();
-    });
-  });
+  accessTokens.create({
+    value: accessToken,
+    expires_in: expires,
+    client_id: clientId,
+    user_id: user
+  }, callback);
+
 };
 
-model.getClient = function (clientId, clientSecret, callback) {
-  pg.connect(pgConn, function(err, client, done) {
-    if (err) {
-      return console.error('pg connection error ', err);
-    }
-    client.query('SELECT * FROM clients WHERE id = $1;', [clientId], function(err, resultClients) {
-      done();
 
-      if (err || !resultClients.rows.length) return callback(err);
 
-      var resultClient = resultClients.rows[0];
-      if (clientSecret !== null && resultClient.secret !== clientSecret) return callback();
-      callback(null, {
-        clientId: resultClient.id,
-        clientSecret: resultClient.secret,
-        redirectUri: resultClient.redirect_uri
-      });
-    });
-  });
-};
+
 
 model.getPermittedResources = function (userId, resourceType, callback) {
   pg.connect(pgConn, function(err, client, done) {
@@ -168,26 +156,6 @@ model.saveRefreshToken = function (refreshToken, clientId, expires, userId, call
     callback(err);
   })
 };
-
-/*
- * Required to support password grant type
- */
-model.getUser = function (username, password, callback) {
-  pg.connect(pgConn, function(err, client, done) {
-    if (err) {
-      return console.error('pg connection error ', err);
-    }
-    client.query('SELECT * FROM users WHERE username = $1 AND password = $2;', [username,password], function(err, result) {
-      done();
-      if(err) {
-        return console.error('error running query', err);
-      }
-      var users = result.rows;
-      callback(err, users && users.length ? users[0] : false);
-    });
-  });
-};
-
 
 //auth code grant type
 // renamed to saveAuthorizationCode in versin 3.x
