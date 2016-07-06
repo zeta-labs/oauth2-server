@@ -1,21 +1,29 @@
-var users = module.exports;
-var _ = require('lodash');
+var pgConn = 'postgres://postgres:postgres@localhost:5432/oauth';
+var pg = require('pg');
 var knex = require('knex')({
   client: 'pg',
-  connection: 'postgres://postgres:postgres@localhost:5432/oau89th'
+  connection: pgConn
 });
 
+exports.create = function(user, callback) {
+  knex('users')
+    .insert(user)
+    .returning('*')
+    .then(function(data) {
+      callback(null,data[0]);
+    })
+    .catch(function(error) {
+      callback(error);
+    });
+};
 
-// users.printAll = function(){
-//   knex.select().from('users').then(function(users) {
-//     console.log(users);
-//   });
-// };
-
-knex('users').insert({username: 'username', password: 'password'})
-.then(function(resp) {
-  console.log('resp ',resp);
-})
-.catch(function(err) {
-  console.error('err ',err);
-});
+exports.get = function(user,callback) {
+  knex.select('*')
+    .from('users')
+    .where(user)
+    .then(function(data) {
+      callback(null,data[0]);
+    }).catch(function(error) {
+      callback(error);
+    });
+};
