@@ -110,11 +110,7 @@ app.use(function (req, res, next) {
 });
 
 app.post('/users', function(req, res){
-<<<<<<< HEAD
   users.create(req.body, function(error, user){
-=======
-  services.user.create(req.body, function(error, user){
->>>>>>> fd5e684348e1de27ac56f6dc70ca96ef1958fdda
     if(error) {
       res.status(422).json(error);
       return;
