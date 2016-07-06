@@ -8,7 +8,7 @@ var knex = require('knex')({
 exports.create = function(user, callback) {
   knex('users')
     .insert(user)
-    .returning('*')
+    .returning(['id', 'username', 'email', 'active', 'created_at'])
     .then(function(data) {
       callback(null,data[0]);
     })
