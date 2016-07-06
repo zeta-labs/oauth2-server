@@ -27,8 +27,6 @@ var model = module.exports;
 var pg = require('pg');
 var pgConn = 'postgres://postgres:postgres@localhost/oauth';
 var services = require('./services/');
-var clients = require('./services/clients.js');
-var accessTokens = require('./services/access_tokens.js');
 
 /*
  * Required to support password grant type
@@ -38,7 +36,7 @@ model.getUser = function (username, password, callback) {
 };
 
 model.getClient = function (clientId, clientSecret, callback) {
-  clients.find({id: clientId}, function(error, client){
+  services.clients.find({id: clientId}, function(error, client){
     if (error) { callback(error); }
     callback(null, {
       clientId: client.id,
@@ -49,7 +47,7 @@ model.getClient = function (clientId, clientSecret, callback) {
 };
 
 model.getAccessToken = function (bearerToken, callback) {
-  accessTokens.find({value: bearerToken},function(error, token){
+  services.accessTokens.find({value: bearerToken},function(error, token){
     if (error) { callback(error); }
     callback(null, {
       accessToken: token.value,
@@ -63,11 +61,11 @@ model.getAccessToken = function (bearerToken, callback) {
 // renamed to saveToken in version 3.x
 model.saveAccessToken = function (accessToken, clientId, expires, user, callback) {
 
-  accessTokens.create({
+  services.accessTokens.create({
     value: accessToken,
     expires_in: expires,
     client_id: clientId,
-    user_id: user
+    user_id: user.id
   }, callback);
 
 };

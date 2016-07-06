@@ -1,10 +1,3 @@
-'use strict'
-
-var knex = require('knex')({
-  client: 'pg',
-  connection: 'postgres://postgres:postgres@localhost:5432/oauth'
-});
-
 class ClientService{
 
   constructor(knex){
@@ -36,4 +29,4 @@ class ClientService{
   }
 }
 
-module.exports = new ClientService(knex);
+module.exports = ClientService;

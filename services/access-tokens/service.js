@@ -1,11 +1,4 @@
-'use strict'
-
-var knex = require('knex')({
-  client: 'pg',
-  connection: 'postgres://postgres:postgres@localhost:5432/oauth'
-});
-
-class AccessTokenService{
+class AccessTokensService{
 
   constructor(knex){
     this.knex = knex;
@@ -14,9 +7,10 @@ class AccessTokenService{
   create(accessToken, callback){
 
     let error = error => callback(error);
-
+    console.log('accessToken ', accessToken);
     this.knex('access_tokens')
     .insert(accessToken)
+    .returning('*')
     .then(rows => {
       callback(null, rows[0])
     })
@@ -35,4 +29,4 @@ class AccessTokenService{
   }
 }
 
-module.exports = new AccessTokenService(knex);
+module.exports = AccessTokensService;

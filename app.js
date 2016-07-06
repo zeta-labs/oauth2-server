@@ -12,7 +12,6 @@ var request = require('request');
 var models = require('./model.js');
 var MemcachedStore = require('connect-memcached')(session);
 
-var clients = require('./services/clients.js');
 var services = require('./services/');
 
 //MIDDLEWARES
@@ -121,7 +120,7 @@ app.post('/users', function(req, res){
 });
 
 app.post('/clients', function(req, res){
-  clients.create(req.body, function(error,client){
+  services.clients.create(req.body, function(error,client){
     if (error) {
       res.status(500);
       res.json(error); //TODO tratar erros
@@ -136,7 +135,7 @@ app.post('/login', function(req, res){
   req.session.clientId = req.query.client_id ? req.query.client_id : null;
   req.session.redirectUri = req.query.redirect_uri ? req.query.redirect_uri : null;
 
-  users.find(req.body,function(error,user){
+  services.users.find(req.body,function(error,user){
     if (error) {
       res.status(500);
       res.json(error); //TODO tratar erros
