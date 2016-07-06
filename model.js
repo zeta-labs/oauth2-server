@@ -26,7 +26,7 @@
 var model = module.exports;
 var pg = require('pg');
 var pgConn = 'postgres://postgres:postgres@localhost/oauth';
-var users = require('./services/users.js');
+var services = require('./services/');
 var clients = require('./services/clients.js');
 var accessTokens = require('./services/access_tokens.js');
 
@@ -34,7 +34,7 @@ var accessTokens = require('./services/access_tokens.js');
  * Required to support password grant type
  */
 model.getUser = function (username, password, callback) {
-  users.find({ username, password }, callback);
+  services.users.find({ username, password }, callback);
 };
 
 model.getClient = function (clientId, clientSecret, callback) {

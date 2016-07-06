@@ -12,8 +12,8 @@ var request = require('request');
 var models = require('./model.js');
 var MemcachedStore = require('connect-memcached')(session);
 
-var users = require('./services/users.js');
 var clients = require('./services/clients.js');
+var services = require('./services/');
 
 //MIDDLEWARES
 app.use(cors());
@@ -110,7 +110,7 @@ app.use(function (req, res, next) {
 });
 
 app.post('/users', function(req, res){
-  users.create(req.body, function(error, user){
+  services.users.create(req.body, function(error, user){
     if (error) {
       res.status(422).json(error);
       return;
