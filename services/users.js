@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use strict'
 
 // var users = module.exports;
@@ -56,34 +55,3 @@ class UserService {
 }
 
 module.exports = new UserService(knex, validate);
-=======
-var pgConn = 'postgres://postgres:postgres@localhost:5432/oauth';
-var pg = require('pg');
-var knex = require('knex')({
-  client: 'pg',
-  connection: pgConn
-});
-
-exports.create = function(user, callback) {
-  knex('users')
-    .insert(user)
-    .returning(['id', 'username', 'email', 'active', 'created_at'])
-    .then(function(data) {
-      callback(null,data[0]);
-    })
-    .catch(function(error) {
-      callback(error);
-    });
-};
-
-exports.get = function(user,callback) {
-  knex.select('*')
-    .from('users')
-    .where(user)
-    .then(function(data) {
-      callback(null,data[0]);
-    }).catch(function(error) {
-      callback(error);
-    });
-};
->>>>>>> fd5e684348e1de27ac56f6dc70ca96ef1958fdda
