@@ -1,3 +1,5 @@
+'use strict'
+
 var express = require('express');
 var cors = require('cors');
 var http = require('http');
@@ -10,6 +12,8 @@ var app = express();
 var request = require('request');
 var models = require('./model.js');
 var MemcachedStore = require('connect-memcached')(session);
+
+var users = require('./services/users.js');
 
 //MIDDLEWARES
 app.use(cors());
@@ -97,15 +101,22 @@ app.post('/oauth/authorize', function (req, res, next) {
     next(null, req.body.allow === 'yes', req.session.user, req.session.user);
 }));
 
+
+app.use(function (req, res, next) {
+  res.url = function (path) {
+    return [req.protocol+'://'+req.get('host')].concat(path).join('/');
+  }
+  next();
+});
+
 app.post('/users', function(req, res){
-  services.createUser(req.body, function(error, user){
+  users.create(req.body, function(error, user){
     if(error) {
-      res.status(500);
-      res.json(error); //TODO tratar erros
+      res.status(422).json(error);
+      return;
     }
-    res.status(201);
-    res.location(`${req.protocol}://${req.get('host')}${req.originalUrl}${user.id}`);
-    res.json(user);
+    res.location(res.url(['users', user.id]));
+    res.status(201).json(user);
   });
 });
 

@@ -1,21 +1,57 @@
-var users = module.exports;
-var _ = require('lodash');
-var knex = require('knex')({
+'use strict'
+
+// var users = module.exports;
+// let _ = require('lodash');
+let validate = require('validate.js');
+let knex = require('knex')({
   client: 'pg',
-  connection: 'postgres://postgres:postgres@localhost:5432/oau89th'
+  connection: 'postgres://postgres:postgres@localhost:5432/oauth'
 });
 
+class UserService {
 
-// users.printAll = function(){
-//   knex.select().from('users').then(function(users) {
-//     console.log(users);
-//   });
-// };
+  constructor(knex, validate) {
+    this.knex = knex;
+    this.validate = validate;
+    this.constraints = {
+      create: {
+        username: {
+          presence: true,
+          length: {
+            minimum: 5,
+            maximum: 30
+          },
+          format: {
+            pattern: /^[A-Za-z0-9-_\^]{5,30}$/
+          }
+        },
+        password: {
+          presence: true,
+          length: {
+            minimum: 5,
+            maximum: 30
+          }
+        }
+      }
+    };
+  }
 
-knex('users').insert({username: 'username', password: 'password'})
-.then(function(resp) {
-  console.log('resp ',resp);
-})
-.catch(function(err) {
-  console.error('err ',err);
-});
+  create(data, callback) {
+
+    let error = (error) => callback(error);
+
+    this.validate.async(data, this.constraints)
+    .then(user => {
+      this.knex('users')
+      .insert(user)
+      .returning('*')
+      .then(rows => {
+        callback(null, rows[0]);
+      })
+      .catch(error);
+    })
+    .catch(error);
+  }
+}
+
+module.exports = new UserService(knex, validate);
