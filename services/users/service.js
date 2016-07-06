@@ -1,18 +1,25 @@
 const CONSTRAINTS = require('./constraints');
 
+let _ = require('lodash');
+
 class UserService {
 
-  constructor(knex, validate) {
+  constructor(knex, validatate) {
     this.knex = knex;
-    this.validate = validate;
+    this.validatate = validatate;
     this.constraints = CONSTRAINTS;
+    knex('users').columnInfo().then(columns => {
+      this.columns = columns;
+    });
   }
 
   create(data, callback) {
-
-    let error = (error) => callback(error);
-
-    this.validate.async(data, this.constraints.CREATE)
+    let error = (error) => {
+      console.error(error);
+      callback(error);
+    }
+    this.validatate
+    .async(data, this.constraints.CREATE)
     .then(user => {
       this.knex('users')
       .insert(user)

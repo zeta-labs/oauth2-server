@@ -1,4 +1,8 @@
 const CREATE = {
+  email: {
+    presence: true,
+    email: true
+  },
   username: {
     presence: true,
     length: {

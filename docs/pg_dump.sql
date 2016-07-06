@@ -22,11 +22,13 @@ ALTER TABLE clients
 CREATE TABLE users
 (
   id uuid NOT NULL DEFAULT uuid_generate_v4(),
-  username character varying,
-  password character varying,
-  email character varying,
-  active boolean,
-  created_at time without time zone,
+  username character varying NOT NULL,
+  password character varying NOT NULL,
+  email character varying NOT NULL,
+  profile jsonb,
+  active boolean DEFAULT true,
+  created_at time without time zone DEFAULT now(),
+  updated_at time without time zone DEFAULT now(),
   CONSTRAINT users_pkey PRIMARY KEY (id)
 )
 WITH (
