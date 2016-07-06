@@ -4,6 +4,7 @@
 let { UserService } = require('./users/');
 let { ClientService } = require('./clients/');
 let { AccessTokensService } = require('./access-tokens/');
+let { CodesService } = require('./codes/');
 
 
 // let _ = require('lodash');
@@ -16,3 +17,4 @@ let knex = require('knex')({
 module.exports.users = new UserService(knex, validate);
 module.exports.clients = new ClientService(knex);
 module.exports.accessTokens = new AccessTokensService(knex);
+module.exports.codes = new CodesService(knex);

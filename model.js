@@ -70,6 +70,31 @@ model.saveAccessToken = function (accessToken, clientId, expires, user, callback
 
 };
 
+// renamed to getAuthorizationCode in version 3.x
+model.getAuthCode = function(bearerCode,callback) {
+  services.codes.find({value: bearerCode}, function(error, code){
+    if (error) { callback(error); }
+    callback(null,{
+      clientId: code.client_id,
+      expires: code.expires_in * 1000,
+      userId: code.user_id
+    })
+  });
+};
+
+
+//auth code grant type
+// renamed to saveAuthorizationCode in versin 3.x
+model.saveAuthCode = function(authCode, clientId, expires, user, callback) {
+  services.codes.create({
+    value: authCode,
+    expires_in: parseInt(expires / 1000, 10),
+    client_id: clientId,
+    user_id: user.id
+  }, callback);
+};
+
+
 
 
 
@@ -130,6 +155,9 @@ model.getResourcePermission = function (userId, resourceType, resourceId, callba
   });
 };
 
+
+
+
 /* REFRESH TOKEN IS NOT TESTED */
 model.getRefreshToken = function (bearerToken, callback) {
   db.oauth_refresh_tokens.find({'refresh_token' : bearerToken}, function(err,users) {
@@ -153,50 +181,4 @@ model.saveRefreshToken = function (refreshToken, clientId, expires, userId, call
   db.oauth_refresh_tokens.save({refresh_token: refreshToken, client_id: clientId, user_id: userId, expires:expires},function(err,saved) {
     callback(err);
   })
-};
-
-//auth code grant type
-// renamed to saveAuthorizationCode in versin 3.x
-model.saveAuthCode = function(authCode, clientId, expires, user, callback) {
-  pg.connect(pgConn, function(err, client, done) {
-    if (err) {
-      return console.error('pg connection error ', err);
-    }
-
-    client.query('INSERT INTO codes(value, expires_in, client_id, user_id) VALUES ($1, $2, $3, $4);', [authCode,parseInt(expires / 1000, 10),clientId,user.id], function(err, result) {
-      done();
-      if(err) {
-        return console.error('error running query ##', err);
-      }
-      var oauthCode = result.rows[0];
-      callback();
-    });
-  });
-};
-
- // renamed to getAuthorizationCode in version 3.x
-model.getAuthCode = function(bearerCode,callback) {
-  pg.connect(pgConn, function(err, client, done) {
-    if (err) {
-      return console.error('pg connection error ', err);
-    }
-    client.query('SELECT * FROM codes WHERE value = $1;', [bearerCode], function(err, result) {
-      done();
-      if (err || !result.rows.length) return callback(err);
-
-      var code = result.rows[0];
-      if (code && code.expires_in) {
-        // code.expires_in = new Date(code.expires_in * 1000);
-        code.expires_in = code.expires_in * 1000;
-      }
-
-      var authorizationCode = {
-        clientId: code.client_id,
-        expires: code.expires_in,
-        userId: code.user_id
-      }
-
-      callback(err,authorizationCode);
-    });
-  });
 };
