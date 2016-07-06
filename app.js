@@ -3,7 +3,7 @@ var cors = require('cors');
 var http = require('http');
 var bodyParser = require('body-parser');
 var oauthserver = require('node-oauth2-server');
-var routes = require('./routes.js');
+var services = require('./services/index.js');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var app = express();
@@ -67,7 +67,6 @@ app.all('/api/services/:id/*', app.oauth.authorise(), function(req,res) {
 });
 
 app.use(bodyParser.urlencoded({ extended: true }));
-
 app.use(bodyParser.json());
 
 app.all('/oauth/token', app.oauth.grant());
@@ -99,23 +98,50 @@ app.post('/oauth/authorize', function (req, res, next) {
 }));
 
 app.post('/users', function(req, res){
-  var services = routes; //TODO
   services.createUser(req.body, function(error, user){
     if(error) {
       res.status(500);
-      res.json(error);
+      res.json(error); //TODO tratar erros
     }
     res.status(201);
-    res.location('/users/' + user.id)
-    console.log(req);
+    res.location(`${req.protocol}://${req.get('host')}${req.originalUrl}${user.id}`);
     res.json(user);
-    re
   });
 });
 
-app.post('/clients', routes.client);
+app.post('/clients', function(req, res){
+  services.createClient(req.body, function(error,client){
+    if(error){
+      res.status(500);
+      res.json(error); //TODO tratar erros
+    }
+    res.status(201);
+    res.location(`${req.protocol}://${req.get('host')}${req.originalUrl}/${client.id}`);
+    res.json({client_id: client.id, client_secret: client.secret, redirect_uri: client.redirect_uri});
+  });
+});
 
-app.post('/login', routes.login);
+app.post('/login', function(req, res){
+  req.session.clientId = req.query.client_id ? req.query.client_id : null;
+  req.session.redirectUri = req.query.redirect_uri ? req.query.redirect_uri : null;
+
+  services.getUser(req.body,function(error,user){
+      if(error){
+        res.status(500);
+        res.json(error); //TODO tratar erros
+      }
+      req.session.user = {id: user.id, user: user.username};
+      if (req.query.redirect && req.session.clientId) {
+        var location = {'Location': `${req.query.redirect}?response_type=code&client_id=${req.session.clientId}&redirect_uri=${req.session.redirectUri}`};
+        res.writeHead(307, location);
+        res.end();
+      }
+      res.status(200);
+      res.json({description: 'Logged in.'});
+  });
+});
+
+
 
 //SERVER
 var server = http.createServer(app);
