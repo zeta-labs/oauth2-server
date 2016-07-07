@@ -6,8 +6,11 @@ class ClientService{
 
   create(client, callback){
 
-    let error = error => callback(error);
-
+    let error = (error) => {
+      console.error(error);
+      callback(error);
+    }
+    
     this.knex('clients')
     .insert(client)
     .returning('*')
