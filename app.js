@@ -45,6 +45,7 @@ app.get('/:view?', function(req, res){
   });
 });
 
+// app.get('/api/services', function(req,res) {
 app.get('/api/services', app.oauth.authorise(), function(req,res) {
   models.getPermittedResources(req.user.id, 'services', function(error,data){
     if(error) { res.sendStatus(404); return; }
@@ -119,6 +120,19 @@ app.post('/users', function(req, res){
   });
 });
 
+//TODO  Security Implementation
+app.delete('/users/:id', function(req, res){
+  services.users.delete(req.params.id, function(error,data){
+    if (error || !data) {
+      res.status(422);
+      res.end();
+      return;
+    }
+    res.status(200);
+    res.end();
+  });
+});
+
 app.post('/clients', function(req, res){
   services.clients.create(req.body, function(error,client){
     if (error) {
@@ -128,6 +142,20 @@ app.post('/clients', function(req, res){
     res.status(201);
     res.location(res.url(['clients', client.id]));
     res.json({client_id: client.id, client_secret: client.secret, redirect_uri: client.redirect_uri});
+  });
+});
+
+//TODO  Security Implementation
+app.delete('/clients/:id', function(req, res){
+  console.log(req.params.id);
+  services.clients.delete(req.params.id, function(error,data){
+    if (error || !data) {
+      res.status(422);
+      res.end();
+      return;
+    }
+    res.status(200);
+    res.end();
   });
 });
 
@@ -156,7 +184,7 @@ app.post('/login', function(req, res){
 
 //SERVER
 var server = http.createServer(app);
-server.listen(process.argv[2] || 9999, function(){
+server.listen(process.argv[2] || 9995, function(){
   var host = server.address().address;
   var port = server.address().port;
   console.log(`Web server listening at http://${host}:${port}`);

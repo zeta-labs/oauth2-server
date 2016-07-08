@@ -100,6 +100,27 @@ model.saveAuthCode = function(authCode, clientId, expires, user, callback) {
 
 
 model.getPermittedResources = function (userId, resourceType, callback) {
+  /**
+  knex.select([
+    `${resourceType}.id`,
+    `${resourceType}.name`,
+    `${resourceType}.uri`,
+    'users_has_resources.options'
+  ])
+  .from('users_has_resources')
+  .join(resourceType, {
+    'users_has_resources.resource_id' : `${resourceType}.id`,
+    'users_has_resources.user_id' : userId,
+    'users_has_resources.resource_type' : resourceType,
+    'users_has_resources.permission' : 'TRUE'
+  })
+  .then(rows => {
+    console.log(rows);
+    // callback(null,rows);
+  })
+  .catch(error => callback(error));
+  **/
+
   pg.connect(pgConn, function(err, client, done) {
     if (err) {
       return console.error('pg connection error ', err);

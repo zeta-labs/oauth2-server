@@ -42,6 +42,17 @@ class UserService {
     })
     .catch(error => callback(error));
   }
+
+  delete(id, callback) {
+
+    this.knex('users')
+    .where('id', id)
+    .del()
+    .then(isDeleted => {
+      callback(null,isDeleted);
+    })
+    .catch(error => callback(error));
+  }
 }
 
 module.exports = UserService;

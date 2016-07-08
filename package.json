@@ -21,6 +21,7 @@
     "validate.js": "^0.10.0"
   },
   "devDependencies": {
+    "mocha": "^2.5.3",
     "chai": "^3.2.0",
     "chai-http": "^1.0.0"
   },
