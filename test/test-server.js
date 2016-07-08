@@ -29,17 +29,38 @@ describe('Oauth2-server FLOW', function() {
     .send({'redirect_uri': 'http://www.oauthteste.com.br'})
     .end(function(err, res){
       client = res.body;
-      // console.log(res.body);
+      // console.log(res);
       res.should.have.status(201);
       done();
     });
   });
 
-  //DELETE
+  //AUTHORIZE
+  it('should get authorization_code on /oauth/authorize GET', function(done) {
+    chai.request(server)
+    .get('/oauth/authorize')
+    .query({response_type: 'code', client_id: client.client_id, redirect_uri: client.redirect_uri})
+    .end(function(err, res){
+      console.log('RES, ', res);
+      expect(res).to.redirect;
+      res.should.have.status(500);
+    });
+    done();
+  });
+  // it('should get authorization_code on /oauth/authorize GET', function(done) {
+  //   chai.request(server)
+  //     .get(`/oauth/authorize?  response_type=code&client_id=${client.client_id}&redirect_uri=${client.redirect_uri}`)
+  //     .end(function(error, response) {
+  //       response.should.have.status(304);
+  //       done();
+  //     });
+  // });
+
+  //DELETES
   it('should delete a SINGLE USER on /users/:id DELETE', function(done) {
     chai.request(server)
-      .delete('/users/'+user.id)
-      .end(function(error, response){
+      .delete(`/users/${user.id}`)
+      .end(function(error, response) {
         response.should.have.status(200);
         done();
     });
@@ -47,12 +68,11 @@ describe('Oauth2-server FLOW', function() {
 
   it('should delete a SINGLE CLIENT on /clients/:id DELETE', function(done) {
     chai.request(server)
-      .delete('/clients/'+client.client_id)
+      .delete(`/clients/${client.client_id}`)
       .end(function(error, response){
         response.should.have.status(200);
         done();
     });
   });
 
-  'http://localhost:9990/oauth/authorize?response_type=code&client_id=1e411d7b-0984-46ea-b41c-ac2a1d7bbe0d&redirect_uri=http://www.google.com.br'
 });
