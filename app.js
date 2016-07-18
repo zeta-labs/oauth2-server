@@ -70,6 +70,16 @@ app.all('/api/services/:id/*', app.oauth.authorise(), function(req,res) {
   });
 });
 
+app.get('/api/users', function(req, res){
+  services.users.all(function(error, users){
+    if (error) {
+      res.status(422).json(error);
+      return;
+    }
+    res.status(200).json(users);
+  });
+});
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -77,9 +87,9 @@ app.all('/oauth/token', app.oauth.grant());
 
 app.get('/oauth/authorize', function (req, res, next) {
     if (!req.session.user) {
-      var path        = '/login?redirect=' + req.path,
-          clientId    = '&client_id='      + req.query.client_id,
-          redirectUri = '&redirect_uri='   + req.query.redirect_uri;
+      var path = '/login?redirect=' + req.path,
+          clientId = '&client_id=' + req.query.client_id,
+          redirectUri = '&redirect_uri=' + req.query.redirect_uri;
       return res.redirect(path + clientId + redirectUri);
     }
     req.body.allow = 'yes';
@@ -147,7 +157,6 @@ app.post('/clients', function(req, res){
 
 //TODO  Security Implementation
 app.delete('/clients/:id', function(req, res){
-  console.log(req.params.id);
   services.clients.delete(req.params.id, function(error,data){
     if (error || !data) {
       res.status(422);
@@ -171,11 +180,14 @@ app.post('/login', function(req, res){
       req.session.user = {id: user.id, user: user.username};
       if (req.query.redirect && req.session.clientId) {
         var location = {'Location': `${req.query.redirect}?response_type=code&client_id=${req.session.clientId}&redirect_uri=${req.session.redirectUri}`};
+        // res.redirect(location);
         res.writeHead(307, location);
         res.end();
+        console.log('req.session ', req.session);
+      }else{
+        res.status(200);
+        res.json({description: 'Logged in.'});
       }
-      res.status(200);
-      res.json({description: 'Logged in.'});
     }
   });
 });

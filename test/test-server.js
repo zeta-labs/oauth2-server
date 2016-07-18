@@ -2,7 +2,7 @@ var chai = require('chai');
 var chaiHttp = require('chai-http');
 var should = chai.should();
 // var server = require('../app');
-var server = 'http://localhost:9990';
+var server = 'http://localhost:80';
 chai.use(chaiHttp);
 
 
@@ -15,9 +15,9 @@ describe('Oauth2-server FLOW', function() {
     chai.request(server)
     .post('/users')
     .send({'username': 'Javascript', 'password': 'rulezzzz', 'email': 'e@mail.com.ui'})
-    .end(function(err, res){
-      user = res.body;
+    .end(function(err, res) {
       // console.log(res.body);
+      user = res.body;
       res.should.have.status(201);
       done();
     });
@@ -26,52 +26,81 @@ describe('Oauth2-server FLOW', function() {
   it('should add a SINGLE CLIENT on /clients POST', function(done) {
     chai.request(server)
     .post('/clients')
-    .send({'redirect_uri': 'http://www.oauthteste.com.br'})
-    .end(function(err, res){
-      client = res.body;
+    .send({'redirect_uri': 'http://www.google.com'})
+    .end(function(err, res) {
       // console.log(res);
+      client = res.body;
       res.should.have.status(201);
       done();
     });
   });
 
   //AUTHORIZE
-  it('should get authorization_code on /oauth/authorize GET', function(done) {
+  it('shoud get bearer code with grant type "password"', function(done) {
+    chai.request(server)
+    .post('/oauth/token')
+    .set('content-type', 'application/x-www-form-urlencoded')
+    .send({grant_type: 'password', client_id: client.client_id, client_secret: client.client_secret, username: user.username, password: user.password})
+    .end(function(error, response){
+      console.log(response.body);
+      done();
+    });
+  });
+
+  /**
+  it('should redirect with authentication on /oauth/authorize GET', function(done) {
     chai.request(server)
     .get('/oauth/authorize')
     .query({response_type: 'code', client_id: client.client_id, redirect_uri: client.redirect_uri})
-    .end(function(err, res){
-      console.log('RES, ', res);
-      expect(res).to.redirect;
-      res.should.have.status(500);
+    .end(function(err, res) {
+      if(err) { console.log('err ', err); }
+
+      var cookies = res.headers['set-cookie'].pop().split(';')[0];
+
+      var seccondRequest = chai.request(server)
+        .set('content-type', 'application/x-www-form-urlencoded')
+        .post(res.redirects[0])
+        .send({username: user.username , password: user.password });
+      seccondRequest.cookies = cookies;
+      seccondRequest.end(function(err, response){
+
+        var thirdRequest = chai.request(server)
+          .post(response.redirects[0])
+          .send({username: user.username , password: user.password });
+        thirdRequest.cookies = cookies;
+        thirdRequest.end(function(err, response) {
+
+          var fourthRequest = chai.request(server)
+            .get('/oauth/authorize')
+            .query({response_type: 'code', client_id: client.client_id, redirect_uri: client.redirect_uri});
+          fourthRequest.cookies = cookies;
+          fourthRequest.end(function(err, response) {
+            console.log();
+            response.should.have.status(200);
+            done();
+          });
+        });
+      });
     });
-    done();
   });
-  // it('should get authorization_code on /oauth/authorize GET', function(done) {
-  //   chai.request(server)
-  //     .get(`/oauth/authorize?  response_type=code&client_id=${client.client_id}&redirect_uri=${client.redirect_uri}`)
-  //     .end(function(error, response) {
-  //       response.should.have.status(304);
-  //       done();
-  //     });
-  // });
+  **/
 
   //DELETES
   it('should delete a SINGLE USER on /users/:id DELETE', function(done) {
     chai.request(server)
-      .delete(`/users/${user.id}`)
-      .end(function(error, response) {
-        response.should.have.status(200);
-        done();
+    .delete(`/users/${user.id}`)
+    .end(function(error, response) {
+      response.should.have.status(200);
+      done();
     });
   });
 
   it('should delete a SINGLE CLIENT on /clients/:id DELETE', function(done) {
     chai.request(server)
-      .delete(`/clients/${client.client_id}`)
-      .end(function(error, response){
-        response.should.have.status(200);
-        done();
+    .delete(`/clients/${client.client_id}`)
+    .end(function(error, response){
+      response.should.have.status(200);
+      done();
     });
   });
 

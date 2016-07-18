@@ -5,7 +5,6 @@ class ClientService{
   }
 
   create(client, callback){
-
     let error = (error) => {
       console.error(error);
       callback(error);
@@ -21,7 +20,6 @@ class ClientService{
   }
 
   find(client,callback) {
-
     this.knex.select('*')
     .from('clients')
     .where(client)
@@ -32,7 +30,6 @@ class ClientService{
   }
 
   delete(id, callback) {
-
     this.knex('clients')
     .where('id', id)
     .del()

@@ -33,7 +33,6 @@ class UserService {
   }
 
   find(user,callback) {
-
     this.knex.select('*')
     .from('users')
     .where(user)
@@ -43,8 +42,16 @@ class UserService {
     .catch(error => callback(error));
   }
 
-  delete(id, callback) {
+  all(callback) {
+    this.knex.select('*')
+    .from('users')
+    .then(rows => {
+      callback(null,rows[0]);
+    })
+    .catch(error => callback(error));
+  }
 
+  delete(id, callback) {
     this.knex('users')
     .where('id', id)
     .del()
