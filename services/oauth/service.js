@@ -91,20 +91,21 @@ class OauthService {
     }, callback);
   };
 
-  //TODO TESTAR
-  getPermittedResources(userId, resourceType, callback){
-    knex.select([
+  ownedBy(userId, resourceType, callback){
+    var raw = this.knex.raw;
+
+    this.knex.select([
+      'users_has_resources.options',
       `${resourceType}.id`,
       `${resourceType}.name`,
-      `${resourceType}.uri`,
-      'users_has_resources.options'
+      `${resourceType}.uri`
     ])
     .from('users_has_resources')
-    .join(resourceType, {
-      'users_has_resources.resource_id' : `${resourceType}.id`,
-      'users_has_resources.user_id' : userId,
-      'users_has_resources.resource_type' : resourceType,
-      'users_has_resources.permission' : 'TRUE'
+    .join(resourceType, function() {
+      this.on('users_has_resources.resource_id', '=', `${resourceType}.id`)
+      .on('users_has_resources.user_id', '=', raw('?', [userId]))
+      .on('users_has_resources.resource_type', '=', raw('?', [resourceType]))
+      .on('users_has_resources.permission', '=', raw('?', [true]))
     })
     .then(rows => {
       callback(null,rows);
@@ -112,19 +113,20 @@ class OauthService {
     .catch(error => callback(error));
   };
 
-  //TODO: TESTAR
   getResourcePermission(userId, resourceType, resourceId, callback) {
-    knex.select([
+    var raw = this.knex.raw;
+
+    this.knex.select([
+      'users_has_resources.*',
       `${resourceType}.name`,
-      `${resourceType}.uri`,
-      'users_has_resources.*'
+      `${resourceType}.uri`
     ])
     .from('users_has_resources')
-    .join(resourceType, {
-      'users_has_resources.resource_id' : `${resourceType}.id`,
-      'users_has_resources.user_id' : userId,
-      'users_has_resources.resource_type' : resourceType,
-      'users_has_resources.resource_id' : resourceId
+    .join(resourceType, function() {
+      this.on('users_has_resources.resource_id', '=', `${resourceType}.id`)
+      .on('users_has_resources.user_id', '=', raw('?', [userId]))
+      .on('users_has_resources.resource_type', '=', raw('?', [resourceType]))
+      .on('users_has_resources.resource_id', '=', raw('?', [resourceId]))
     })
     .then(rows => {
       var resourcePermission = rows[0];
@@ -156,19 +158,19 @@ class OauthService {
         return callback(false, /*authorizedClientIds.indexOf(clientId.toLowerCase()) >= 0*/true);
     }
   };
-
-  /* REFRESH TOKEN IS NOT TESTED */
-  getRefreshToken(bearerToken, callback) {
-    db.oauth_refresh_tokens.find({'refresh_token' : bearerToken}, function(err,users) {
-      callback(err, users && users.length ? users[0] : false);
-    });
-  };
-  /* REFRESH TOKEN IS NOT TESTED */
-  saveRefreshToken(refreshToken, clientId, expires, userId, callback) {
-    db.oauth_refresh_tokens.save({refresh_token: refreshToken, client_id: clientId, user_id: userId, expires:expires},function(err,saved) {
-      callback(err);
-    })
-  };
+  //
+  // /* REFRESH TOKEN IS NOT TESTED */
+  // getRefreshToken(bearerToken, callback) {
+  //   db.oauth_refresh_tokens.find({'refresh_token' : bearerToken}, function(err,users) {
+  //     callback(err, users && users.length ? users[0] : false);
+  //   });
+  // };
+  // /* REFRESH TOKEN IS NOT TESTED */
+  // saveRefreshToken(refreshToken, clientId, expires, userId, callback) {
+  //   db.oauth_refresh_tokens.save({refresh_token: refreshToken, client_id: clientId, user_id: userId, expires:expires},function(err,saved) {
+  //     callback(err);
+  //   })
+  // };
 }
 
 module.exports = OauthService;

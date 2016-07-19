@@ -27,6 +27,16 @@ class CodesService{
     })
     .catch(error => callback(error));
   }
+
+  delete(code, callback) {
+    this.knex('codes')
+    .where('value', code)
+    .del()
+    .then(isDeleted => {
+      callback(null,isDeleted);
+    })
+    .catch(error => callback(error));
+  }
 }
 
 module.exports = CodesService;

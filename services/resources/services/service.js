@@ -1,15 +1,15 @@
-class AccessTokensService{
+class ServicesService{
 
   constructor(knex){
     this.knex = knex;
   }
 
-  create(accessToken, callback){
+  create(service, callback){
 
     let error = error => callback(error);
-    console.log('accessToken ', accessToken);
-    this.knex('access_tokens')
-    .insert(accessToken)
+
+    this.knex('services')
+    .insert(service)
     .returning('*')
     .then(rows => {
       callback(null, rows[0])
@@ -17,19 +17,19 @@ class AccessTokensService{
     .catch(error);
   }
 
-  find(accessToken,callback) {
+  find(service,callback) {
     this.knex.select('*')
-    .from('access_tokens')
-    .where(accessToken)
+    .from('services')
+    .where(service)
     .then(rows => {
       callback(null,rows[0]);
     })
     .catch(error => callback(error));
   }
 
-  deleteByValue(value, callback) {
-    this.knex('access_tokens')
-    .where('value', value)
+  delete(id, callback) {
+    this.knex('services')
+    .where('id', id)
     .del()
     .then(isDeleted => {
       callback(null,isDeleted);
@@ -38,4 +38,4 @@ class AccessTokensService{
   }
 }
 
-module.exports = AccessTokensService;
+module.exports = ServicesService;

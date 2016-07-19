@@ -6,6 +6,7 @@ let { ClientService } = require('./clients/');
 let { AccessTokensService } = require('./access-tokens/');
 let { CodesService } = require('./codes/');
 let { OauthService } = require('./oauth/');
+let { ServicesService } = require('./resources/services/');
 
 
 // let _ = require('lodash');
@@ -20,3 +21,4 @@ module.exports.clients = new ClientService(knex);
 module.exports.accessTokens = new AccessTokensService(knex);
 module.exports.codes = new CodesService(knex);
 module.exports.oauth = new OauthService(knex);
+module.exports.services = new ServicesService(knex);

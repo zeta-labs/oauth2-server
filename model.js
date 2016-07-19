@@ -99,7 +99,7 @@ model.saveAuthCode = function(authCode, clientId, expires, user, callback) {
 
 
 
-model.getPermittedResources = function (userId, resourceType, callback) {
+model.ownedBy = function (userId, resourceType, callback) {
   /**
   knex.select([
     `${resourceType}.id`,

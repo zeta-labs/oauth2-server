@@ -9,7 +9,7 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var app = express();
 var request = require('request');
-var models = require('./model.js');
+// var models = require('./model.js');
 var MemcachedStore = require('connect-memcached')(session);
 
 var services = require('./services/');
@@ -29,7 +29,7 @@ app.use(session({
 
 //OAUTH Model configurations
 app.oauth = oauthserver({
-    model: models,
+    model: services.oauth,
     grants: ['password', 'authorization_code'],
     debug: true,
     accessTokenLifetime: 60 * 60 * 24,
@@ -47,7 +47,7 @@ app.get('/:view?', function(req, res){
 
 // app.get('/api/services', function(req,res) {
 app.get('/api/services', app.oauth.authorise(), function(req,res) {
-  models.getPermittedResources(req.user.id, 'services', function(error,data){
+  services.oauth.ownedBy(req.user.id, 'services', function(error,data){
     if(error) { res.sendStatus(404); return; }
     res.json(data);
   });
@@ -55,7 +55,7 @@ app.get('/api/services', app.oauth.authorise(), function(req,res) {
 
 app.all('/api/services/:id/*', app.oauth.authorise(), function(req,res) {
 
-  models.getResourcePermission(req.user.id, 'services', req.params.id, function(error,data){
+  services.oauth.getResourcePermission(req.user.id, 'services', req.params.id, function(error,data){
     if(error) { res.sendStatus(404); return; }
     if(!data.permission) { res.sendStatus(401); return; }
 
@@ -119,7 +119,56 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.post('/users', function(req, res){
+app.delete('/api/access_tokens/:value', function(req, res){
+  services.accessTokens.deleteByValue(req.params.value, function(error,data){
+    if (error || !data) {
+      res.status(422);
+      res.end();
+      return;
+    }
+    res.status(200);
+    res.end();
+  });
+});
+
+app.post('/api/services', function(req, res){
+  console.log(req.body);
+  // res.end();
+  services.services.create(req.body, function(error, service){
+    if (error) {
+      res.status(422).json(error);
+      return;
+    }
+    res.location(res.url(['services', service.id]));
+    res.status(201).json(service);
+  });
+});
+
+app.delete('/api/codes/:code', function(req, res){
+  services.codes.delete(req.params.code, function(error,data){
+    if (error || !data) {
+      res.status(422);
+      res.end();
+      return;
+    }
+    res.status(200);
+    res.end();
+  });
+});
+
+app.delete('/api/services/:id', function(req, res){
+  services.services.delete(req.params.id, function(error,data){
+    if (error || !data) {
+      res.status(422);
+      res.end();
+      return;
+    }
+    res.status(200);
+    res.end();
+  });
+});
+
+app.post('/api/users', function(req, res){
   services.users.create(req.body, function(error, user){
     if (error) {
       res.status(422).json(error);
@@ -131,7 +180,7 @@ app.post('/users', function(req, res){
 });
 
 //TODO  Security Implementation
-app.delete('/users/:id', function(req, res){
+app.delete('/api/users/:id', function(req, res){
   services.users.delete(req.params.id, function(error,data){
     if (error || !data) {
       res.status(422);
@@ -143,7 +192,7 @@ app.delete('/users/:id', function(req, res){
   });
 });
 
-app.post('/clients', function(req, res){
+app.post('/api/clients', function(req, res){
   services.clients.create(req.body, function(error,client){
     if (error) {
       res.status(500);
@@ -156,7 +205,7 @@ app.post('/clients', function(req, res){
 });
 
 //TODO  Security Implementation
-app.delete('/clients/:id', function(req, res){
+app.delete('/api/clients/:id', function(req, res){
   services.clients.delete(req.params.id, function(error,data){
     if (error || !data) {
       res.status(422);
