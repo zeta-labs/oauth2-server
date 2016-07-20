@@ -45,8 +45,8 @@ app.get('/:view?', function(req, res){
   });
 });
 
-// app.get('/api/services', function(req,res) {
 app.get('/api/services', app.oauth.authorise(), function(req,res) {
+// app.get('/api/services', function(req,res) {
   services.oauth.ownedBy(req.user.id, 'services', function(error,data){
     if(error) { res.sendStatus(404); return; }
     res.json(data);
@@ -111,7 +111,6 @@ app.post('/oauth/authorize', function (req, res, next) {
     next(null, req.body.allow === 'yes', req.session.user, req.session.user);
 }));
 
-
 app.use(function (req, res, next) {
   res.url = function (path) {
     return [req.protocol+'://'+req.get('host')].concat(path).join('/');
@@ -132,8 +131,6 @@ app.delete('/api/access_tokens/:value', function(req, res){
 });
 
 app.post('/api/services', function(req, res){
-  console.log(req.body);
-  // res.end();
   services.services.create(req.body, function(error, service){
     if (error) {
       res.status(422).json(error);
@@ -168,6 +165,33 @@ app.delete('/api/services/:id', function(req, res){
   });
 });
 
+app.post('/api/oauth', function(req, res){
+  services.oauth.createResourcePermission(req.body, function(error, userHasResources){
+    if (error) {
+      res.status(422).json(error);
+      return;
+    }
+    res.status(201).json(userHasResources);
+  });
+});
+
+// app.delete('/api/oauth/:user_id?.:resource_id?.:resource_type', function(req, res){
+app.delete('/api/oauth/:key', function(req, res){
+  var params = req.params.key.split('&');
+  var userHasResources = {
+    userId: params[0],
+    resourceId: params[1],
+    resourceType: params[2]
+  }
+  services.oauth.deleteResourcePermission(userHasResources, function(error, user){
+    if (error) {
+      res.status(422).json(error);
+      return;
+    }
+    res.status(200).json(user);
+  });
+});
+
 app.post('/api/users', function(req, res){
   services.users.create(req.body, function(error, user){
     if (error) {
@@ -183,6 +207,7 @@ app.post('/api/users', function(req, res){
 app.delete('/api/users/:id', function(req, res){
   services.users.delete(req.params.id, function(error,data){
     if (error || !data) {
+      //res.status(422).json(error);
       res.status(422);
       res.end();
       return;
@@ -232,7 +257,6 @@ app.post('/login', function(req, res){
         // res.redirect(location);
         res.writeHead(307, location);
         res.end();
-        console.log('req.session ', req.session);
       }else{
         res.status(200);
         res.json({description: 'Logged in.'});
@@ -240,8 +264,6 @@ app.post('/login', function(req, res){
     }
   });
 });
-
-
 
 //SERVER
 var server = http.createServer(app);

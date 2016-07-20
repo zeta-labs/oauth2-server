@@ -91,6 +91,30 @@ class OauthService {
     }, callback);
   };
 
+  createResourcePermission(userHasResources, callback){
+    this.knex('users_has_resources')
+    .insert(userHasResources)
+    .returning('*')
+    .then(rows => {
+      callback(null, rows[0])
+    })
+    .catch(error => callback(error));
+  };
+
+  deleteResourcePermission(userHasResources, callback){
+    var raw = this.knex.raw;
+    console.log('userHasResources ', userHasResources);
+    this.knex('users_has_resources')
+    .where('user_id', userHasResources.userId)
+    .andWhere('resource_id', userHasResources.resourceId)
+    .andWhere('resource_type', userHasResources.resourceType)
+    .del()
+    .then(isDeleted => {
+      callback(null,isDeleted);
+    })
+    .catch(error => callback(error));
+  };
+
   ownedBy(userId, resourceType, callback){
     var raw = this.knex.raw;
 

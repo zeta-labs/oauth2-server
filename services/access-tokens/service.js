@@ -7,7 +7,7 @@ class AccessTokensService{
   create(accessToken, callback){
 
     let error = error => callback(error);
-    console.log('accessToken ', accessToken);
+
     this.knex('access_tokens')
     .insert(accessToken)
     .returning('*')

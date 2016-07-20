@@ -20,7 +20,6 @@ class ClientService{
   }
 
   find(client,callback) {
-    console.log('@@@@@ client ', client);
     this.knex.select('*')
     .from('clients')
     .where(client)
