@@ -30,9 +30,13 @@ app.use(session({
 //OAUTH Model configurations
 app.oauth = oauthserver({
     model: services.oauth,
-    grants: ['password', 'authorization_code'],
-    debug: true,
-    accessTokenLifetime: 60 * 60 * 24,
+    // grants: ['password', 'authorization_code'],
+    grants: ['password', 'authorization_code', 'refresh_token'],
+    passthroughErrors: true,
+    // debug: true,
+    // accessTokenLifetime: 60 * 60 * 24,
+    accessTokenLifetime: 5,
+    refreshTokenLifetime: 3700,
     clientIdRegex: '^[A-Za-z0-9-_\^]{5,36}$'
 });
 
@@ -45,8 +49,8 @@ app.get('/:view?', function(req, res){
   });
 });
 
-app.get('/api/services', app.oauth.authorise(), function(req,res) {
 // app.get('/api/services', function(req,res) {
+app.get('/api/services', app.oauth.authorise(), function(req,res) {
   services.oauth.ownedBy(req.user.id, 'services', function(error,data){
     if(error) { res.sendStatus(404); return; }
     res.json(data);
@@ -70,7 +74,7 @@ app.all('/api/services/:id/*', app.oauth.authorise(), function(req,res) {
   });
 });
 
-app.get('/api/users', function(req, res){
+app.get('/users', function(req, res){
   services.users.all(function(error, users){
     if (error) {
       res.status(422).json(error);
@@ -81,6 +85,7 @@ app.get('/api/users', function(req, res){
 });
 
 app.use(bodyParser.urlencoded({ extended: true }));
+
 app.use(bodyParser.json());
 
 app.all('/oauth/token', app.oauth.grant());
@@ -116,6 +121,10 @@ app.use(function (req, res, next) {
     return [req.protocol+'://'+req.get('host')].concat(path).join('/');
   }
   next();
+});
+
+app.post('/api/access_tokens/revoke/:value', function(req, res){
+  
 });
 
 app.delete('/api/access_tokens/:value', function(req, res){
@@ -192,7 +201,7 @@ app.delete('/api/oauth/:key', function(req, res){
   });
 });
 
-app.post('/api/users', function(req, res){
+app.post('/users', function(req, res){
   services.users.create(req.body, function(error, user){
     if (error) {
       res.status(422).json(error);
@@ -203,8 +212,7 @@ app.post('/api/users', function(req, res){
   });
 });
 
-//TODO  Security Implementation
-app.delete('/api/users/:id', function(req, res){
+app.delete('/users/:id', function(req, res){
   services.users.delete(req.params.id, function(error,data){
     if (error || !data) {
       //res.status(422).json(error);
@@ -217,11 +225,11 @@ app.delete('/api/users/:id', function(req, res){
   });
 });
 
-app.post('/api/clients', function(req, res){
+app.post('/clients', function(req, res){
   services.clients.create(req.body, function(error,client){
     if (error) {
       res.status(500);
-      res.json(error); //TODO tratar erros
+      res.json(error);
     }
     res.status(201);
     res.location(res.url(['clients', client.id]));
@@ -229,8 +237,7 @@ app.post('/api/clients', function(req, res){
   });
 });
 
-//TODO  Security Implementation
-app.delete('/api/clients/:id', function(req, res){
+app.delete('/clients/:id', function(req, res){
   services.clients.delete(req.params.id, function(error,data){
     if (error || !data) {
       res.status(422);
@@ -246,23 +253,29 @@ app.post('/login', function(req, res){
   req.session.clientId = req.query.client_id ? req.query.client_id : null;
   req.session.redirectUri = req.query.redirect_uri ? req.query.redirect_uri : null;
 
+  if (!req.body.username || !req.body.password) { res.status(422); res.end(); }
+
   services.users.find(req.body,function(error,user){
     if (error) {
       res.status(500);
-      res.json(error); //TODO tratar erros
-    } else if (user) {
+      res.json(error);
+    }
+    if (user) {
       req.session.user = {id: user.id, user: user.username};
       if (req.query.redirect && req.session.clientId) {
         var location = {'Location': `${req.query.redirect}?response_type=code&client_id=${req.session.clientId}&redirect_uri=${req.session.redirectUri}`};
-        // res.redirect(location);
         res.writeHead(307, location);
         res.end();
-      }else{
-        res.status(200);
-        res.json({description: 'Logged in.'});
-      }
+      } else { res.status(200); res.end();}
     }
+    if (!user) { res.status(401); res.end();}
   });
+});
+
+app.use(function(error, req, res, next) {
+  var location = {'Location': `${req.protocol}://${req.get('host')}?error=${error.error}&error_description=${error.error_description}`};
+  res.writeHead(302, location);
+  res.end();
 });
 
 //SERVER

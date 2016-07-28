@@ -1,27 +1,23 @@
 const CONSTRAINTS = require('./constraints');
 
-let _ = require('lodash');
-
 class UserService {
 
   constructor(knex, validatate) {
     this.knex = knex;
     this.validatate = validatate;
     this.constraints = CONSTRAINTS;
-    knex('users').columnInfo().then(columns => {
+    this.TABLE_NAME = 'users';
+    knex(this.TABLE_NAME).columnInfo().then(columns => {
       this.columns = columns;
     });
   }
 
   create(data, callback) {
-    let error = (error) => {
-      console.error(error);
-      callback(error);
-    }
+    let error = (error) => { callback(error); }
     this.validatate
     .async(data, this.constraints.CREATE)
     .then(user => {
-      this.knex('users')
+      this.knex(this.TABLE_NAME)
       .insert(user)
       .returning('*')
       .then(rows => {
@@ -34,7 +30,7 @@ class UserService {
 
   find(user,callback) {
     this.knex.select('*')
-    .from('users')
+    .from(this.TABLE_NAME)
     .where(user)
     .then(rows => {
       callback(null,rows[0]);
@@ -44,7 +40,7 @@ class UserService {
 
   all(callback) {
     this.knex.select('*')
-    .from('users')
+    .from(this.TABLE_NAME)
     .then(rows => {
       callback(null,rows[0]);
     })
@@ -52,7 +48,7 @@ class UserService {
   }
 
   delete(id, callback) {
-    this.knex('users')
+    this.knex(this.TABLE_NAME)
     .where('id', id)
     .del()
     .then(isDeleted => {

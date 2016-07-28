@@ -2,15 +2,13 @@ class ClientService{
 
   constructor(knex){
     this.knex = knex;
+    this.TABLE_NAME = 'clients';
   }
 
   create(client, callback){
-    let error = (error) => {
-      console.error(error);
-      callback(error);
-    }
+    let error = error => callback(error);
 
-    this.knex('clients')
+    this.knex(this.TABLE_NAME)
     .insert(client)
     .returning('*')
     .then(rows => {
@@ -21,7 +19,7 @@ class ClientService{
 
   find(client,callback) {
     this.knex.select('*')
-    .from('clients')
+    .from(this.TABLE_NAME)
     .where(client)
     .then(rows => {
       callback(null,rows[0]);
@@ -29,9 +27,9 @@ class ClientService{
     .catch(error => callback(error));
   }
 
-  delete(id, callback) {
-    this.knex('clients')
-    .where('id', id)
+  delete(clientId, callback) {
+    this.knex(this.TABLE_NAME)
+    .where('id', clientId || clientId.id)
     .del()
     .then(isDeleted => {
       callback(null,isDeleted);

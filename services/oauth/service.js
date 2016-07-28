@@ -30,7 +30,6 @@ class OauthService {
     this.knex = knex;
   }
 
-  // Required to support password grant type
   getUser(username, password, callback) {
     services.users.find({ username, password }, callback);
   };
@@ -80,7 +79,6 @@ class OauthService {
     });
   };
 
-  //auth code grant type
   // renamed to saveAuthorizationCode in versin 3.x
   saveAuthCode(authCode, clientId, expires, user, callback) {
     services.codes.create({
@@ -103,7 +101,6 @@ class OauthService {
 
   deleteResourcePermission(userHasResources, callback){
     var raw = this.knex.raw;
-    console.log('userHasResources ', userHasResources);
     this.knex('users_has_resources')
     .where('user_id', userHasResources.userId)
     .andWhere('resource_id', userHasResources.resourceId)
@@ -168,13 +165,52 @@ class OauthService {
     .catch(error => callback(error));
   };
 
+  getRefreshToken(bearerToken, callback) {
+    services.accessTokens.find({refresh_token: bearerToken}, function(error, accessToken){
+      if (error) { callback(error) }
+      callback(null,{
+        clientId: accessToken.client_id,
+        expires: accessToken.refresh_token_expires_in,
+        userId: accessToken.user_id
+      });
+    });
+  };
+
+  revokeRefreshToken(token, callback) {
+    services.accessTokens.revokeRefreshToken(token, (error) => {
+      if (error) {
+        callback(error);
+        return;
+      }
+       callback();
+     });
+  };
+
+  saveRefreshToken(refreshToken, clientId, expires, user, callback) {
+    this.knex('access_tokens')
+    .returning('*')
+    .where('client_id', '=', clientId)
+    .andWhere('user_id', '=', user.id)
+    .update({
+      refresh_token: refreshToken,
+      refresh_token_expires_in: expires
+    })
+    .then(rows => {
+      callback(null,rows);
+    })
+    .catch(error => {
+      callback(error)
+    });
+  };
 
 
 
-  // TODO refactor
-  // This will very much depend on your setup, I wouldn't advise doing anything exactly like this but
-  // it gives an example of how to use the method to resrict certain grant types
-  // var authorizedClientIds = ['1234215215', 'def2'];
+  /**
+  TODO: refactor
+  This will very much depend on your setup, I wouldn't advise doing anything exactly like this but
+  it gives an example of how to use the method to resrict certain grant types
+  var authorizedClientIds = ['1234215215', 'def2'];
+  **/
   grantTypeAllowed(clientId, grantType, callback) {
     // LOGIC TO CHECK IF THE grantType is allowed for the particular clientId
     return callback(false,true);
@@ -182,19 +218,6 @@ class OauthService {
         return callback(false, /*authorizedClientIds.indexOf(clientId.toLowerCase()) >= 0*/true);
     }
   };
-  //
-  // /* REFRESH TOKEN IS NOT TESTED */
-  // getRefreshToken(bearerToken, callback) {
-  //   db.oauth_refresh_tokens.find({'refresh_token' : bearerToken}, function(err,users) {
-  //     callback(err, users && users.length ? users[0] : false);
-  //   });
-  // };
-  // /* REFRESH TOKEN IS NOT TESTED */
-  // saveRefreshToken(refreshToken, clientId, expires, userId, callback) {
-  //   db.oauth_refresh_tokens.save({refresh_token: refreshToken, client_id: clientId, user_id: userId, expires:expires},function(err,saved) {
-  //     callback(err);
-  //   })
-  // };
 }
 
 module.exports = OauthService;

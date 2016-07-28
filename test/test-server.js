@@ -1,6 +1,8 @@
 var Request = require("request");
 var assert = require('chai').assert;
-var URL = 'http://localhost:80';
+var expect = require('chai').expect;
+var Url = require('url');
+var BASE_URL = 'http://prod-04:80';
 
 describe('Oauth2-server FLOW', function() {
   var user;
@@ -16,10 +18,10 @@ describe('Oauth2-server FLOW', function() {
   }
   var bearer;
 
-  it('Should add a SINGLE user on /api/users POST.', function(done) {
+  it('Should CREATE a single user', function(done) {
     var request = {
       method: 'POST',
-      url: URL + '/api/users',
+      url: BASE_URL + '/users',
       headers:{
         'content-type': 'application/x-www-form-urlencoded',
         'cache-control': 'no-cache'
@@ -38,10 +40,60 @@ describe('Oauth2-server FLOW', function() {
     });
   });
 
-  it('Should add a SINGLE client on /api/clients POST.', function(done) {
+  it('Should login with valid credentials', function(done) {
     var request = {
       method: 'POST',
-      url: URL + '/api/clients',
+      url: BASE_URL + '/login',
+      headers: {
+        'content-type': 'application/x-www-form-urlencoded',
+      },
+      form: {
+        username: user.username,
+        password: user.password
+      }
+    }
+    Request(request, function (error, response, body) {
+      if (error) console.error(error);
+      assert.equal(response.statusCode, 200);
+      done();
+    });
+  });
+
+  it('Should REVOKE access by missing credentials', function(done) {
+    var request = {
+      method: 'POST',
+      url: BASE_URL + '/login',
+    }
+    Request(request, function (error, response, body) {
+      if (error) console.error(error);
+      assert.equal(response.statusCode, 422);
+      done();
+    });
+  });
+
+  it('Should REVOKE access by invalid credentials', function(done) {
+    var request = {
+      method: 'POST',
+      url: BASE_URL + '/login',
+      headers: {
+        'content-type': 'application/x-www-form-urlencoded',
+      },
+      form: {
+        username: Math.floor(Math.random() * 999),
+        password: Math.floor(Math.random() * 999)
+      }
+    }
+    Request(request, function (error, response, body) {
+      if (error) console.error(error);
+      assert.equal(response.statusCode, 401);
+      done();
+    });
+  });
+
+  it('Should CREATE a single client', function(done) {
+    var request = {
+      method: 'POST',
+      url: BASE_URL + '/clients',
       headers:{ 'content-type': 'application/x-www-form-urlencoded' },
       form: { redirect_uri: 'http://www.yahoo.com' }
     };
@@ -53,10 +105,10 @@ describe('Oauth2-server FLOW', function() {
     });
   });
 
-  it('Should add a SINGLE resource type service on /api/services POST.', function(done) {
+  it('Should CREATE a single resource, type service', function(done) {
     var request = {
       method: 'POST',
-      url: URL + '/api/services',
+      url: BASE_URL + '/api/services',
       headers:{ 'content-type': 'application/x-www-form-urlencoded' },
       form: { name: 'Baren Test', uri: 'http://zetainfo.dyndns.info:5001/api/v1' }
     };
@@ -68,10 +120,10 @@ describe('Oauth2-server FLOW', function() {
     });
   });
 
-  it('Should create "user-resource" relationship on /api/oauth POST.', function(done) {
+  it('Should CREATE "users_has_resources" relationship', function(done) {
     var request = {
       method: 'POST',
-      url: URL + '/api/oauth',
+      url: BASE_URL + '/api/oauth',
       headers:{ 'content-type': 'application/x-www-form-urlencoded' },
       form: {
         user_id: user.id,
@@ -88,10 +140,10 @@ describe('Oauth2-server FLOW', function() {
     });
   });
 
-  it('[authorization_code step 1] Should get session cookie and get redirects on /oauth/authorize.', function(done) {
+  it('[authorization_code step 1] Should GET session cookie and get redirects', function(done) {
     var request = {
       method: 'GET',
-      url: URL + '/oauth/authorize',
+      url: BASE_URL + '/oauth/authorize',
       qs: {
         response_type: 'code',
         client_id: client.client_id,
@@ -107,7 +159,7 @@ describe('Oauth2-server FLOW', function() {
     });
   });
 
-  it('[authorization_code step 2] Should login, set session on api and get recidect location.', function(done) {
+  it('[authorization_code step 2] Should LOGIN, SET SESSION on api and GET recidect LOCATION', function(done) {
     var request = {
       method: 'POST',
       url: redirects[0].redirectUri,
@@ -134,15 +186,15 @@ describe('Oauth2-server FLOW', function() {
     });
   });
 
-  it('[authorization_code step 3] Should get "authorization_code".', function(done) {
+  it('[authorization_code step 3] Should GET authorization code', function(done) {
     var request = {
       method: 'POST',
-      url: URL + authorization.location,
+      url: BASE_URL + authorization.location,
       headers: {
         'Content-type': 'application/x-www-form-urlencoded',
         'Cookie' : sessionCookie,
         'Connection' : 'keep-alive',
-        'Referer' : URL + authorization.location
+        'Referer' : BASE_URL + authorization.location
       },
       qs: {
         response_type: 'code',
@@ -162,10 +214,10 @@ describe('Oauth2-server FLOW', function() {
     });
   });
 
-  it('[authorization_code step 4] Should get bearer.', function(done) {
+  it('[authorization_code step 4] Should GET bearer', function(done) {
     var request = {
       method: 'POST',
-      url: URL + '/oauth/token',
+      url: BASE_URL + '/oauth/token',
       headers: {
         'Content-type': 'application/x-www-form-urlencoded'
       },
@@ -186,10 +238,10 @@ describe('Oauth2-server FLOW', function() {
     });
   });
 
-  it('Should get services.', function(done) {
+  it('Should GET services', function(done) {
     var request = {
       method: 'GET',
-      url: URL + '/api/services',
+      url: BASE_URL + '/api/services',
       headers: {
         'Connection' : 'keep-alive',
         'Authorization' : `Bearer ${bearer.access_token}`
@@ -202,14 +254,14 @@ describe('Oauth2-server FLOW', function() {
     });
   });
 
-  it('Should get a single service(middleware) request', function(done) {
+  it('Should GET request from service(middleware ex)', function(done) {
     var id = userHasResources.resource_id;
     var prefix = userHasResources.options.system.type;
     var codfilial = userHasResources.options.organizations[0].id;
 
     var request = {
       method: 'GET',
-      url: `${URL}/api/services/${id}/entities/${prefix}ecli?filter[codfilial]=${codfilial}&fields=codcliente,nome,cpf_cgc,pessoa,codfilial`,
+      url: `${BASE_URL}/api/services/${id}/entities/${prefix}ecli?filter[codfilial]=${codfilial}&fields=codcliente,nome,cpf_cgc,pessoa,codfilial`,
       headers: {
         'Connection' : 'keep-alive',
         'Authorization' : `Bearer ${bearer.access_token}`
@@ -222,58 +274,118 @@ describe('Oauth2-server FLOW', function() {
     });
   });
 
-  it('Should DELETE code on /api/codes/:code.', function(done) {
-    var request = {
-      method: 'DELETE',
-      url: URL + '/api/codes/' + authorization.code
-    };
-    Request(request, function (error, response, body) {
-      if (error) console.error(error);
-      assert.equal(response.statusCode, 200);
-      done();
+  /**
+   *  Only works if access_token lifetime (server-side) is less than sleep function parameter
+  it('Should get invalid_token (access_token has expired) from grant type authorization_code', function(done) {
+
+    this.timeout(30000);
+    function sleep (time) {
+      return new Promise((resolve) => setTimeout(resolve, time));
+    }
+
+    sleep(6000).then(() => {
+      var request = {
+        method: 'GET',
+        url: BASE_URL + '/api/services',
+        headers: {
+          'Connection' : 'keep-alive',
+          'Authorization' : `Bearer ${bearer.access_token}`
+        }
+      }
+      Request(request, function (error, response, body) {
+        if (error) console.error(error);
+
+        var redirects = response.request._redirect.redirects;
+        assert.equal(redirects[0].statusCode, 302);
+
+        var queryParams = Url.parse(redirects[0].redirectUri, true).query;
+        assert.equal(queryParams.error, 'invalid_token');
+
+        done();
+        this.timeout(2000);
+      });
     });
   });
+  **/
 
-  it('Should DELETE a access token generated by grant type authorization_code on /api/access_tokens/:value.', function(done) {
-    var request = {
-      method: 'DELETE',
-      url: URL + '/api/access_tokens/' + bearer.access_token
-    };
-    Request(request, function (error, response, body) {
-      if (error) console.error(error);
-      assert.equal(response.statusCode, 200);
-      done();
-    });
-  });
-
-  it('Should DELETE a service on /api/services/:id.', function(done) {
-    var request = {
-      method: 'DELETE',
-      url: URL + '/api/services/' + service.id
-    };
-    Request(request, function (error, response, body) {
-      if (error) console.error(error);
-      assert.equal(response.statusCode, 200);
-      done();
-    });
-  });
-
-  it('Should DELETE a userHasResources on /api/oauth', function(done) {
-    var request = {
-      method: 'DELETE',
-      url: URL + `/api/oauth/${userHasResources.user_id}&${userHasResources.resource_id}&${userHasResources.resource_type}`
-    };
-    Request(request, function (error, response, body) {
-      if (error) console.error(error);
-      assert.equal(response.statusCode, 200);
-      done();
-    });
-  });
-
-  it('Should get token with grant type "password"', function(done) {
+  it('Should REFRESH token generated by grant type AUTHORIZATION_CODE', function(done) {
     var request = {
       method: 'POST',
-      url: URL + '/oauth/token',
+      url: BASE_URL + '/oauth/token',
+      headers: {
+        'content-type': 'application/x-www-form-urlencoded',
+        'Cookie' : sessionCookie,
+        'Connection' : 'keep-alive',
+      },
+      form: {
+        grant_type: 'refresh_token',
+        refresh_token: bearer.refresh_token,
+        client_id: client.client_id,
+        username: user.username,
+        password: user.password,
+        client_secret: client.client_secret
+       }
+     };
+     Request(request, function (error, response, body) {
+      if (error) console.error(error);
+      assert.equal(response.statusCode, 200);
+      bearer = JSON.parse(body);
+      done();
+    });
+  });
+
+  it('Should DELETE code', function(done) {
+    var request = {
+      method: 'DELETE',
+      url: BASE_URL + '/api/codes/' + authorization.code
+    };
+    Request(request, function (error, response, body) {
+      if (error) console.error(error);
+      assert.equal(response.statusCode, 200);
+      done();
+    });
+  });
+
+  it('Should DELETE access token generated by authorization_code flow', function(done) {
+    var request = {
+      method: 'DELETE',
+      url: BASE_URL + '/api/access_tokens/' + bearer.access_token
+    };
+    Request(request, function (error, response, body) {
+      if (error) console.error(error);
+      assert.equal(response.statusCode, 200);
+      done();
+    });
+  });
+
+  it('Should DELETE a resource (service)', function(done) {
+    var request = {
+      method: 'DELETE',
+      url: BASE_URL + '/api/services/' + service.id
+    };
+    Request(request, function (error, response, body) {
+      if (error) console.error(error);
+      assert.equal(response.statusCode, 200);
+      done();
+    });
+  });
+
+  it('Should DELETE a users_has_resources relationship', function(done) {
+    var request = {
+      method: 'DELETE',
+      url: BASE_URL + `/api/oauth/${userHasResources.user_id}&${userHasResources.resource_id}&${userHasResources.resource_type}`
+    };
+    Request(request, function (error, response, body) {
+      if (error) console.error(error);
+      assert.equal(response.statusCode, 200);
+      done();
+    });
+  });
+
+  it('Should GET token by grant type password', function(done) {
+    var request = {
+      method: 'POST',
+      url: BASE_URL + '/oauth/token',
       headers: {
         'content-type': 'application/x-www-form-urlencoded',
         'cache-control': 'no-cache'
@@ -294,10 +406,36 @@ describe('Oauth2-server FLOW', function() {
     });
   });
 
-  it('Should DELETE a access token generated by grant type password on /api/access_tokens/:value.', function(done) {
+  it('Should REFRESH token generated by grant type PASSWORD', function(done) {
+    var request = {
+      method: 'POST',
+      url: BASE_URL + '/oauth/token',
+      headers: {
+        'content-type': 'application/x-www-form-urlencoded',
+        'Cookie' : sessionCookie,
+        'Connection' : 'keep-alive',
+      },
+      form: {
+        grant_type: 'refresh_token',
+        refresh_token: token.refresh_token,
+        client_id: client.client_id,
+        username: user.username,
+        password: user.password,
+        client_secret: client.client_secret
+       }
+     };
+     Request(request, function (error, response, body) {
+      if (error) console.error(error);
+      assert.equal(response.statusCode, 200);
+      token = JSON.parse(body);
+      done();
+    });
+  });
+
+  it('Should DELETE access token generated by grant type PASSWORD', function(done) {
     var request = {
       method: 'DELETE',
-      url: URL + '/api/access_tokens/' + token.access_token
+      url: BASE_URL + '/api/access_tokens/' + token.access_token
     };
     Request(request, function (error, response, body) {
       if (error) console.error(error);
@@ -306,10 +444,10 @@ describe('Oauth2-server FLOW', function() {
     });
   });
 
-  it('Should DELETE a SINGLE USER on /api/users/:value.', function(done) {
+  it('Should DELETE a single user', function(done) {
     var request = {
       method: 'DELETE',
-      url: URL + '/api/users/' + user.id
+      url: BASE_URL + '/users/' + user.id
     };
     Request(request, function (error, response, body) {
       if (error) console.error(error);
@@ -318,10 +456,10 @@ describe('Oauth2-server FLOW', function() {
     });
   });
 
-  it('Should DELETE a SINGLE CLIENT on /api/clients/:id.', function(done) {
+  it('Should DELETE a single client', function(done) {
     var request = {
       method: 'DELETE',
-      url: URL + '/api/clients/' + client.client_id
+      url: BASE_URL + '/clients/' + client.client_id
     };
     Request(request, function (error, response, body) {
       if (error) console.error(error);
@@ -330,4 +468,23 @@ describe('Oauth2-server FLOW', function() {
     });
   });
 
+  it('Should RETURN oauth2 error response pattern following RFC 6749 section-4.1.2.1', function(done) {
+    var request = {
+      method: 'GET',
+      url: BASE_URL + '/oauth/authorize',
+      headers: {
+        'Cookie' : sessionCookie,
+        'Connection' : 'keep-alive'
+      }
+    };
+    Request(request, function (error, response, body) {
+      if (error) console.error(error);
+
+      var redirects = response.request._redirect.redirects;
+      assert.equal(redirects[0].statusCode, 302);
+      assert.notEqual(redirects[0].redirectUri.indexOf("error="), -1);
+      assert.notEqual(redirects[0].redirectUri.indexOf("error_description="), -1);
+      done();
+    });
+  });
 });
