@@ -2,13 +2,12 @@ class ServicesService{
 
   constructor(knex){
     this.knex = knex;
-    this.TABLE_NAME = 'services';
   }
 
   create(service, callback){
     let error = error => callback(error);
 
-    this.knex(this.TABLE_NAME)
+    this.knex('services')
     .insert(service)
     .returning('*')
     .then(rows => {
@@ -19,7 +18,7 @@ class ServicesService{
 
   find(service,callback) {
     this.knex.select('*')
-    .from(this.TABLE_NAME)
+    .from('services')
     .where(service)
     .then(rows => {
       callback(null,rows[0]);
@@ -28,7 +27,7 @@ class ServicesService{
   }
 
   delete(id, callback) {
-    this.knex(this.TABLE_NAME)
+    this.knex('services')
     .where('id', id)
     .del()
     .then(isDeleted => {

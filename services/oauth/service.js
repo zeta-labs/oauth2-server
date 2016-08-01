@@ -150,6 +150,7 @@ class OauthService {
       .on('users_has_resources.resource_id', '=', raw('?', [resourceId]))
     })
     .then(rows => {
+      console.log(rows);
       var resourcePermission = rows[0];
       callback(null, {
         name: resourcePermission.name,

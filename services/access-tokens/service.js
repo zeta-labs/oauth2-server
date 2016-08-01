@@ -2,13 +2,12 @@ class AccessTokensService{
 
   constructor(knex){
     this.knex = knex;
-    this.TABLE = 'access_tokens';
   }
 
   create(accessToken, callback){
     let error = error => callback(error);
 
-    this.knex(this.TABLE)
+    this.knex('access_tokens')
     .insert(accessToken)
     .returning('*')
     .then(rows => {
@@ -19,7 +18,7 @@ class AccessTokensService{
 
   find(accessToken, callback) {
     this.knex.select('*')
-    .from(this.TABLE)
+    .from('access_tokens')
     .where(accessToken)
     .then(rows => {
       callback(null,rows[0]);
@@ -28,7 +27,7 @@ class AccessTokensService{
   }
 
   revokeRefreshToken(refreshToken, callback) {
-    this.knex(this.TABLE)
+    this.knex('access_tokens')
     .where('refresh_token', refreshToken)
     .del()
     .then(isDeleted => callback())
@@ -36,7 +35,7 @@ class AccessTokensService{
   };
 
   deleteByValue(value, callback) {
-    this.knex(this.TABLE)
+    this.knex('access_tokens')
     .where('value', value)
     .del()
     .then(isDeleted => {

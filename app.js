@@ -9,7 +9,6 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var app = express();
 var request = require('request');
-// var models = require('./model.js');
 var MemcachedStore = require('connect-memcached')(session);
 
 var services = require('./services/');
@@ -22,7 +21,7 @@ app.use(session({
   secret : '6f8c27af-7deb-4df5-b0c0-91a6b4d9dc9d',
   key: 'session',
   store : new MemcachedStore({
-    hosts: ['127.0.0.1:11211'],
+    hosts: ['192.168.0.55:11211'],
     secret: 'ed1a7901-d342-424e-bce0-38744335358d'
   })
 }));
@@ -57,22 +56,52 @@ app.get('/api/services', app.oauth.authorise(), function(req,res) {
   });
 });
 
-app.all('/api/services/:id/*', app.oauth.authorise(), function(req,res) {
+app.all('/api/services/:id', app.oauth.authorise(), function(req,res) {
+  if (req.method === 'DELETE') {
+    services.services.delete(req.params.id, function(error,data){
+      if (error || !data) {
+        res.status(422);
+        res.end();
+        return;
+      }
+      res.status(200);
+      res.end();
+    });
+  } else if(req.url.indexOf('request=') > -1) {
+    services.oauth.getResourcePermission(req.user.id, 'services', req.params.id, function(error,data){
+      if(error) {
+        res.sendStatus(404); return;
+      }
+      if(!data.permission) { res.sendStatus(401); return; }
 
-  services.oauth.getResourcePermission(req.user.id, 'services', req.params.id, function(error,data){
-    if(error) { res.sendStatus(404); return; }
-    if(!data.permission) { res.sendStatus(401); return; }
+      var url = data.uri + req.url.split('request=')[1];
+      var headers = req.headers;
+      headers.authorization = `Token token=${data.options.token}`;
 
-    var url = data.uri + req.url.split(req.params.id)[1];
-    var headers = req.headers;
-    headers.authorization = `Token token=${data.options.token}`;
-
-    req.pipe(request({
-      url: url,
-      headers: headers
-    })).pipe(res);
-  });
+      req.pipe(request({url: url,headers: headers})).pipe(res);
+    });
+  } else {
+    res.status(422).json({error: 'unprocessable_entity', error_description: 'param "request" not present'});
+  }
 });
+
+// app.all('/api/services/:id/*', app.oauth.authorise(), function(req,res) {
+//   services.oauth.getResourcePermission(req.user.id, 'services', req.params.id, function(error,data){
+//     if(error) {
+//       res.sendStatus(404); return;
+//     }
+//     if(!data.permission) { res.sendStatus(401); return; }
+//
+//     var url = data.uri + req.url.split(req.params.id)[1];
+//     var headers = req.headers;
+//     headers.authorization = `Token token=${data.options.token}`;
+//
+//     req.pipe(request({
+//       url: url,
+//       headers: headers
+//     })).pipe(res);
+//   });
+// });
 
 app.get('/users', function(req, res){
   services.users.all(function(error, users){
@@ -85,8 +114,42 @@ app.get('/users', function(req, res){
 });
 
 app.use(bodyParser.urlencoded({ extended: true }));
-
 app.use(bodyParser.json());
+
+//TODO: Rever nomenclatura do end-point
+app.post('/api/services/:id/bind', app.oauth.authorise(), function(req, res){
+  services.services.find({id: req.params.id}, function(error, data){
+    if (error) {
+      console.error(error);
+      res.status(500);
+      res.end();
+    }
+    var resource = data;
+    request.post({url: `${resource.uri}/authentication`, formData: req.body}, function(err, response, body) {
+      if (err) {
+        console.error(err);
+        res.status(500);
+        res.end();
+      } else {
+        var permission = {
+          user_id: req.user.id,
+          resource_id: req.params.id,
+          resource_type: 'services',
+          options: body
+        };
+        services.oauth.createResourcePermission(permission, function(error, createdPermission){
+          if (createdPermission) {
+            res.status(201).json(createdPermission);
+            res.end();
+          } else {
+            res.status(422);
+            res.end();
+          }
+        });
+      }
+    });
+  });
+});
 
 app.all('/oauth/token', app.oauth.grant());
 
@@ -123,10 +186,6 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.post('/api/access_tokens/revoke/:value', function(req, res){
-  
-});
-
 app.delete('/api/access_tokens/:value', function(req, res){
   services.accessTokens.deleteByValue(req.params.value, function(error,data){
     if (error || !data) {
@@ -159,28 +218,6 @@ app.delete('/api/codes/:code', function(req, res){
     }
     res.status(200);
     res.end();
-  });
-});
-
-app.delete('/api/services/:id', function(req, res){
-  services.services.delete(req.params.id, function(error,data){
-    if (error || !data) {
-      res.status(422);
-      res.end();
-      return;
-    }
-    res.status(200);
-    res.end();
-  });
-});
-
-app.post('/api/oauth', function(req, res){
-  services.oauth.createResourcePermission(req.body, function(error, userHasResources){
-    if (error) {
-      res.status(422).json(error);
-      return;
-    }
-    res.status(201).json(userHasResources);
   });
 });
 
@@ -261,7 +298,7 @@ app.post('/login', function(req, res){
       res.json(error);
     }
     if (user) {
-      req.session.user = {id: user.id, user: user.username};
+      req.session.user = { id: user.id, user: user.username };
       if (req.query.redirect && req.session.clientId) {
         var location = {'Location': `${req.query.redirect}?response_type=code&client_id=${req.session.clientId}&redirect_uri=${req.session.redirectUri}`};
         res.writeHead(307, location);
@@ -273,7 +310,7 @@ app.post('/login', function(req, res){
 });
 
 app.use(function(error, req, res, next) {
-  var location = {'Location': `${req.protocol}://${req.get('host')}?error=${error.error}&error_description=${error.error_description}`};
+var location = {'Location': `${req.protocol}://${req.get('host')}?error=${error.error}&error_description=${error.error_description}`};
   res.writeHead(302, location);
   res.end();
 });

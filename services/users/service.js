@@ -6,8 +6,7 @@ class UserService {
     this.knex = knex;
     this.validatate = validatate;
     this.constraints = CONSTRAINTS;
-    this.TABLE_NAME = 'users';
-    knex(this.TABLE_NAME).columnInfo().then(columns => {
+    knex('users').columnInfo().then(columns => {
       this.columns = columns;
     });
   }
@@ -17,7 +16,7 @@ class UserService {
     this.validatate
     .async(data, this.constraints.CREATE)
     .then(user => {
-      this.knex(this.TABLE_NAME)
+      this.knex('users')
       .insert(user)
       .returning('*')
       .then(rows => {
@@ -30,7 +29,7 @@ class UserService {
 
   find(user,callback) {
     this.knex.select('*')
-    .from(this.TABLE_NAME)
+    .from('users')
     .where(user)
     .then(rows => {
       callback(null,rows[0]);
@@ -40,7 +39,7 @@ class UserService {
 
   all(callback) {
     this.knex.select('*')
-    .from(this.TABLE_NAME)
+    .from('users')
     .then(rows => {
       callback(null,rows[0]);
     })
@@ -48,7 +47,7 @@ class UserService {
   }
 
   delete(id, callback) {
-    this.knex(this.TABLE_NAME)
+    this.knex('users')
     .where('id', id)
     .del()
     .then(isDeleted => {
