@@ -89,12 +89,27 @@ class OauthService {
     }, callback);
   };
 
-  createResourcePermission(userHasResources, callback){
-    this.knex('users_has_resources')
-    .insert(userHasResources)
-    .returning('*')
-    .then(rows => {
-      callback(null, rows[0])
+  createResourcePermission(userHasResources, callback) {
+    this.knex.raw(
+      'INSERT INTO ' +
+        'users_has_resources (user_id, resource_id, resource_type, options) ' +
+      'VALUES ' +
+        '(?,?,?,?) ' + //1,2,3,4
+      'ON CONFLICT ' +
+        '(user_id, resource_id, resource_type) ' +
+      'DO UPDATE SET ' +
+        'options = ? ' + //5
+      'RETURNING *',
+      [
+        userHasResources.user_id,
+        userHasResources.resource_id,
+        userHasResources.resource_type,
+        userHasResources.options,
+        userHasResources.options
+      ]
+    )
+    .then(resultset => {
+      callback(null, resultset.rows[0])
     })
     .catch(error => callback(error));
   };
@@ -150,18 +165,21 @@ class OauthService {
       .on('users_has_resources.resource_id', '=', raw('?', [resourceId]))
     })
     .then(rows => {
-      console.log(rows);
-      var resourcePermission = rows[0];
-      callback(null, {
-        name: resourcePermission.name,
-        uri: resourcePermission.uri,
-        userId: resourcePermission.user_id,
-        resourceId: resourcePermission.resource_id,
-        resourceType: resourcePermission.resource_type,
-        createdAt: resourcePermission.created_at,
-        options: resourcePermission.options,
-        permission: resourcePermission.permission
-      });
+      if(rows[0]){
+        var resourcePermission = rows[0];
+        callback(null, {
+          name: resourcePermission.name,
+          uri: resourcePermission.uri,
+          userId: resourcePermission.user_id,
+          resourceId: resourcePermission.resource_id,
+          resourceType: resourcePermission.resource_type,
+          createdAt: resourcePermission.created_at,
+          options: resourcePermission.options,
+          permission: resourcePermission.permission
+        });
+      }else{
+        callback(null,null);
+      }
     })
     .catch(error => callback(error));
   };
@@ -203,7 +221,6 @@ class OauthService {
       callback(error)
     });
   };
-
 
 
   /**

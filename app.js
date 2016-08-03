@@ -16,7 +16,7 @@ var services = require('./services/');
 //MIDDLEWARES
 app.use(cors());
 app.use(cookieParser());
-
+ 
 app.use(session({
   secret : '6f8c27af-7deb-4df5-b0c0-91a6b4d9dc9d',
   key: 'session',
@@ -57,7 +57,23 @@ app.get('/api/services', app.oauth.authorise(), function(req,res) {
 });
 
 app.all('/api/services/:id', app.oauth.authorise(), function(req,res) {
-  if (req.method === 'DELETE') {
+  if(req.url.indexOf('request=') > -1) {
+    services.oauth.getResourcePermission(req.user.id, 'services', req.params.id, function(error,data){
+      if(error) {
+        res.sendStatus(404);
+        return;
+      } else if(!data.permission) {
+        res.sendStatus(401);
+        return;
+      }
+
+      var url = data.uri + req.url.split('request=')[1];
+      var headers = req.headers;
+      headers.authorization = `Token token=${data.options.token}`;
+
+      req.pipe(request({url: url,headers: headers})).pipe(res);
+    });
+  } else if (req.method === 'DELETE') {
     services.services.delete(req.params.id, function(error,data){
       if (error || !data) {
         res.status(422);
@@ -67,41 +83,21 @@ app.all('/api/services/:id', app.oauth.authorise(), function(req,res) {
       res.status(200);
       res.end();
     });
-  } else if(req.url.indexOf('request=') > -1) {
-    services.oauth.getResourcePermission(req.user.id, 'services', req.params.id, function(error,data){
-      if(error) {
-        res.sendStatus(404); return;
-      }
-      if(!data.permission) { res.sendStatus(401); return; }
-
-      var url = data.uri + req.url.split('request=')[1];
-      var headers = req.headers;
-      headers.authorization = `Token token=${data.options.token}`;
-
-      req.pipe(request({url: url,headers: headers})).pipe(res);
-    });
   } else {
-    res.status(422).json({error: 'unprocessable_entity', error_description: 'param "request" not present'});
+    services.oauth.getResourcePermission(req.user.id, 'services', req.params.id, function(error,data){
+      if (error) {
+        res.status(422);
+        res.end();
+      } else if(!data || !data.permission) {
+        res.status(401);
+        res.end();
+      } else {
+        res.json(data);
+        res.end()
+      }
+    });
   }
 });
-
-// app.all('/api/services/:id/*', app.oauth.authorise(), function(req,res) {
-//   services.oauth.getResourcePermission(req.user.id, 'services', req.params.id, function(error,data){
-//     if(error) {
-//       res.sendStatus(404); return;
-//     }
-//     if(!data.permission) { res.sendStatus(401); return; }
-//
-//     var url = data.uri + req.url.split(req.params.id)[1];
-//     var headers = req.headers;
-//     headers.authorization = `Token token=${data.options.token}`;
-//
-//     req.pipe(request({
-//       url: url,
-//       headers: headers
-//     })).pipe(res);
-//   });
-// });
 
 app.get('/users', function(req, res){
   services.users.all(function(error, users){
@@ -124,28 +120,35 @@ app.post('/api/services/:id/bind', app.oauth.authorise(), function(req, res){
       res.status(500);
       res.end();
     }
-    var resource = data;
-    request.post({url: `${resource.uri}/authentication`, formData: req.body}, function(err, response, body) {
+    request.post({url: `${data.uri}/authentication`, formData: req.body}, function(err, response, body) {
       if (err) {
         console.error(err);
         res.status(500);
         res.end();
       } else {
-        var permission = {
-          user_id: req.user.id,
-          resource_id: req.params.id,
-          resource_type: 'services',
-          options: body
-        };
-        services.oauth.createResourcePermission(permission, function(error, createdPermission){
-          if (createdPermission) {
-            res.status(201).json(createdPermission);
-            res.end();
-          } else {
-            res.status(422);
-            res.end();
-          }
-        });
+        if (!body) {
+          res.status(response.statusCode);
+          res.end();
+        } else {
+          services.oauth.createResourcePermission({
+            user_id: req.user.id,
+            resource_id: req.params.id,
+            resource_type: 'services',
+            options: body
+          }, function(error, createdPermission){
+            if (error) {
+              res.status(500);
+              res.end();
+            }
+            if (createdPermission) {
+              res.status(201).json(createdPermission);
+              res.end();
+            } else {
+              res.status(422);
+              res.end();
+            }
+          });
+        }
       }
     });
   });
@@ -177,7 +180,8 @@ app.post('/oauth/authorize', function (req, res, next) {
     next();
   }, app.oauth.authCodeGrant(function (req, next) {
     next(null, req.body.allow === 'yes', req.session.user, req.session.user);
-}));
+  })
+);
 
 app.use(function (req, res, next) {
   res.url = function (path) {

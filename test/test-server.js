@@ -381,7 +381,7 @@ describe('Oauth2-server grant type AUTHORIZATION CODE flow.', function() {
     });
   });
 
-  it('Should DELETE access token generated', function(done) {
+  it('Should DELETE access token', function(done) {
     var request = {
       method: 'DELETE',
       url: BASE_URL + '/api/access_tokens/' + bearer.access_token
